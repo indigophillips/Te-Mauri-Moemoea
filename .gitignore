@@ -1,0 +1,7 @@
+node_modules
+bundle*
+*.log
+.DS_Store
+*.sqlite*
+yarn-error.*
+config.json
