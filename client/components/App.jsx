@@ -1,4 +1,8 @@
 import React from 'react'
+import {HashRouter as Router, Route} from 'react-router-dom'
+
+import Register from './auth/Register'
+import Welcome from './Welcome'
 
 class App extends React.Component {
   constructor (props) {
@@ -10,9 +14,12 @@ class App extends React.Component {
 
   render () {
     return (
-      <div className='app'>
-        Hi
-      </div>
+      <Router>
+        <div>
+          <Route path='/register' component={Register} />
+          <Route path='/welcome' component={Welcome} />
+        </div>
+      </Router>
     )
   }
 }
