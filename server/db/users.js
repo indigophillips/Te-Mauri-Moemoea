@@ -8,6 +8,13 @@ function getUserByID ( id, testDB ) {
     .first()
 }
 
+function addUser ( user, testDB ) {
+  const db = testDB || conn
+
+  return db.insert([user], 'id').into('users')
+}
+
 module.exports = {
-  getUserByID
+  getUserByID,
+  addUser
 }
