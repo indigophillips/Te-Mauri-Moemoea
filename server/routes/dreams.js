@@ -9,6 +9,12 @@ router.get('/public', (req, res) => {
     .then(dreams => {
       res.status(200).json(dreams)
     })
+    .catch(err => {
+      res.status(500).send({
+        message: 'error retrieving public dreams',
+        err
+      })
+    })
 })
 
 module.exports = dreamRouter

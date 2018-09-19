@@ -9,7 +9,13 @@ router.post('/new', (req, res) => {
 
   userDB.addUser(userInfo)
     .then(ids => {
-      res.send({id})
+      res.status(200).send({id})
+    })
+    .catch(err => {
+      res.status(500).send({
+        message: 'error retrieving public dreams',
+        err
+      })
     })
 })
 
