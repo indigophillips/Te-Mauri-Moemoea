@@ -1,7 +1,11 @@
 const conn = require('./connection')
 
-function getUserByID ( id ) {
-  return {id}
+function getUserByID ( id, testDB ) {
+  const db = testDB || conn
+
+  return db('users')
+    .where( { id } )
+    .first()
 }
 
 module.exports = {
