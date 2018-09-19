@@ -169,4 +169,10 @@ function mapDispatchToProps (dispatch) {
   }
 }
 
-export default connect(null, mapDispatchToProps)(Register)
+function mapStateToProps (state) {
+  return {
+    message: state.errorMessage
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Register)
