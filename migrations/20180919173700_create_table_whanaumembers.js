@@ -2,8 +2,8 @@
 exports.up = function(knex, Promise) {
   return knex.schema.createTable('whanaumembers', table => {
     table.increments('id').primary()
-    table.integer('user_1_id')
-    table.integer('user_2_id')
+    table.integer('whanau_id')
+    table.integer('member_id')
   })
 };
 
