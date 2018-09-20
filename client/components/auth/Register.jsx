@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
+import {clearError} from '../../actions'
 import {Redirect, Link} from 'react-router-dom'
 import {register} from '../../actions/auth/register'
 
@@ -164,6 +165,7 @@ class Register extends Component {
 function mapDispatchToProps (dispatch) {
   return {
     register: (user) => {
+      dispatch(clearError())
       return dispatch(register(user))
     }
   }

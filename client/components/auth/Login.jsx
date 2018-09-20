@@ -26,16 +26,16 @@ class Login extends React.Component {
 
   handleSubmit (e) {
     const user = {
-      email: this.state.phoneNumber,
+      phoneNumber: this.state.phoneNumber,
       password: this.state.password
     }
-    const goStore = (id) => {
+    const goUser = (id) => {
       this.setState({
         redirect: true,
         id: id
       })
     }
-    this.props.login(user, goStore)
+    this.props.login(user, goUser)
     e.preventDefault()
   }
 

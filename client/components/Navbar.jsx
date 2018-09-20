@@ -2,7 +2,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
+    <div className='columns is-mobile navbar'>
       <div className='column'>
         <div className='log'></div>
       </div>

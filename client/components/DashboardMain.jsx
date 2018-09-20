@@ -1,12 +1,15 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 
 export default class DashboardMap extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {}
   }
 
-  render() {
-    <div>dashboard main</div>
+  render () {
+    return (
+      <div>dashboard main</div>
+
+    )
   }
 }
