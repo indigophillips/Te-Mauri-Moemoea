@@ -37,7 +37,7 @@ export function logStoreOut () {
   }
 }
 
-export function login (user, goStore) {
+export function login (user, goUser) {
   return (dispatch) => {
     dispatch(requestLogin())
     request('post', '/auth/login', user)
@@ -46,7 +46,7 @@ export function login (user, goStore) {
         dispatch(receiveLogin(res.body))
         dispatch(getUserData(token.id))
         dispatch(clearError())
-        goStore(token.id)
+        goUser(token.id)
         dispatch(showSuccess('You are now logged in.'))
       })
       .catch(err => {
