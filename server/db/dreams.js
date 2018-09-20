@@ -1,17 +1,17 @@
 const conn = require('./connection')
 
-function getPublicDreams ( testDB ) {
+function getPublicDreams (testDB) {
   const db = testDB || conn
 
   return db('dreams')
-    .where( { type: 'public' } )
+    .where({type: 'public'})
 }
 
-function getPersonalDreamsByUserID ( user_id, testDB ) {
+function getPersonalDreamsByUserID (userId, testDB) {
   const db = testDB || conn
 
   return db('dreams')
-    .where({dreamer_id: user_id})
+    .where({dreamer_id: userId})
     .whereNot({type: 'whanau'})
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Select} from 'react-select'
 
-const options = [
+const avatar = [
   {value: 'stingray', label: 'Whaitere'},
   {value: 'taniwha', label: 'Awarua'}
 ]
@@ -28,16 +28,11 @@ class Avatar extends React.Component {
         <Select
           value={selectedOption}
           onChange={this.handleChange}
-          options={options}
+          options={avatar}
         />
       </div>
     )
   }
 }
 
-// function mapStateToProps (state) {
-//   return {
-//    Select: selectedOption
-//   }
-// }
 export default Avatar
