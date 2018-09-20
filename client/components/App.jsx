@@ -5,6 +5,7 @@ import Register from './auth/Register'
 import Login from './auth/Login'
 import Welcome from './Welcome'
 import Avatar from './Avatar'
+import Navbar from './Navbar'
 import DashboardMain from './DashboardMain'
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/user/:id' component={DashboardMain} />
         <Route path='/welcome' component={Welcome} />
         <Route path='/avatar' component={Avatar} />
+        <Route path='/navbar' component={Navbar} />
       </div>
     </Router>
   )
