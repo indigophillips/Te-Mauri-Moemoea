@@ -10,6 +10,7 @@ class Cloud extends Component {
   }
 
   render () {
+    <div>it's a cloud</div>
   }
 }
 

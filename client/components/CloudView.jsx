@@ -1,5 +1,5 @@
 import React from 'react'
-import CloudLayer from './CloudView'
+import CloudLayer from './CloudLayer'
 
 const roles = [
   'personal',
@@ -11,7 +11,13 @@ const roles = [
 function CloudView ( props ) {
   return (
     <div>
-      {roles.map(dreamerRole => <CloudLayer dreamerRole={dreamerRole}/>)}
+      {roles.map(dreamerRole => (
+        <CloudLayer 
+        key={dreamerRole} 
+        dreamerRole={dreamerRole} 
+        dreams={[]}
+        />
+      ))}
     </div>
   )
 }
