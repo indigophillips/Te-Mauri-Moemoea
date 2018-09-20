@@ -9,7 +9,7 @@ module.exports = {
 }
 
 function issue (req, res) {
-  db.getUserByPhoneNumber(req.body.email)
+  db.getUserByPhoneNumber(req.body.phoneNumber)
     .then(user => {
       const token = createToken(user, process.env.JWT_SECRET)
       res.json({

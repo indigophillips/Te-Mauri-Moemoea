@@ -3,7 +3,7 @@ const express = require('express')
 const dreamDB = require('../db/dreams')
 const errorHandler = require('./errorHandler')
 
-const dreamRouter = express.Router()
+const router = express.Router()
 
 router.get('/public', (req, res) => {
   dreamDB.getPublicDreams()
@@ -16,8 +16,8 @@ router.get('/public', (req, res) => {
 })
 
 router.get('/personal/:dreamer_id', (req, res) => {
-  const { dreamer_id } = req.params
-  
+  const {dreamer_id} = req.params
+
   dreamDB.getPersonalDreamsByUserID(dreamer_id)
     .then(personalDreams => {
       res.status(200).json(personalDreams)
@@ -29,7 +29,7 @@ router.get('/personal/:dreamer_id', (req, res) => {
 
 // router.get('/whanau/:whanau_id', (req, res) => {
 //   const { whanau_id } = req.params
-  
+
 //   dreamDB.getDreamsByWhanauID(dreamer_id)
 //     .then(whanauDreams => {
 //       res.status(200).json(whanauDreams)
@@ -38,10 +38,10 @@ router.get('/personal/:dreamer_id', (req, res) => {
 //       'error retrieving whanau dreams'
 //     ))
 // })
-// 
+//
 router.get('/contributing/:id', (req, res) => {
-  const { id } = req.params
-  
+  const {id} = req.params
+
   dreamDB.getDreamsByContributorID(id)
     .then(contributorDreams => {
       res.status(200).json(contributorDreams)
@@ -51,4 +51,4 @@ router.get('/contributing/:id', (req, res) => {
     ))
 })
 
-module.exports = dreamRouter
+module.exports = router
