@@ -1,4 +1,5 @@
 import {showError, clearError, showSuccess} from '../'
+import {saveAuthToken} from '../../lib/auth'
 import request from '../../lib/apiClient'
 
 export const REQUEST_USER_REGISTRATION = 'REQUEST_USER_REGISTRATION'
@@ -12,9 +13,10 @@ export const requestUserRegistration = () => {
   }
 }
 
-export const receiveUserRegistration = () => {
+export const receiveUserRegistration = (token) => {
   return {
-    type: RECEIVE_USER_REGISTRATION
+    type: RECEIVE_USER_REGISTRATION,
+    token
   }
 }
 
@@ -36,8 +38,9 @@ export function register (user) {
     dispatch(requestUserRegistration())
     return request('post', '/auth/register', user)
       .then(res => {
+        const token = saveAuthToken(res.body.token)
         dispatch(receiveUserRegistration(res.body))
-        dispatch(getUserDetails())
+        dispatch(getUserDetails(token.id))
         dispatch(clearError())
         dispatch(showSuccess('Registration successful'))
       })

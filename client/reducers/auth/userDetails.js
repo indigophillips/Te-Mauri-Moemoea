@@ -1,6 +1,6 @@
-// import {
-//   LOG_OUT
-// } from '../../actions/auth/login'
+import {
+  LOG_OUT
+} from '../../actions/auth/login'
 
 import {
   REQUEST_USER_DETAILS,
@@ -15,8 +15,8 @@ const userDetails = (state = null, action) => {
     case RECEIVE_USER_DETAILS:
       return action.user
 
-    // case LOG_OUT:
-    //   return null
+    case LOG_OUT:
+      return null
 
     default:
       return state

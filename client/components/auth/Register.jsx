@@ -51,7 +51,7 @@ class Register extends Component {
   render () {
     if (this.props.message === 'Registration successful') {
       return (
-        <Redirect to='/avatar' />
+        <Redirect to='/login' />
       )
     }
     return (
@@ -130,7 +130,7 @@ class Register extends Component {
             />
             <br />
             <label htmlFor='password'>Password</label>
-            <input type='text'
+            <input type='password'
               name='password'
               id='password'
               placeholder='Password..'
@@ -139,7 +139,7 @@ class Register extends Component {
             <br />
             <label htmlFor='confirmPassword'>Confirm password</label>
             <input
-              type='text'
+              type='password'
               name='confirm'
               id='confirm'
               placeholder='Confirm phoneNumber'
