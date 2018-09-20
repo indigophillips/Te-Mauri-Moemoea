@@ -13,6 +13,9 @@
     "postinstall": "yarn build",
     "knex": "knex"
   },
+  "jest": {
+    "collectCoverage": true
+  },
   "babel": {
     "presets": [
       "env",
