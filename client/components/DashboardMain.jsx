@@ -1,5 +1,8 @@
 import React, {Component} from 'react'
 
+import CloudView from './CloudView'
+import ProgressView from './ProgressView'
+
 export default class DashboardMap extends Component {
   constructor (props) {
     super(props)
@@ -8,8 +11,10 @@ export default class DashboardMap extends Component {
 
   render () {
     return (
-      <div>dashboard main</div>
-
+      <React.Fragment>
+        <CloudView/>
+        <ProgressView/>
+      </React.Fragment>
     )
   }
 }
