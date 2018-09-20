@@ -9,7 +9,7 @@ router.post('/new', (req, res) => {
 
   userDB.addUser(userInfo)
     .then(ids => {
-      res.status(200).send({id})
+      res.status(200).send({id: ids[0]})
     })
     .catch(err => {
       res.status(500).send({

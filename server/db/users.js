@@ -32,15 +32,26 @@ function getUserByPhoneNumber (number, testDB) {
   const db = testDB || conn
 
   return db('users')
-    .where({phone_number: number})
+    .select()
+    .where('phone_number', number)
     .first()
 }
 
+// function userExists (number, testDB) {
+//   const db = testDB || conn
+
+//   return getUserByPhoneNumber(number, db)
+//     .then(user => !!user)
+// }
+
 function userExists (number, testDB) {
   const db = testDB || conn
-
-  return getUserByPhoneNumber(number, db)
-    .then(user => !!user)
+  return db('users')
+    .count('id as n')
+    .where('phone_number', number)
+    .then(count => {
+      return count[0].n > 0
+    })
 }
 
 module.exports = {
