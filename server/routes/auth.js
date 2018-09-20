@@ -12,7 +12,7 @@ function register (req, res, next) {
   db.userExists(req.body.phoneNumber)
     .then(exists => {
       if (exists) {
-        res.status(400).send({message: 'User exists'})
+        res.status(500).send({message: 'User exists'}) // handle error client side
       } else {
         db.addUser(req.body)
           .then(() => next())
