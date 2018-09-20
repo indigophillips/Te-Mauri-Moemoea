@@ -3,7 +3,7 @@ import React, {Component} from 'react'
 import CloudView from './CloudView'
 import ProgressView from './ProgressView'
 
-export default class DashboardMap extends Component {
+export default class DashboardMain extends Component {
   constructor (props) {
     super(props)
     this.state = {}
