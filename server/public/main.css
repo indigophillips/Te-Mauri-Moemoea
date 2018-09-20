@@ -1,3 +1,31 @@
 body {
-  background-color: blue;
+  margin: 0;
+}
+
+.navbar {
+  height: 50px;
+  border: 1px solid black;
+}
+
+.log {
+  margin: 10px auto;
+  width: 40px;
+  height: 20px;
+  border-radius: 0 50% 50% 0;
+  background-color: orange;
+}
+
+.toggle {
+  margin: 10px auto;
+  width: 30px;
+  height: 20px;
+  background-color: orange;
+}
+
+.avatar {
+  margin: 5px auto;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background-color: orange;
 }
