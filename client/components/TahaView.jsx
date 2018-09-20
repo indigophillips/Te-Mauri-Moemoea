@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function TahaView (props) {
   return (
-    <div>
-      TahaView
+    <div className='tahaview'>
+      <img src='../images/bargraph_placeholder.png'/>
     </div>
   )
 }
