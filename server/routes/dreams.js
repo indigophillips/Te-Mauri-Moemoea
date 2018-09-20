@@ -27,4 +27,28 @@ router.get('/personal/:dreamer_id', (req, res) => {
     ))
 })
 
+// router.get('/whanau/:whanau_id', (req, res) => {
+//   const { whanau_id } = req.params
+  
+//   dreamDB.getDreamsByWhanauID(dreamer_id)
+//     .then(whanauDreams => {
+//       res.status(200).json(whanauDreams)
+//     })
+//     .catch(err => errorHandler(res, err,
+//       'error retrieving whanau dreams'
+//     ))
+// })
+// 
+router.get('/contributing/:id', (req, res) => {
+  const { id } = req.params
+  
+  dreamDB.getDreamsByContributorID(id)
+    .then(contributorDreams => {
+      res.status(200).json(contributorDreams)
+    })
+    .catch(err => errorHandler(res, err,
+      'error retrieving contributor dreams'
+    ))
+})
+
 module.exports = dreamRouter

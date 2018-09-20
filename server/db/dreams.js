@@ -7,13 +7,21 @@ function getPublicDreams ( testDB ) {
     .where( { type: 'public' } )
 }
 
-function getPersonalDreamsByUserID ( dreamer_id, testDB ) {
+function getPersonalDreamsByUserID ( user_id, testDB ) {
   const db = testDB || conn
 
   return db('dreams')
-    .where({dreamer_id})
+    .where({dreamer_id: user_id})
     .whereNot({type: 'whanau'})
 }
+
+// function getDreamsByContributorID ( contributor_id, testDB ) {
+//   const db = testDB || conn
+
+//   return db('dreams')
+//     .where({contributor_id})
+//     .whereNot({type: 'whanau'})
+// }
 
 module.exports = {
   getPublicDreams,
