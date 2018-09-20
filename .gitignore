@@ -5,3 +5,4 @@ bundle*
 *.sqlite*
 yarn-error.*
 config.json
+.env
