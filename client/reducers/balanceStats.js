@@ -1,5 +1,5 @@
 import request from 'superagent'
-import {showError} from './'
+import {showError} from '../'
 
 export const REQUEST_BALANCE_STATS = 'REQUEST_BALANCE_STATS'
 export const RECEIVE_BALANCE_STATS = 'RECEIVE_BALANCE_STATS'
@@ -21,9 +21,9 @@ export function getBalanceStats () {
   return dispatch => {
     dispatch(requestBalanceStats())
     return request
-      .get('/api/v1/store')
+      .get('/')
       .then(res => {
-        return getBalance(res.body)
+        return getBalanceStats(res.body)
       })
       .then(stats => {
         dispatch(receiveBalanceStats(stats))
