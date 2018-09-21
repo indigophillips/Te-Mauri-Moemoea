@@ -1,4 +1,4 @@
-exports.up = function(knex, Promise) {
+exports.up = function (knex, Promise) {
   return knex.schema.createTable('tasks', table => {
     table.increments('id').primary()
     table.integer('dream_id')
@@ -8,8 +8,8 @@ exports.up = function(knex, Promise) {
     table.string('description', 1000)
     table.boolean('done')
   })
-};
+}
 
-exports.down = function(knex, Promise) {
+exports.down = function (knex, Promise) {
   return knex.schema.dropTable('tasks')
-};
+}

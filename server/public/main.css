@@ -3,6 +3,9 @@ body {
 }
 
 .navbar {
+  top: 0;
+  margin: 0 !important;
+  width: 100%;
   height: 56px;
   border: 1px solid black;
   background-color: rgb(49, 40, 104)
@@ -17,15 +20,16 @@ body {
   background-color: skyblue
 }
 
-.cloudlayer {
-  min-height: 14em;
+.cloudLayer {
+  min-height: 6em;
+  margin-bottom: 0 !important;
 }
 
 .cloud {
   position: relative;
   text-align: center;
-  width: 14em;
-  height: 8em;
+  width: 35%;
+  height: 18%;
 }
 
 .cloud img {
@@ -35,6 +39,7 @@ body {
 
 .cloudtext {
   position: absolute;
+  font-size: .8em;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

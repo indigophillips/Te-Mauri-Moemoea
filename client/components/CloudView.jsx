@@ -21,14 +21,14 @@ const testDreams = [
   }
 ]
 
-function CloudView ( props ) {
+function CloudView (props) {
   return (
     <div className='cloudview'>
       {roles.map(dreamerRole => (
-        <CloudLayer 
-        key={dreamerRole} 
-        dreamerRole={dreamerRole} 
-        dreams={testDreams}
+        <CloudLayer
+          key={dreamerRole}
+          dreamerRole={dreamerRole}
+          dreams={testDreams}
         />
       ))}
     </div>

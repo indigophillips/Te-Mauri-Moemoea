@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, Fragment} from 'react'
 
 import CloudView from './CloudView'
 import ProgressView from './ProgressView'
@@ -11,10 +11,10 @@ export default class DashboardMain extends Component {
 
   render () {
     return (
-      <React.Fragment>
+      <Fragment>
         <CloudView/>
         <ProgressView/>
-      </React.Fragment>
+      </Fragment>
     )
   }
 }
