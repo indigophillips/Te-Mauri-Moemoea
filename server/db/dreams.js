@@ -4,15 +4,17 @@ function getPublicDreams (testDB) {
   const db = testDB || conn
 
   return db('dreams')
-    .where({type: 'public'})
+    .select()
+    .where('type', 'public')
 }
 
 function getPersonalDreamsByUserID (userId, testDB) {
   const db = testDB || conn
 
   return db('dreams')
-    .where({dreamer_id: userId})
-    .whereNot({type: 'whanau'})
+    .select()
+    .where('dreamer_id', userId )
+    .whereNot('type', 'whanau')
 }
 
 // function getDreamsByContributorID ( contributor_id, testDB ) {
