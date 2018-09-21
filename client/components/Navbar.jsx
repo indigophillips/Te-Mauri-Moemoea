@@ -16,7 +16,9 @@ const Navbar = () => {
         </div>
       </div>
       <div className='column'>
-        <div className='avatar'></div>
+        <div className='avatar'>
+          <img className='avatarImg' src="./images/Hawk.png" alt=""/>
+        </div>
       </div>
     </div>
   )
