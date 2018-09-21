@@ -3,27 +3,27 @@ body {
 }
 
 .navbar {
-  height: 50px;
+  height: 56px;
   border: 1px solid black;
 }
 
 .log {
   margin: 10px auto;
-  width: 40px;
+  padding: 0 0 0 4px;
+  width: 45px;
   height: 20px;
+  font-size: .8em;
   border-radius: 0 50% 50% 0;
   background-color: orange;
 }
 
 .toggle {
-  margin: 10px auto;
-  width: 30px;
-  height: 20px;
-  background-color: orange;
+  margin: 8px 25%;
+  width: 40px;
 }
 
 .avatar {
-  margin: 5px auto;
+  margin: 8px auto;
   width: 27px;
   height: 27px;
   border-radius: 50%;
