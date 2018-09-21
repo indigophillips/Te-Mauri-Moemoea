@@ -10,7 +10,14 @@ class Cloud extends Component {
   }
 
   render () {
-    <div>it's a cloud</div>
+    return (
+      <div className='cloud'>
+        <img src='./images/clouds/cloud1.png'/>
+        <div className='cloudtext'> 
+          {this.props.dream.name}
+        </div>
+      </div>
+    )
   }
 }
 
