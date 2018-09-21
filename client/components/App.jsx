@@ -6,6 +6,7 @@ import Login from './auth/Login'
 import Welcome from './Welcome'
 import Navbar from './Navbar'
 import DashboardMain from './DashboardMain'
+import Balance from './Balance'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/user/:id' component={DashboardMain} />
         <Route path='/welcome' component={Welcome} />
         <Route path='/navbar' component={Navbar} />
+        <Route path='/balance' component={Balance} />
       </div>
     </Router>
   )
