@@ -4,6 +4,7 @@ import {HashRouter as Router, Route} from 'react-router-dom'
 import Register from './auth/Register'
 import Login from './auth/Login'
 import Welcome from './Welcome'
+import Avatar from './Avatar'
 import Navbar from './Navbar'
 import DashboardMain from './DashboardMain'
 import Balance from './Balance'
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/login' component={Login} />
         <Route path='/user/:id' component={DashboardMain} />
         <Route path='/welcome' component={Welcome} />
+        <Route path='/avatar' component={Avatar} />
         <Route path='/navbar' component={Navbar} />
         <Route path='/balance' component={Balance} />
       </div>

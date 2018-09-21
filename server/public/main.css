@@ -3,29 +3,79 @@ body {
 }
 
 .navbar {
-  height: 50px;
+  height: 56px;
   border: 1px solid black;
+  background-color: rgb(49, 40, 104)
+}
+
+.tahaview {
+  width: 100%;
+  height: 10em;
+}
+
+.cloudview {
+  background-color: skyblue
+}
+
+.cloudlayer {
+  min-height: 14em;
+}
+
+.cloud {
+  position: relative;
+  text-align: center;
+  width: 14em;
+  height: 8em;
+}
+
+.cloud img {
+  width: 100%;
+  height: 100%;
+}
+
+.cloudtext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cloudtext div {
+  display: inline-block;
+}
+
+img.barplaceholder{
+  max-height: 100%;
+  width: 100%;
+}
+
+img.progressplaceholder{
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .log {
   margin: 10px auto;
-  width: 40px;
+  padding: 0 0 0 4px;
+  width: 45px;
   height: 20px;
+  font-size: .8em;
   border-radius: 0 50% 50% 0;
-  background-color: orange;
+  background-color: #84c7c1;
 }
 
 .toggle {
-  margin: 10px auto;
-  width: 30px;
-  height: 20px;
-  background-color: orange;
+  margin: 8px 25%;
+  width: 40px;
 }
 
 .avatar {
-  margin: 5px auto;
+  margin: 8px auto;
   width: 27px;
   height: 27px;
-  border-radius: 50%;
-  background-color: orange;
 }
+
+.avatarImg {
+  border-radius: 50%;
+}
+

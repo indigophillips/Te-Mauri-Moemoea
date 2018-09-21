@@ -1,5 +1,5 @@
 {
-  "name": "Te-Tihi",
+  "name": "te-tihi",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/tetihi/Te-Tihi.git",
@@ -28,7 +28,6 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "bulma": "^0.7.1",
-    "bulma-start": "^0.0.2",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "express-jwt": "^5.3.1",
@@ -40,6 +39,8 @@
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
+    "react-select": "^2.0.0",
+    "recharts": "^1.2.0",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
     "sodium": "^2.0.3",
