@@ -4,10 +4,10 @@ const Navbar = () => {
   return (
     <div className='columns is-mobile navbar'>
       <div className='column'>
-        <div className='log element'>Log</div>
+        <div className='log'>Log</div>
       </div>
       <div className='column switch'>
-        <div className='toggle element'>
+        <div className='toggle'>
           <label>
             <input type="checkbox"></input>
             <span className="lever"></span>
