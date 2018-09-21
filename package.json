@@ -1,5 +1,5 @@
 {
-  "name": "Te-Tihi",
+  "name": "te-tihi",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/tetihi/Te-Tihi.git",
@@ -39,6 +39,7 @@
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
+    "react-select": "^2.0.0",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
     "sodium": "^2.0.3",
