@@ -1,6 +1,6 @@
 import React from 'react'
 import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer} from 'recharts'
-// import {connect} from 'react-redux'
+import {getBalanceStats} from '../reducers/balanceStats'
 
 class Balance extends React.Component {
   constructor (props) {
@@ -13,9 +13,9 @@ class Balance extends React.Component {
     }
   }
 
-  // componentDidMount () {
-  //   this.props.dispatch(getBalanceStats())
-  // }
+  componentDidMount () {
+    this.props.dispatch(getBalanceStats())
+  }
 
   render () {
     if (!this.props.balanceStats) return null
@@ -38,11 +38,4 @@ class Balance extends React.Component {
   }
 }
 
-// function mapStateToProps (state) {
-//   return {
-//     balanceStats: state.balanceStats
-//   }
-// }
-
-// export default connect(Balance)(mapStateToProps)
 export default Balance

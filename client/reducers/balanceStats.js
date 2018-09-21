@@ -1,5 +1,5 @@
 import request from 'superagent'
-import {showError} from '../'
+import {showError} from '../actions/getBalanceStats'
 
 export const REQUEST_BALANCE_STATS = 'REQUEST_BALANCE_STATS'
 export const RECEIVE_BALANCE_STATS = 'RECEIVE_BALANCE_STATS'

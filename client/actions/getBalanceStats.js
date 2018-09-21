@@ -1,4 +1,4 @@
-import {REQUEST_BALANCE_STATS, RECEIVE_BALANCE_STATS} from '../'
+import {REQUEST_BALANCE_STATS, RECEIVE_BALANCE_STATS} from '../reducers/balanceStats'
 
 const getBalanceStats = (state = null, action) => {
   switch (action.type) {
