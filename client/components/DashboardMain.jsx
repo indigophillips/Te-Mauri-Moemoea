@@ -12,8 +12,8 @@ export default class DashboardMain extends Component {
   render () {
     return (
       <Fragment>
-        <CloudView/>
-        <ProgressView/>
+        <CloudView />
+        <ProgressView />
       </Fragment>
     )
   }

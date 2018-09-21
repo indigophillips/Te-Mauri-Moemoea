@@ -1,11 +1,14 @@
 import React from 'react'
 import CloudLayer from './CloudLayer'
+import AddDream from './AddDream'
 
 const roles = [
   'personal',
   'collaborator',
   'contributor',
-  'public'
+  'public',
+  'random',
+  'unrealistic'
 ]
 
 const testDreams = [
@@ -31,6 +34,7 @@ function CloudView (props) {
           dreams={testDreams}
         />
       ))}
+      <AddDream />
     </div>
   )
 }

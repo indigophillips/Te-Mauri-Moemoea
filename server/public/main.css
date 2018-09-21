@@ -11,9 +11,24 @@ body {
   background-color: rgb(49, 40, 104)
 }
 
+.totProgress {
+  padding-top: 15% !important;
+  height: 100%;
+  width: 25%;
+}
+
 .tahaview {
+  padding-top: 10% !important;
+  height: 100%;
+  width: 75%;
+}
+
+.botBar {
+  margin: 0 !important;
+  height: 20%;
   width: 100%;
-  height: 10em;
+  bottom: 0;
+  position: absolute;
 }
 
 .cloudview {
