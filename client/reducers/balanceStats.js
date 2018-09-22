@@ -1,35 +1,16 @@
-import request from 'superagent'
-import {showError} from '../actions/getBalanceStats'
+import {REQUEST_BALANCE_STATS, RECEIVE_BALANCE_STATS} from '../actions/getBalanceStats'
 
-export const REQUEST_BALANCE_STATS = 'REQUEST_BALANCE_STATS'
-export const RECEIVE_BALANCE_STATS = 'RECEIVE_BALANCE_STATS'
+const balanceStats = (state = null, action) => {
+  switch (action.type) {
+    case REQUEST_BALANCE_STATS:
+      return null
 
-const requestBalanceStats = () => {
-  return {
-    type: REQUEST_BALANCE_STATS
+    case RECEIVE_BALANCE_STATS:
+      return action.payload.data
+
+    default:
+      return state
   }
 }
 
-const receiveBalanceStats = (stats) => {
-  return {
-    type: RECEIVE_BALANCE_STATS,
-    stats
-  }
-}
-
-export function getBalanceStats () {
-  return dispatch => {
-    dispatch(requestBalanceStats())
-    return request
-      .get('/')
-      .then(res => {
-        return getBalanceStats(res.body)
-      })
-      .then(stats => {
-        dispatch(receiveBalanceStats(stats))
-      })
-      .catch(() => {
-        dispatch(showError('An unexpected error has occurred'))
-      })
-  }
-}
+export default balanceStats
