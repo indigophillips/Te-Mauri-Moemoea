@@ -1,18 +1,23 @@
 import React from 'react'
-import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
+import {connect} from 'react-redux'
 
 const AddDream = (props) => {
-  return (
-    <div>
-      <Link to={`user/${props.id}/dreams`}>
-        <img src='./images/clouds/cloud1.png'/>
-        <div className='cloudtext'>
-          Add new Dream
-        </div>
-      </Link>
-    </div>
-  )
+  if (!props.user) {
+    return ('hi')
+  } else {
+    let id = props.user.id
+    return (
+      <div className='newDreamCont'>
+        <Link to={`/user/${id}/dreams`}>
+          <img className='newDream' src='./images/clouds/cloud1.png'/>
+          <div className='newDreamTxt'>
+            Add new Dream
+          </div>
+        </Link>
+      </div>
+    )
+  }
 }
 
 const mapStateToProps = ({userDetails}) => ({user: userDetails})

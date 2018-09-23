@@ -7,8 +7,7 @@ const roles = [
   'collaborator',
   'contributor',
   'public',
-  'random',
-  'unrealistic'
+  'random'
 ]
 
 const testDreams = [
@@ -24,7 +23,7 @@ const testDreams = [
   }
 ]
 
-function CloudView (props) {
+const CloudView = (props) => {
   return (
     <div className='cloudview'>
       {roles.map(dreamerRole => (

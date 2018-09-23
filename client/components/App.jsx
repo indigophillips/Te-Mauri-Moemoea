@@ -7,7 +7,7 @@ import Welcome from './Welcome'
 import Avatar from './Avatar'
 import Navbar from './Navbar'
 import DashboardMain from './DashboardMain'
-// import AddDream from '/AddDream'
+import Dreams from './Dreams'
 
 const App = () => {
   return (
@@ -17,9 +17,9 @@ const App = () => {
         <Route path='/login' component={Login} />
         <Route path='/user' component={Navbar} />
         <Route path='/user/:id' component={DashboardMain} />
+        <Route path='/user/:id/dreams' component={Dreams} />
         <Route path='/welcome' component={Welcome} />
         <Route path='/avatar' component={Avatar} />
-        {/* <Route path='/newdream' component={AddDream} /> */}
       </Fragment>
     </Router>
   )
