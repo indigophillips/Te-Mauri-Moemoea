@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 
 const AddDream = (props) => {
   if (!props.user) {
-    return ('hi')
+    return ('Error')
   } else {
     let id = props.user.id
     return (

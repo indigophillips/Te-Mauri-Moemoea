@@ -16,7 +16,7 @@ const App = () => {
         <Route path='/register' component={Register} />
         <Route path='/login' component={Login} />
         <Route path='/user' component={Navbar} />
-        <Route path='/user/:id' component={DashboardMain} />
+        <Route exact path='/user/:id' component={DashboardMain} />
         <Route path='/user/:id/dreams' component={Dreams} />
         <Route path='/welcome' component={Welcome} />
         <Route path='/avatar' component={Avatar} />

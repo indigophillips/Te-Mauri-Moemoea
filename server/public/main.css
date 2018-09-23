@@ -118,3 +118,21 @@ img.progressplaceholder{
   border-radius: 50%;
 }
 
+.newDreamBtn {
+  width: 100%;
+  background-color: rgb(23, 92, 116);
+  padding: 2% 0;
+  text-align: center;
+}
+
+.inviteCont {
+  width: 100%;
+
+}
+
+.invites {
+  width: 100%;
+  background-color: rgb(156, 225, 248);
+  padding: 2% 0;
+  text-align: center;
+}
