@@ -25,7 +25,7 @@ const testDreams = [
 
 const CloudView = (props) => {
   return (
-    <div className='cloudview'>
+    <div className='cloudView level'>
       {roles.map(dreamerRole => (
         <CloudLayer
           key={dreamerRole}
