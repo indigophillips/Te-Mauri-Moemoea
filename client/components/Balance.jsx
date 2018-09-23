@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer} from 'recharts'
+import {BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer} from 'recharts'
 import {getBalanceStats} from '../actions/getBalanceStats'
 
 class Balance extends React.Component {
@@ -13,14 +13,12 @@ class Balance extends React.Component {
     return (
       <div className='stats'>
         {this.props.tahaData &&
-        <ResponsiveContainer width='100%' height={500} maxWidth={600}>
-          <BarChart width={600} height={300} data={this.props.tahaData} margin={{top: 20, right: 30, left: 20, bottom: 5}}>
-            <CartesianGrid strokeDasharray="3 3"/>
-            <XAxis dataKey="name"/>
-            <YAxis/>
+        <ResponsiveContainer width='50%' height={200} maxWidth={150}>
+          <BarChart data={this.props.tahaData} margin={{top: 0, right: 1, left: 1, bottom: 0}}>
+            <XAxis tickLine={false} stroke="white" fontFamily="sans-serif"/>
+            <YAxis tickLine={false} stroke="white" fontFamily="sans-serif"/>
             <Tooltip/>
-            <Legend />
-            <Bar dataKey="completed" stackId="a" fill="#8884d8" />
+            <Bar dataKey="completed" stackId="a" fill="#009901" />
             <Bar dataKey="remaining" stackId="a" fill="#82ca9d" />
           </BarChart>
         </ResponsiveContainer>}
