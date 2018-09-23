@@ -21,16 +21,18 @@ body {
   background-color: rgb(49, 40, 104)
 }
 
+
+.dashCont {
+  height: 100%;
+}
 .totProgress {
-  padding-top: 15% !important;
   height: 100%;
   width: 25%;
 }
 
-.tahaview {
-  padding-top: 10% !important;
-  height: 100%;
+.balance {
   width: 75%;
+  height: 100%;
 }
 
 .botBar {
@@ -41,8 +43,9 @@ body {
   position: absolute;
 }
 
-.cloudview {
-  background-color: skyblue
+.cloudView {
+  background-color: skyblue;
+  height: 80%;
 }
 
 .cloudLayer {
