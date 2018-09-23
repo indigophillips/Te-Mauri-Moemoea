@@ -2,11 +2,11 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 import {BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer} from 'recharts'
-import {getBalanceStats} from '../actions/getBalanceStats'
+import {getStats} from '../actions/getStats'
 
 class Balance extends React.Component {
   componentDidMount () {
-    this.props.dispatch(getBalanceStats())
+    this.props.dispatch(getStats())
   }
 
   render () {
@@ -27,6 +27,6 @@ class Balance extends React.Component {
   }
 }
 
-const mapStateToProps = ({balanceStats}) => ({tahaData: balanceStats})
+const mapStateToProps = ({stats}) => ({tahaData: stats})
 
 export default connect(mapStateToProps)(Balance)
