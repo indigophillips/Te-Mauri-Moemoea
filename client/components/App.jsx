@@ -25,7 +25,6 @@ const App = () => {
         <Route path='/welcome' component={Welcome} />
         <Route path='/avatar' component={Avatar} />
         <Route path='/balance' component={Balance} />
-        <Route path='/totalprogress' component={TotalProgress} />
       </Fragment>
     </Router>
   )
