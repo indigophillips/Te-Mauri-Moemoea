@@ -7,8 +7,5 @@ const TahaView = (props) => {
     </div>
   )
 }
-<<<<<<< HEAD:client/components/TahaView.jsx
-=======
 
 export default TahaView
->>>>>>> 560d5a63cd7aa01b172d5fa2516bc46a9e283fe1:client/components/dashboard/TahaView.jsx
