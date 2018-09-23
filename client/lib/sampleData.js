@@ -35,47 +35,12 @@ export const personalDreams = [
         due_date: 'none'
       }        
     ]
-  },
-  {
-
   }
 ]
 
-export const whanauDreams = [
-  {
-    whanau_id: 1,
-    name: 'License',
-    description: '...',
-    tasks: [
-      {
-        name:,
-        taha:,
-        description:,
-        done: '',
-        due_date: ''
-      },
-      {}
-    ]
-  },
-]
+export const whanauDreams = []
 
-export const contributorDreams = [
-  {
-    dreamer_id: 1,
-    name: 'License',
-    description: '...',
-    tasks: [
-      {
-        name:,
-        taha:,
-        description:,
-        done: '',
-        due_date: ''
-      },
-      {}
-    ]
-  },
-]
+export const contributorDreams = []
 
 export const publicDreams = [
   {
