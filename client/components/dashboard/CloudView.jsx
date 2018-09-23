@@ -1,11 +1,13 @@
 import React from 'react'
 import CloudLayer from './CloudLayer'
+import NewDreamCloud from './NewDreamCloud'
 
 const roles = [
   'personal',
   'collaborator',
   'contributor',
-  'public'
+  'public',
+  'random'
 ]
 
 const testDreams = [
@@ -21,7 +23,7 @@ const testDreams = [
   }
 ]
 
-function CloudView (props) {
+const CloudView = (props) => {
   return (
     <div className='cloudview'>
       {roles.map(dreamerRole => (
@@ -31,6 +33,7 @@ function CloudView (props) {
           dreams={testDreams}
         />
       ))}
+      <NewDreamCloud />
     </div>
   )
 }

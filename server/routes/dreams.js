@@ -15,10 +15,10 @@ router.get('/public', (req, res) => {
     ))
 })
 
-router.get('/personal/:dreamer_id', (req, res) => {
-  const {dreamer_id} = req.params
+router.get('/personal/:dreamerId', (req, res) => {
+  const {dreamerId} = req.params
 
-  dreamDB.getPersonalDreamsByUserID(dreamer_id)
+  dreamDB.getPersonalDreamsByUserID(dreamerId)
     .then(personalDreams => {
       res.status(200).json(personalDreams)
     })
