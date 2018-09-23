@@ -10,7 +10,6 @@ import Balance from './Balance'
 import DashboardMain from './dashboard/DashboardMain'
 import InvitesAndNewDreams from './dashboard/InvitesAndNewDreams'
 import NewDream from './dreams/NewDream'
-import TotalProgress from './dashboard/TotalProgress'
 
 const App = () => {
   return (
