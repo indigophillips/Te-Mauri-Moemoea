@@ -1,7 +1,7 @@
 import {
   whanau,
   whanau_members
-} from '../../lib/sampleData'
+} from '../lib/sampleData'
 
 const sampleWhanau = {
   whanau,

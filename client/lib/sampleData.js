@@ -35,17 +35,33 @@ export const personalDreams = [
         due_date: 'none'
       }        
     ]
+  },
+  {
+    name: 'Get a part-time job',
+  },
+  {
+    name: 'Work on my well being'
   }
 ]
 
-export const whanauDreams = []
+export const whanauDreams = [
+  {
+    name: 'Improve Whanau Communication'
+  },
+  {
+    name: 'Take a trip to the Gold Coast'
+  }
+]
 
-export const contributorDreams = []
+export const contributorDreams = [
+  {
+    name: 'Build a computer'
+  }
+]
 
 export const publicDreams = [
   {
-    name: 'License',
-    description: '...',
+    name: 'Build a computer'
   }
 ]
 

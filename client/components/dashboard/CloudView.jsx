@@ -13,7 +13,7 @@ const CloudView = (props) => {
         <CloudLayer
           key={role}
           role={role}
-          dreams={dreams[role]}
+          dreams={props.dreams[role]}
         />
       ))}
       <NewDreamCloud />

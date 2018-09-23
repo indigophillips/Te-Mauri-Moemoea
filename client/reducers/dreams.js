@@ -3,7 +3,7 @@ import {
   whanauDreams, 
   contributorDreams, 
   publicDreams
-} from './dreams'
+} from '../lib/sampleData'
 
 const sampleDreams = {
   personal: personalDreams,
