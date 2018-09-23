@@ -4,7 +4,7 @@ import Cloud from './Cloud'
 
 export default function CloudLayer (props) {
   return (
-    <div className='level cloudlayer'>
+    <div className='level cloudLayer is-mobile'>
       {props.dreams.map(dream => (
         <Cloud
           key={dream.id}

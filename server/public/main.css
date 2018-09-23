@@ -3,38 +3,77 @@ body {
 }
 
 .navbar {
+  top: 0;
+  margin: 0 !important;
+  width: 100%;
   height: 56px;
   border: 1px solid black;
   background-color: rgb(49, 40, 104)
 }
 
+.totProgress {
+  padding-top: 15% !important;
+  height: 100%;
+  width: 25%;
+}
+
 .tahaview {
+  padding-top: 10% !important;
+  height: 100%;
+  width: 75%;
+}
+
+.botBar {
+  margin: 0 !important;
+  height: 20%;
   width: 100%;
-  height: 10em;
+  bottom: 0;
+  position: absolute;
 }
 
 .cloudview {
   background-color: skyblue
 }
 
-.cloudlayer {
-  min-height: 14em;
+.cloudLayer {
+  min-height: 6em;
+  margin-bottom: 0 !important;
 }
 
 .cloud {
   position: relative;
   text-align: center;
-  width: 14em;
-  height: 8em;
+  width: 35%;
+  height: 18%;
 }
+
 
 .cloud img {
   width: 100%;
   height: 100%;
 }
 
+.newDreamCont {
+  position: relative;
+  text-align: center;
+}
+
+.newDream {
+  width: 35%;
+  height: 18%;
+}
+
+.newDreamTxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: .8em;
+  transform: translate(-50%, -50%);
+}
+
 .cloudtext {
   position: absolute;
+  font-size: .8em;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -79,3 +118,21 @@ img.progressplaceholder{
   border-radius: 50%;
 }
 
+.newDreamBtn {
+  width: 100%;
+  background-color: rgb(23, 92, 116);
+  padding: 2% 0;
+  text-align: center;
+}
+
+.inviteCont {
+  width: 100%;
+
+}
+
+.invites {
+  width: 100%;
+  background-color: rgb(156, 225, 248);
+  padding: 2% 0;
+  text-align: center;
+}

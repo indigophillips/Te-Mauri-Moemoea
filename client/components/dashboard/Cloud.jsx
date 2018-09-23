@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 
 class Cloud extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
 
     this.state = {
-      location: [0,0]
+      location: [0, 0]
     }
   }
 
@@ -13,7 +13,7 @@ class Cloud extends Component {
     return (
       <div className='cloud'>
         <img src='./images/clouds/cloud1.png'/>
-        <div className='cloudtext'> 
+        <div className='cloudtext'>
           {this.props.dream.name}
         </div>
       </div>
