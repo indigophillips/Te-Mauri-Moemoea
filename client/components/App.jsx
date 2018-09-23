@@ -10,6 +10,7 @@ import Balance from './Balance'
 import DashboardMain from './dashboard/DashboardMain'
 import InvitesAndNewDreams from './dashboard/InvitesAndNewDreams'
 import NewDream from './dreams/NewDream'
+import TotalProgress from './dashboard/TotalProgress'
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path='/welcome' component={Welcome} />
         <Route path='/avatar' component={Avatar} />
         <Route path='/balance' component={Balance} />
+        <Route path='/totalprogress' component={TotalProgress} />
       </Fragment>
     </Router>
   )
