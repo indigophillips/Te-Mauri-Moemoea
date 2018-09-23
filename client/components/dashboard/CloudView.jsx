@@ -1,6 +1,6 @@
 import React from 'react'
 import CloudLayer from './CloudLayer'
-import AddDream from './AddDream'
+import NewDreamCloud from './NewDreamCloud'
 
 const roles = [
   'personal',
@@ -33,7 +33,7 @@ const CloudView = (props) => {
           dreams={testDreams}
         />
       ))}
-      <AddDream />
+      <NewDreamCloud />
     </div>
   )
 }

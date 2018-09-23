@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
-const AddDream = (props) => {
+const NewDreamCloud = (props) => {
   if (!props.user) {
     return ('Error')
   } else {
@@ -22,4 +22,4 @@ const AddDream = (props) => {
 
 const mapStateToProps = ({userDetails}) => ({user: userDetails})
 
-export default connect(mapStateToProps, null)(AddDream)
+export default connect(mapStateToProps, null)(NewDreamCloud)

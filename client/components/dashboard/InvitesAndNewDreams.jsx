@@ -2,7 +2,7 @@ import React, {Fragment} from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
-const Dreams = (props) => {
+const InvitesAndNewDreams = (props) => {
   if (!props.user) {
     return ('Error')
   } else {
@@ -23,4 +23,4 @@ const Dreams = (props) => {
 
 const mapStateToProps = ({userDetails}) => ({user: userDetails})
 
-export default connect(mapStateToProps, null)(Dreams)
+export default connect(mapStateToProps, null)(InvitesAndNewDreams)
