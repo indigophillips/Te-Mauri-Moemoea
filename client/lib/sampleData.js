@@ -126,33 +126,36 @@ export const whanauDreams = [
 export const contributorDreams = [
   {
     dreamer_id: 1,
-    name: 'License',
-    description: '...',
+    name: 'School Mural',
+    description: 'Help to create a mural on the new building at school',
     tasks: [
       {
-        name:,
-        taha:,
-        description:,
-        done: '',
-        due_date: ''
+        name: 'Painting the mural',
+        taha:'whānau',
+        description: 'Contribute to the painting of the school mural',
+        done: false,
+        due_date: '23/12/2018'
       },
-      {}
     ]
   },
 ]
 
 export const publicDreams = [
   {
-    name: 'License',
-    description: '...',
-  }
+    name: 'Build a Computer',
+    description: 'I would like to know how to build a computer',
+  },
+  {
+    name: 'Improve my maths abilities',
+    description: 'I would like to pair up with someone to become better at maths',
+  }  
 ]
 
 export const whanau = [
   {
     id: 1,
-    name: '',
-    description: '',
+    name: 'Mikaere-Akarana Whanau',
+    description: 'The Mikaere-Akarana Whanau',
     member_ids: [
       2,
       3
@@ -163,12 +166,12 @@ export const whanau = [
 export const whanau_members = [
   {
     id: 2,
-    fist_name: '',
-    last_name: ''
+    fist_name: 'Hori',
+    last_name: 'Akarana'
   },
   {
     id: 3,
-    fist_name: '',
-    last_name: ''
+    fist_name: 'Eden',
+    last_name: 'Mikaere'
   }
 ]
