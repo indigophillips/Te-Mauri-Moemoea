@@ -1,14 +1,14 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 
 import CloudView from './CloudView'
 import ProgressView from './ProgressView'
 
 const DashboardMain = () => {
   return (
-    <Fragment>
+    <div className='dashCont'>
       <CloudView />
       <ProgressView />
-    </Fragment>
+    </div>
   )
 }
 

@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 
 export default function TotalProgress (props) {
   return (
-    <div className='totProgress'>
+    <Fragment>
       <img className='progressplaceholder' src='../images/progressplaceholder.jpg'/>
-    </div>
+    </Fragment>
   )
 }
