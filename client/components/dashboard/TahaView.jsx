@@ -1,9 +1,11 @@
 import React from 'react'
 
+import Balance from '../Balance'
+
 const TahaView = (props) => {
   return (
     <div className='tahaview'>
-      <img className='barplaceholder' src='../images/bargraph_placeholder.png'/>
+      <Balance />
     </div>
   )
 }
