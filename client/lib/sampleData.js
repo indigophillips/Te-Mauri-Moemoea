@@ -37,24 +37,88 @@ export const personalDreams = [
     ]
   },
   {
-
+    name: 'Find a part time job',
+    description: 'I would like to get a part time job so that I can buy a new phone',
+    tasks: [
+      {
+        name: 'Figure out what jobs there are',
+        description: 'Find out what jobs suit me and my skills',
+        taha: 'hinengaro',
+        done: false,
+        due_date: 'none'
+      },
+      {
+        name: 'Write my C.V',
+        description: 'Complete writing my C.V',
+        taha: 'hinengaro',
+        done: false,
+        due_date: 'none'
+      },      
+      {
+        name: 'Speak to Dad',
+        description: 'Talk to Dad to see if there are any part time jobs at his work',
+        taha: 'hinengaro',
+        done: false,
+        due_date: 'none'
+      }
+    ]
+  },
+  {
+    name: 'Improve my wellbeing',
+    description: 'I want to work on improving my wellbeing to improve my focus at school',
+    tasks: [
+      {
+        name: 'Go for a run',
+        description: 'Go for a run for 30 minutes a day for 1 week',
+        taha: 'tinana',
+        done: false,
+        due_date: '10/10/2018'        
+      },
+      {
+        name: 'Disconnect',
+        description: 'Turn off my phone and other devices 1 hour before bed to get a good sleep for 1 week',
+        taha: 'hinengaro',
+        done: false,
+        due_date: '10/10/2018'            
+      },
+      {
+        name: 'Meditate',
+        description: 'Meditate for 10 minutes a day to de-stress for 1 week',
+        taha: 'wairua',
+        done: false,
+        due_date: '10/10/2018'            
+      },      
+    ]
   }
 ]
 
 export const whanauDreams = [
   {
     whanau_id: 1,
-    name: 'License',
-    description: '...',
+    name: 'Take a family trip to the Gold Coast',
+    description: 'Our whānau would like to take a trip to the Gold Coast for 2 weeks',
     tasks: [
       {
-        name:,
-        taha:,
-        description:,
-        done: '',
-        due_date: ''
+        name: 'Pick a date',
+        taha:'whānau',
+        description: 'Choose a date which suits everyone',
+        done: false,
+        due_date: '1/11/2018'
       },
-      {}
+      {
+        name: 'Passports',
+        taha:'whānau',
+        description: 'Ensure everyones passports are current',
+        done: false,
+        due_date: 'none'
+      },
+      {
+        name: 'Accomodation',
+        taha:'whānau',
+        description: 'Book suitable accomodation',
+        done: false,
+        due_date: 'none'
+      }
     ]
   },
 ]
