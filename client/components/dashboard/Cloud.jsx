@@ -11,7 +11,7 @@ class Cloud extends Component {
 
   render () {
     return (
-      <div className='cloud'>
+      <div className='cloud' onClick={this.props.onClick}>
         <img src='./images/clouds/cloud1.png'/>
         <div className='cloudtext'>
           {this.props.dream.name}

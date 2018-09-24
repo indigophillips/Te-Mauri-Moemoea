@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import Cloud from './Cloud'
+import {selectDream} from '../../actions/selectDream.js'
 
 function CloudLayer (props) {
   return (
@@ -10,6 +11,7 @@ function CloudLayer (props) {
         <Cloud
           key={dream.id}
           dream={dream}
+          onClick={() => props.select(props.role, dream.id)}
         />
       ))}
     </div>
@@ -17,10 +19,13 @@ function CloudLayer (props) {
 }
 
 const mapStateToProps = ({dreams}, ownProps) => {
-  console.log(ownProps.role)
   return {
     dreams: dreams[ownProps.role]
   }
 }
 
-export default connect(mapStateToProps)(CloudLayer)
+const mapDispatchToProps = dispatch => ({
+  select: (dreamType, dreamID) => dispatch(selectDream(dreamType, dreamID))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(CloudLayer)

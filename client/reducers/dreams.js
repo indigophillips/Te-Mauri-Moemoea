@@ -1,3 +1,5 @@
+import {SELECT_DREAM} from '../actions/selectDream'
+
 import {
   personalDreams, 
   whanauDreams, 
@@ -18,6 +20,17 @@ const sampleDreams = {
 
 export default function dreamReducer (state = sampleDreams, action) {
   switch (action.type) {
+    case SELECT_DREAM:
+      return Object.assign(
+        {},
+        state,
+        {
+          selection: {
+            type: action.payload.dreamType,
+            id: action.payload.dreamID
+          }
+        }
+      )
     default:
       return state
   }
