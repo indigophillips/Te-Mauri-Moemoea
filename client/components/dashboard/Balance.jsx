@@ -13,10 +13,10 @@ class Balance extends React.Component {
     return (
       <Fragment>
         {this.props.data &&
-        <ResponsiveContainer width='100%' height={200} maxWidth={150} >
+        <ResponsiveContainer width='100%' height='100%'>
           <BarChart data={this.props.data} margin={{top: 0, right: 1, left: 1, bottom: 0}}>
-            <XAxis tickLine={false} stroke="white" fontFamily="sans-serif"/>
-            <YAxis tickLine={false} stroke="white" fontFamily="sans-serif"/>
+            <XAxis dataKey="name" fontSize='.6em' stroke='white' fontFamily="sans-serif"/>
+            <YAxis tickLine={false} stroke="#00000000" fontFamily="sans-serif"/>
             <Tooltip />
             <Bar dataKey="completed" stackId="a" >
               {this.props.data.map((taha) => (
