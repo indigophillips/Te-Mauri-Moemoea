@@ -60,90 +60,90 @@ class Register extends Component {
         <form>
           <fieldset>
             <h2>Register</h2>
-            <label htmlFor='alias'>Alias</label>
+            <label htmlFor='alias'></label>
             <input
               type='text'
               name='alias'
               id='alias'
-              placeholder='Alias..'
+              placeholder='Alias'
               onChange={this.handleChange}
               value={this.state.Alias}
             />
             <br />
-            <label htmlFor='firstName'>First Name</label>
+            <label htmlFor='firstName'></label>
             <input
               type='text'
               name='firstName'
               id='firstName'
-              placeholder='firstName..'
+              placeholder='First Name'
               onChange={this.handleChange}
               value={this.state.firstName}
             />
             <br />
-            <label htmlFor='lastName'>LastName</label>
+            <label htmlFor='lastName'></label>
             <input
               type='text'
               name='lastName'
               id='lastName'
-              placeholder='lastName..'
+              placeholder='Last Name'
               onChange={this.handleChange}
               value={this.state.lastName}
             />
             <br />
-            <label htmlFor='gender'>Gender</label>
+            <label htmlFor='gender'></label>
             <input
               type='text'
               name='gender'
               id='gender'
-              placeholder='Gender..'
+              placeholder='Gender'
               onChange={this.handleChange}
               value={this.state.Gender}
             />
             <br />
-            <label htmlFor='age'>Age</label>
+            <label htmlFor='age'></label>
             <input
               type='text'
               name='age'
               id='age'
-              placeholder='Age..'
+              placeholder='Age'
               onChange={this.handleChange}
               value={this.state.Age}
             />
             <br />
-            <label htmlFor='Alias'>Iwi</label>
+            <label htmlFor='Alias'></label>
             <input
               type='text'
               name='iwi'
               id='iwi'
-              placeholder='Iwi..'
+              placeholder='Iwi'
               onChange={this.handleChange}
               value={this.state.Iwi}
             />
             <br />
-            <label htmlFor='phoneNumber'>phoneNumber</label>
+            <label htmlFor='phoneNumber'></label>
             <input
               type='text'
               name='phoneNumber'
               id='phoneNumber'
-              placeholder='phoneNumber..'
+              placeholder='Phone Number'
               onChange={this.handleChange}
               value={this.state.phoneNumber}
             />
             <br />
-            <label htmlFor='password'>Password</label>
+            <label htmlFor='password'></label>
             <input type='password'
               name='password'
               id='password'
-              placeholder='Password..'
+              placeholder='Password'
               onChange={this.handleChange}
               value={this.state.password} />
             <br />
-            <label htmlFor='confirmPassword'>Confirm password</label>
+            <label htmlFor='confirmPassword'></label>
             <input
               type='password'
               name='confirm'
               id='confirm'
-              placeholder='Confirm phoneNumber'
+              placeholder='Confirm password'
               onChange={this.handleChange}
               value={this.state.change}
             />
@@ -152,9 +152,8 @@ class Register extends Component {
               type='button'
               disabled={!this.state.match}
               className='button'
-              onClick={this.handleSubmit}>Register
-            </button>
-            <Link to='/avatar' type='button' className='button cancel-button' >Cancel</Link>
+              onClick={this.handleSubmit}>Register</button>
+            <Link to='/avatar' type='button' className='button' >Cancel </Link>
           </fieldset>
         </form>
       </div>

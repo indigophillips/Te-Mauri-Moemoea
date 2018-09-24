@@ -1,13 +1,13 @@
 import React from 'react'
 
 import TotalProgress from './TotalProgress'
-import TahaView from './TahaView'
+import Balance from './Balance'
 
 function ProgressView (props) {
   return (
     <div className='level is-mobile botBar'>
-      <TotalProgress/>
-      <TahaView/>
+      <TotalProgress className='totProgress' />
+      <Balance className='balance'/>
     </div>
   )
 }

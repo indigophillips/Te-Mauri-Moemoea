@@ -7,7 +7,9 @@ import {
   RECEIVE_USER_DETAILS
 } from '../../actions/auth/register'
 
-const userDetails = (state = null, action) => {
+import {user} from '../../lib/sampleData'
+
+const userDetails = (state = user, action) => {
   switch (action.type) {
     case REQUEST_USER_DETAILS:
       return null

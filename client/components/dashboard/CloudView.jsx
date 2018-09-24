@@ -2,35 +2,18 @@ import React from 'react'
 import CloudLayer from './CloudLayer'
 import NewDreamCloud from './NewDreamCloud'
 
-const roles = [
-  'personal',
-  'collaborator',
-  'contributor',
-  'public',
-  'random'
-]
-
-const testDreams = [
-  {
-    id: 1,
-    name: 'Get my learners drivers license',
-    description: 'I would like to get my learners drivers license so that I may drive the car to school with mum'
-  },
-  {
-    id: 2,
-    name: 'Find a part time job',
-    description: 'I would like to get a part time job so that I can buy a new phone'
-  }
-]
+import {connect} from 'react-redux'
 
 const CloudView = (props) => {
+  const roles = Object.keys(props.dreams).filter(role => role != 'selection')
+
   return (
     <div className='cloudview'>
-      {roles.map(dreamerRole => (
+      {roles.map(role => (
         <CloudLayer
-          key={dreamerRole}
-          dreamerRole={dreamerRole}
-          dreams={testDreams}
+          key={role}
+          role={role}
+          dreams={props.dreams[role]}
         />
       ))}
       <NewDreamCloud />
@@ -38,4 +21,6 @@ const CloudView = (props) => {
   )
 }
 
-export default CloudView
+const mapStateToProps = ({dreams}) => ({dreams})
+
+export default connect(mapStateToProps)(CloudView)

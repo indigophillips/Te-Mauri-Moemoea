@@ -1,48 +1,110 @@
+/* MAIN PAGE */
+
 body {
   margin: 0;
 }
 
-#container {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 10px;
-  width: 700px;
-  height: 700px;
-  background-color: #fff;
+h1 {
+  font-size: 3rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  color:#e4e2e2;
+}
+
+/* NAV BAR */
 .navbar {
   top: 0;
   margin: 0 !important;
   width: 100%;
-  height: 56px;
+  height: 5%;
   border: 1px solid black;
   background-color: rgb(49, 40, 104)
 }
 
+::placeholder {
+  font-size: 0.8rem;
+}
+
+.button {
+  width: 7rem;
+  height: 2.5rem;
+  margin: 1rem;
+  font-weight: 700;
+  border: none;
+  color: black;
+  box-shadow: 0 2px 2px 0 gray;
+}
+
+.button:hover {
+  color: gray;
+}
+
+a:link, a:visited {
+  width: 7rem;
+  height: 2.5rem;
+  margin: 1rem;
+  font-weight: 700;
+  border: none;
+  color: black;
+  box-shadow: 0 2px 2px 0 gray;
+}
+
+a:link:hover, a:visted:hover {
+  color: gray;
+}
+
+/* REGISTER PAGE */
+
+.register {
+  width: 40%;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* DASHBOARD */
+.dashCont {
+  position: absolute;
+  height: 91.1%;
+  background: url('/images/dashBoard.png')
+}
+
 .totProgress {
-  padding-top: 15% !important;
-  height: 100%;
+  height: 95%;
   width: 25%;
 }
 
-.tahaview {
-  padding-top: 10% !important;
-  height: 100%;
+/* BALANCE */
+.balance {
   width: 75%;
+  height: 100%;
 }
 
 .botBar {
   margin: 0 !important;
+  background-image: none;
   height: 20%;
   width: 100%;
   bottom: 0;
-  position: absolute;
+  position: fixed;
 }
 
-.cloudview {
-  background-color: skyblue
+/* CLOUD */
+.cloudView {
+  height: 71.1%;
+  margin-bottom: 0 !important;
 }
 
 .cloudLayer {
@@ -57,12 +119,12 @@ body {
   height: 18%;
 }
 
-
 .cloud img {
   width: 100%;
   height: 100%;
 }
 
+/* NEW DREAM */
 .newDreamCont {
   position: relative;
   text-align: center;
@@ -81,6 +143,14 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.newDreamBtn {
+  width: 100%;
+  background-color: rgb(23, 92, 116);
+  padding: 2% 0;
+  text-align: center;
+}
+
+/* CLOUD TEXT */
 .cloudtext {
   position: absolute;
   font-size: .8em;
@@ -93,6 +163,8 @@ body {
   display: inline-block;
 }
 
+
+/* IMAGES */
 img.barplaceholder{
   max-height: 100%;
   width: 100%;
@@ -118,6 +190,7 @@ img.progressplaceholder{
   width: 40px;
 }
 
+/* AVATAR PAGE */
 .avatar {
   margin: 8px auto;
   width: 27px;
@@ -128,13 +201,7 @@ img.progressplaceholder{
   border-radius: 50%;
 }
 
-.newDreamBtn {
-  width: 100%;
-  background-color: rgb(23, 92, 116);
-  padding: 2% 0;
-  text-align: center;
-}
-
+/* INVITE */
 .inviteCont {
   width: 100%;
 
@@ -145,4 +212,15 @@ img.progressplaceholder{
   background-color: rgb(156, 225, 248);
   padding: 2% 0;
   text-align: center;
+}
+
+/* BALANCE CONTAINER */
+#container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 700px;
+  height: 700px;
+  background-color: #fff;
 }

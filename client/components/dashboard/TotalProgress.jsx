@@ -26,7 +26,6 @@ export class TotalProgress extends React.Component {
       )
     })
   }
-  // const endBalance = this.props.completedBalance.completed - this.props.totalBalance.remaining
 
   render () {
     return (
