@@ -16,8 +16,11 @@ function CloudLayer (props) {
   )
 }
 
-const mapStateToProps = ({dreams}) => ({
-  dreams: dreams[props.dreamType]
-})
+const mapStateToProps = ({dreams}, ownProps) => {
+  console.log(ownProps.role)
+  return {
+    dreams: dreams[ownProps.role]
+  }
+}
 
 export default connect(mapStateToProps)(CloudLayer)
