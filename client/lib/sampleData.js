@@ -192,76 +192,90 @@ export const onboarding_dreams = [
     id: 1,
     name: 'Get my restricted drivers license',
     taha: [
-      tinana: 0,
-      wairua: 0,
-      whānau: 2,
-      hinengaro: 4
-    ],
+      {
+        tinana: 0,
+        wairua: 0,
+        whānau: 2,
+        hinengaro: 4
+      }
+    ]
   }, 
 
   {
     id: 2,
     name: 'Spend more time with my family',
     taha: [
-      tinana: 0,
-      wairua: 4,
-      whānau: 6,
-      hinengaro: 0
-    ],
+      {
+        tinana: 0,
+        wairua: 4,
+        whānau: 6,
+        hinengaro: 0
+      }
+    ]
   },   
   
   {
     id: 3,
     name: 'Setup a bank account',
     taha: [
-      tinana: 0,
-      wairua: 0,
-      whānau: 1,
-      hinengaro: 4
-    ],
+      {
+        tinana: 0,
+        wairua: 0,
+        whānau: 1,
+        hinengaro: 4
+      }
+    ]
   },
   
   {
     id: 4,
     name: 'Improve my school grades',
     taha: [
-      tinana: 0,
-      wairua: 1,
-      whānau: 2,
-      hinengaro: 5 
-    ],
+      {
+        tinana: 0,
+        wairua: 1,
+        whānau: 2,
+        hinengaro: 5
+      }
+    ]
   },  
 
   {
     id: 5,
     name: 'Learn how to skateboard',
     taha: [
-      tinana: 4,
-      wairua: 0,
-      whānau: 1,
-      hinengaro: 2
-    ],
+      {
+        tinana: 4,
+        wairua: 0,
+        whānau: 1,
+        hinengaro: 2
+      }
+    ]
   },
 
   {
     id: 6,
     name: 'Learn a new musical instrument',
     taha: [
-      tinana: 1,
-      wairua: 0,
-      whānau: 2,
-      hinengaro: 5
-    ],
+      {
+        tinana: 1,
+        wairua: 0,
+        whānau: 2,
+        hinengaro: 5
+      }
+    ]
   },  
 
   {
     id: 7,
     name: 'Improve my physical wellbeing',
     taha: [
-      tinana: 7,
-      wairua: 1,
-      whānau: 0,
-      hinengaro: 1
+      {
+        tinana: 7,
+        wairua: 1,
+        whānau: 0,
+        hinengaro: 1
+      }
     ],
   },  
 
@@ -269,45 +283,51 @@ export const onboarding_dreams = [
     id: 8,
     name: 'Get a job',
     taha: [
-      tinana: 1,
-      wairua: 0,
-      whānau: 3,
-      hinengaro: 4 
-    ],
+      {
+        tinana: 1,
+        wairua: 0,
+        whānau: 3,
+        hinengaro: 4
+      }
+    ]
   },  
 
   {
     id: 9,
     name: 'Investigate attending a Polytech/University',
     taha: [
-      tinana: 0,
-      wairua: 0,
-      whānau: 3,
-      hinengaro: 4 
-    ],
+      {
+        tinana: 0,
+        wairua: 0,
+        whānau: 3,
+        hinengaro: 4
+      }
+    ]
   },  
 
   {
     id: 10,
     name: 'Find a scholarship for study',
     taha: [
-      tinana: 0,
-      wairua: 0,
-      whānau: 2,
-      hinengaro: 2 
-    ],
+      {
+        tinana: 0,
+        wairua: 0,
+        whānau: 2,
+        hinengaro: 2
+      }
+    ]
   },  
 
   {
     id: 11,
     name: 'Improve my mental wellbeing',
     taha: [
-      tinana: 1,
-      wairua:  5,
-      whānau: 1,
-      hinengaro: 2 
+      {
+        tinana: 1,
+        wairua:  5,
+        whānau: 1,
+        hinengaro: 2
+      }
     ]
   } 
-]
-  
 ]
