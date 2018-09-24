@@ -48,8 +48,8 @@ body {
 }
 
 .cloudView {
-  /* background-color: skyblue; */
-  height: 80%;
+  height: 71.1%;
+  margin-bottom: 0 !important;
 }
 
 .cloudLayer {
