@@ -37,16 +37,89 @@ export const personalDreams = [
     ]
   },
   {
-    name: 'Get a part-time job',
+    name: 'Find a part time job',
+    description: 'I would like to get a part time job so that I can buy a new phone',
+    tasks: [
+      {
+        name: 'Figure out what jobs there are',
+        description: 'Find out what jobs suit me and my skills',
+        taha: 'hinengaro',
+        done: false,
+        due_date: 'none'
+      },
+      {
+        name: 'Write my C.V',
+        description: 'Complete writing my C.V',
+        taha: 'hinengaro',
+        done: false,
+        due_date: 'none'
+      },      
+      {
+        name: 'Speak to Dad',
+        description: 'Talk to Dad to see if there are any part time jobs at his work',
+        taha: 'hinengaro',
+        done: false,
+        due_date: 'none'
+      }
+    ]
   },
   {
-    name: 'Work on my well being'
+    name: 'Improve my wellbeing',
+    description: 'I want to work on improving my wellbeing to improve my focus at school',
+    tasks: [
+      {
+        name: 'Go for a run',
+        description: 'Go for a run for 30 minutes a day for 1 week',
+        taha: 'tinana',
+        done: false,
+        due_date: '10/10/2018'        
+      },
+      {
+        name: 'Disconnect',
+        description: 'Turn off my phone and other devices 1 hour before bed to get a good sleep for 1 week',
+        taha: 'hinengaro',
+        done: false,
+        due_date: '10/10/2018'            
+      },
+      {
+        name: 'Meditate',
+        description: 'Meditate for 10 minutes a day to de-stress for 1 week',
+        taha: 'wairua',
+        done: false,
+        due_date: '10/10/2018'            
+      },      
+    ]
   }
 ]
 
 export const whanauDreams = [
   {
-    name: 'Improve Whanau Communication'
+    whanau_id: 1,
+    name: 'Take a family trip to the Gold Coast',
+    description: 'Our whānau would like to take a trip to the Gold Coast for 2 weeks',
+    tasks: [
+      {
+        name: 'Pick a date',
+        taha:'whānau',
+        description: 'Choose a date which suits everyone',
+        done: false,
+        due_date: '1/11/2018'
+      },
+      {
+        name: 'Passports',
+        taha:'whānau',
+        description: 'Ensure everyones passports are current',
+        done: false,
+        due_date: 'none'
+      },
+      {
+        name: 'Accomodation',
+        taha:'whānau',
+        description: 'Book suitable accomodation',
+        done: false,
+        due_date: 'none'
+      }
+    ]
   },
   {
     name: 'Take a trip to the Gold Coast'
@@ -55,21 +128,37 @@ export const whanauDreams = [
 
 export const contributorDreams = [
   {
-    name: 'Build a computer'
-  }
+    dreamer_id: 1,
+    name: 'School Mural',
+    description: 'Help to create a mural on the new building at school',
+    tasks: [
+      {
+        name: 'Painting the mural',
+        taha:'whānau',
+        description: 'Contribute to the painting of the school mural',
+        done: false,
+        due_date: '23/12/2018'
+      },
+    ]
+  },
 ]
 
 export const publicDreams = [
   {
-    name: 'Build a computer'
-  }
+    name: 'Build a Computer',
+    description: 'I would like to know how to build a computer',
+  },
+  {
+    name: 'Improve my maths abilities',
+    description: 'I would like to pair up with someone to become better at maths',
+  }  
 ]
 
 export const whanau = [
   {
     id: 1,
-    name: '',
-    description: '',
+    name: 'Mikaere-Akarana Whanau',
+    description: 'The Mikaere-Akarana Whanau',
     member_ids: [
       2,
       3
@@ -80,12 +169,12 @@ export const whanau = [
 export const whanau_members = [
   {
     id: 2,
-    fist_name: '',
-    last_name: ''
+    fist_name: 'Hori',
+    last_name: 'Akarana'
   },
   {
     id: 3,
-    fist_name: '',
-    last_name: ''
+    fist_name: 'Eden',
+    last_name: 'Mikaere'
   }
 ]
