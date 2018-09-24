@@ -1,70 +1,67 @@
 import React from 'react'
-import {VictoryPie, VictoryLabel, VictoryAnimation} from 'victory'
+import CircularProgressbar from 'react-circular-progressbar'
 
-class TotalProgress extends React.Component {
-  constructor () {
-    super()
+export class TotalProgress extends React.Component {
+  constructor (props) {
+    super(props)
     this.state = {
-      percent: 25, data: this.getData(0)
+      completedBalance: 3,
+      currentBalance: 3,
+      totalBalance: 7,
+      counter: null
     }
   }
 
   componentDidMount () {
-    let percent = 25
-    this.setStateInterval = window.setInterval(() => {
-      percent += (Math.random() * 25)
-      percent = (percent > 100) ? 0 : percent
-      this.setState({
-        percent, data: this.getData(percent)
-      })
-    }, 2000)
+    this.setState({
+      counter: setInterval(() => {
+        if (this.state.currentBalance < this.state.totalBalance) {
+          const nextBalance = this.state.currentBalance + 1
+          this.setState({currentBalance: nextBalance})
+        } else {
+          clearInterval(this.state.counter)
+        }
+      },
+      100
+      )
+    })
   }
-
-  componentWillUnmount () {
-    window.clearInterval(this.setStateInterval)
-  }
-
-  getData (percent) {
-    return [{x: 1, y: percent}, {x: 2, y: 100 - percent}]
-  }
+  // const endBalance = this.props.completedBalance.completed - this.props.totalBalance.remaining
 
   render () {
     return (
-      <div>
-        <svg viewBox="0 0 400 400" width="100%" height="100%">
-          <VictoryPie
-            standalone={false}
-            animate={{duration: 1000}}
-            width={400} height={400}
-            data={this.state.data}
-            innerRadius={120}
-            cornerRadius={25}
-            labels={() => null}
-            style={{
-              data: {fill: (d) => {
-                const color = d.y > 30 ? 'green' : 'red'
-                return d.x === 1 ? color : 'transparent'
-              }
-              }
-            }
-            }
-          />
-          <VictoryAnimation duration={1000} data={this.state}>
-            {(newProps) => {
-              return (
-                <VictoryLabel
-                  textAnchor="middle" verticalAnchor="middle"
-                  x={200} y={200}
-                  text={`${Math.round(newProps.percent)}%`}
-                  style={{fontSize: 45}}
-                />
-              )
-            }}
-          </VictoryAnimation>
-        </svg>
-      </div>
+      <CircularProgressbar
+        percentage={this.state.currentBalance * 100.0 / this.state.totalBalance}
+        // Path width must be customized with strokeWidth,
+        // since it informs dimension calculations.
+        strokeWidth={5}
+        styles={{
+          // Customize the root svg element
+          root: {},
+          // Customize the path, i.e. the part that's "complete"
+          path: {
+            // Tweak path color:
+            stroke: '#f88',
+            // Tweak path to use flat or rounded ends:
+            strokeLinecap: 'butt',
+            // Tweak transition animation:
+            transition: 'stroke-dashoffset 0.5s ease 0s'
+          },
+          // Customize the circle behind the path
+          trail: {
+            // Tweak the trail color:
+            stroke: '#d6d6d6'
+          },
+          // Customize the text
+          text: {
+            // Tweak text color:
+            fill: '#f88',
+            // Tweak text size:
+            fontSize: '30px'
+          }
+        }}
+      />
     )
   }
 }
-
 export default TotalProgress
