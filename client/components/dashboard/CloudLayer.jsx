@@ -1,22 +1,31 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
 import Cloud from './Cloud'
+import {selectDream} from '../../actions/selectDream.js'
 
-export default function CloudLayer (props) {
+function CloudLayer (props) {
   return (
     <div className='level cloudLayer is-mobile'>
       {props.dreams.map(dream => (
         <Cloud
           key={dream.id}
           dream={dream}
+          onClick={() => props.select(props.role, dream.id)}
         />
       ))}
     </div>
   )
 }
 
-// const mapStateToProps = ({dreams}) => ({
-//   dreams: dreams[props.dreamType]
-// })
+const mapStateToProps = ({dreams}, ownProps) => {
+  return {
+    dreams: dreams[ownProps.role]
+  }
+}
 
-// export default connect(mapStateToProps)(CloudLayer)
+const mapDispatchToProps = dispatch => ({
+  select: (dreamType, dreamID) => dispatch(selectDream(dreamType, dreamID))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(CloudLayer)

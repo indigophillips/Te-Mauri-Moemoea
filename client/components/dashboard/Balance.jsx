@@ -12,19 +12,19 @@ class Balance extends React.Component {
   render () {
     return (
       <Fragment>
-        {this.props.tahaData &&
+        {this.props.data &&
         <ResponsiveContainer width='100%' height='100%'>
-          <BarChart data={this.props.tahaData} margin={{top: 0, right: 1, left: 1, bottom: 0}}>
+          <BarChart data={this.props.data} margin={{top: 0, right: 1, left: 1, bottom: 0}}>
             <XAxis dataKey="name" fontSize='.6em' stroke='white' fontFamily="sans-serif"/>
             <YAxis tickLine={false} stroke="#00000000" fontFamily="sans-serif"/>
             <Tooltip />
             <Bar dataKey="completed" stackId="a" >
-              {this.props.tahaData.map((taha) => (
+              {this.props.data.map((taha) => (
                 <Cell key={taha.name} fill={taha.color1} />
               ))}
             </Bar>
             <Bar dataKey="remaining" stackId="a" >
-              {this.props.tahaData.map((taha) => (
+              {this.props.data.map((taha) => (
                 <Cell key={taha.name} fill={taha.color2} />
               ))}
             </Bar>
@@ -35,6 +35,44 @@ class Balance extends React.Component {
   }
 }
 
-const mapStateToProps = ({stats}) => ({tahaData: stats})
+const mapStateToProps = ({dreams}) => {
+  const {selection} = dreams
+
+  const ngaTaha = ['whānau', 'wairua', 'heningaro', 'tinana']
+  const colour1 = ['darkred', 'orangered', 'darkblue', 'darkgreen']
+  const colour2 = ['red', 'orange', 'blue', 'green']
+
+  let data
+
+  if (selection.id) {
+    const selectedDream = dreams[selection.type].find(dream => dream.id == selection.id)
+    
+    data = ngaTaha.map((taha, i) => {
+      let datum = {
+        name: taha,
+        color1: colour1[i],
+        color2: colour2[i],
+      }
+
+      const allTasks = selectedDream.tasks.filter(task => (task.taha === taha))
+      datum.completed = allTasks.filter(task => task.done).length
+      datum.remaining = allTasks.length - datum.completed
+
+      return datum
+    })
+  } else {
+    data = ngaTaha.map((taha, i) => ({
+      name: taha,
+      color1: colour1[i],
+      color2: colour2[i],
+      completed: 5,
+      remaining: 2
+    }))
+  }
+
+  return {
+    data
+  }
+}
 
 export default connect(mapStateToProps)(Balance)

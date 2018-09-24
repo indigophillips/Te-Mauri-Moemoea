@@ -5,7 +5,7 @@ import NewDreamCloud from './NewDreamCloud'
 import {connect} from 'react-redux'
 
 const CloudView = (props) => {
-  const roles = Object.keys(props.dreams)
+  const roles = Object.keys(props.dreams).filter(role => role != 'selection')
 
   return (
     <div className='cloudview'>
