@@ -6,8 +6,8 @@ export class TotalProgress extends React.Component {
     super(props)
     this.state = {
       completedBalance: 3,
-      currentBalance: 3,
-      totalBalance: 7,
+      currentBalance: 0,
+      totalBalance: 10,
       counter: null
     }
   }
@@ -15,7 +15,7 @@ export class TotalProgress extends React.Component {
   componentDidMount () {
     this.setState({
       counter: setInterval(() => {
-        if (this.state.currentBalance < this.state.totalBalance) {
+        if (this.state.currentBalance < this.state.completedBalance) {
           const nextBalance = this.state.currentBalance + 1
           this.setState({currentBalance: nextBalance})
         } else {
