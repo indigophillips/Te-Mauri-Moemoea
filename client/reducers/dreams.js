@@ -9,7 +9,11 @@ const sampleDreams = {
   personal: personalDreams,
   whanau: whanauDreams,
   contributing: contributorDreams,
-  public: publicDreams
+  public: publicDreams,
+  selection: {
+    type: 'whanau',
+    id: 0
+  }
 }
 
 export default function dreamReducer (state = sampleDreams, action) {
