@@ -12,7 +12,7 @@ const sampleDreams = {
   public: publicDreams,
   selection: {
     type: 'whanau',
-    id: 0
+    id: 4
   }
 }
 

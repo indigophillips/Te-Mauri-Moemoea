@@ -124,10 +124,6 @@ export const whanauDreams = [
         due_date: 'none'
       }
     ]
-  },
-  {
-    id: 8,
-    name: 'Take a trip to the Gold Coast'
   }
 ]
 

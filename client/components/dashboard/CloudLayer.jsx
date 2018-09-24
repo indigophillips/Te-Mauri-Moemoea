@@ -1,8 +1,9 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
 import Cloud from './Cloud'
 
-export default function CloudLayer (props) {
+function CloudLayer (props) {
   return (
     <div className='level cloudLayer is-mobile'>
       {props.dreams.map(dream => (
@@ -15,8 +16,8 @@ export default function CloudLayer (props) {
   )
 }
 
-// const mapStateToProps = ({dreams}) => ({
-//   dreams: dreams[props.dreamType]
-// })
+const mapStateToProps = ({dreams}) => ({
+  dreams: dreams[props.dreamType]
+})
 
-// export default connect(mapStateToProps)(CloudLayer)
+export default connect(mapStateToProps)(CloudLayer)
