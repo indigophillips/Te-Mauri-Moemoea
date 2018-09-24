@@ -7,7 +7,7 @@ const DashboardMain = () => {
   return (
     <div className='dashCont'>
       <CloudView />
-      <ProgressView />
+      <ProgressView className='level is-mobile botBar' />
     </div>
   )
 }
