@@ -10,6 +10,7 @@ export const user = {
 
 export const personalDreams = [
   {
+    id: 1,
     name: 'Get my learners drivers license',
     description: 'I would like to get my learners drivers license so that I may drive the car to school with mum',
     tasks: [
@@ -37,6 +38,7 @@ export const personalDreams = [
     ]
   },
   {
+    id: 2,
     name: 'Find a part time job',
     description: 'I would like to get a part time job so that I can buy a new phone',
     tasks: [
@@ -64,6 +66,7 @@ export const personalDreams = [
     ]
   },
   {
+    id: 3,
     name: 'Improve my wellbeing',
     description: 'I want to work on improving my wellbeing to improve my focus at school',
     tasks: [
@@ -87,13 +90,14 @@ export const personalDreams = [
         taha: 'wairua',
         done: false,
         due_date: '10/10/2018'            
-      },      
+      }  
     ]
   }
 ]
 
 export const whanauDreams = [
   {
+    id: 4,
     whanau_id: 1,
     name: 'Take a family trip to the Gold Coast',
     description: 'Our whānau would like to take a trip to the Gold Coast for 2 weeks',
@@ -122,12 +126,14 @@ export const whanauDreams = [
     ]
   },
   {
+    id: 8,
     name: 'Take a trip to the Gold Coast'
   }
 ]
 
 export const contributorDreams = [
   {
+    id: 5,
     dreamer_id: 1,
     name: 'School Mural',
     description: 'Help to create a mural on the new building at school',
@@ -138,17 +144,19 @@ export const contributorDreams = [
         description: 'Contribute to the painting of the school mural',
         done: false,
         due_date: '23/12/2018'
-      },
+      }
     ]
-  },
+  }
 ]
 
 export const publicDreams = [
   {
+    id: 6,
     name: 'Build a Computer',
     description: 'I would like to know how to build a computer',
   },
   {
+    id: 7,
     name: 'Improve my maths abilities',
     description: 'I would like to pair up with someone to become better at maths',
   }  
