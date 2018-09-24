@@ -1,14 +1,14 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 
 import TotalProgress from './TotalProgress'
 import Balance from './Balance'
 
 function ProgressView (props) {
   return (
-    <Fragment>
+    <div className='level is-mobile botBar'>
       <TotalProgress className='totProgress'/>
       <Balance className='balance'/>
-    </Fragment>
+    </div>
   )
 }
 
