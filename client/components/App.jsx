@@ -6,7 +6,6 @@ import Login from './auth/Login'
 import Welcome from './Welcome'
 import Avatar from './Avatar'
 import Navbar from './Navbar'
-import Balance from './Balance'
 import DashboardMain from './dashboard/DashboardMain'
 import InvitesAndNewDreams from './dashboard/InvitesAndNewDreams'
 import NewDream from './dreams/NewDream'
@@ -23,7 +22,6 @@ const App = () => {
         <Route path='/user/:id/NewDream' component={NewDream} />
         <Route path='/welcome' component={Welcome} />
         <Route path='/avatar' component={Avatar} />
-        <Route path='/balance' component={Balance} />
       </Fragment>
     </Router>
   )
