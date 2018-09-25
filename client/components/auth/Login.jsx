@@ -52,19 +52,19 @@ class Login extends React.Component {
         <form>
           <fieldset>
             <h2>Login</h2>
-            <label htmlFor='phoneNumber'>PhoneNumber: </label>
+            <label htmlFor='phoneNumber'></label>
             <input type='text'
               name='phoneNumber'
               id='phoneNumber'
-              placeholder='Phone number...'
+              placeholder='Phone number'
               onChange={this.handleChange}
               value={this.state.phoneNumber} />
             <br />
-            <label htmlFor='password'>Password: </label>
+            <label htmlFor='password'></label>
             <input
               type='password'
               name='password'
-              placeholder='Password...'
+              placeholder='Password'
               onChange={this.handleChange}
               value={this.state.password} />
             <br />

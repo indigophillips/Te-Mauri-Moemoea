@@ -1,13 +1,13 @@
 import React from 'react'
 import CircularProgressbar from 'react-circular-progressbar'
 
-export class TotalProgress extends React.Component {
+class TotalProgress extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      completedBalance: 3,
-      currentBalance: 3,
-      totalBalance: 7,
+      completedBalance: 30,
+      currentBalance: 0,
+      totalBalance: 100,
       counter: null
     }
   }
@@ -15,52 +15,54 @@ export class TotalProgress extends React.Component {
   componentDidMount () {
     this.setState({
       counter: setInterval(() => {
-        if (this.state.currentBalance < this.state.totalBalance) {
+        if (this.state.currentBalance < this.state.completedBalance) {
           const nextBalance = this.state.currentBalance + 1
           this.setState({currentBalance: nextBalance})
         } else {
           clearInterval(this.state.counter)
         }
       },
-      100
+      20
       )
     })
   }
 
   render () {
     return (
+      <div className='circularProgressbar'>
       <CircularProgressbar
-        percentage={this.state.currentBalance * 100.0 / this.state.totalBalance}
-        // Path width must be customized with strokeWidth,
-        // since it informs dimension calculations.
-        strokeWidth={5}
-        styles={{
-          // Customize the root svg element
-          root: {},
-          // Customize the path, i.e. the part that's "complete"
-          path: {
-            // Tweak path color:
-            stroke: '#f88',
-            // Tweak path to use flat or rounded ends:
-            strokeLinecap: 'butt',
-            // Tweak transition animation:
-            transition: 'stroke-dashoffset 0.5s ease 0s'
-          },
-          // Customize the circle behind the path
-          trail: {
-            // Tweak the trail color:
-            stroke: '#d6d6d6'
-          },
-          // Customize the text
-          text: {
-            // Tweak text color:
-            fill: '#f88',
-            // Tweak text size:
-            fontSize: '30px'
-          }
-        }}
-      />
+      percentage={this.state.currentBalance * 100.0 / this.state.totalBalance}
+      text={this.state.currentBalance * 100.0 / this.state.totalBalance + "%"}
+      strokeWidth={3}
+      backgroundPadding={6}
+      styles={{ 
+        
+        path: {
+        stroke: 'green',
+        strokeWidth:'4px',
+        strokeLinecap: 'butt',
+        transition: 'stroke-dashoffset 0.18s ease 0s'
+        },
+
+        trail: {
+        stroke: 'lightgreen',
+        strokeWidth:'4px',
+        circlesize: '20%',
+        progress: '100%'
+        },
+        
+        text: {
+        displayTextWhenDone: true,
+        donetext:'Success!',
+        fill: 'green',
+        fontSize: '10px',
+        isundeterminated: true,        
+        }
+      }}
+    />
+    </div> 
     )
   }
 }
+
 export default TotalProgress

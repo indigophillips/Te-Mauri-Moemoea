@@ -1,4 +1,4 @@
-/* MAIN PAGE */
+/* MAIN HEADING */
 
 body {
   margin: 0;
@@ -20,9 +20,6 @@ h4 {
   font-size: 1.2rem;
 }
 
-p {
-  color:#e4e2e2;
-}
 
 /* NAV BAR */
 .navbar {
@@ -37,6 +34,8 @@ p {
 ::placeholder {
   font-size: 0.8rem;
 }
+
+/* BUTTONS & LINKS */
 
 .button {
   width: 7rem;
@@ -70,8 +69,8 @@ a:link:hover, a:visted:hover {
 
 .register {
   width: 40%;
-  margin: auto;
-  padding: 1rem;
+  margin: 0;
+  padding: 0.5rem;
 }
 
 /* DASHBOARD */
@@ -79,26 +78,6 @@ a:link:hover, a:visted:hover {
   position: absolute;
   height: 91.1%;
   background: url('/images/dashBoard.png')
-}
-
-.totProgress {
-  height: 95%;
-  width: 25%;
-}
-
-/* BALANCE */
-.balance {
-  width: 75%;
-  height: 100%;
-}
-
-.botBar {
-  margin: 0 !important;
-  background-image: none;
-  height: 20%;
-  width: 100%;
-  bottom: 0;
-  position: fixed;
 }
 
 /* CLOUD */
@@ -163,7 +142,6 @@ a:link:hover, a:visted:hover {
   display: inline-block;
 }
 
-
 /* IMAGES */
 img.barplaceholder{
   max-height: 100%;
@@ -173,6 +151,16 @@ img.barplaceholder{
 img.progressplaceholder{
   max-height: 100%;
   max-width: 100%;
+}
+
+/* LOGIN */
+.login{
+  padding: 0 0 0 4px;
+  width: 45px;
+  height: 20px;
+  font-size: .8em;
+  border-radius: 0 50% 50% 0;
+  
 }
 
 .log {
@@ -204,7 +192,6 @@ img.progressplaceholder{
 /* INVITE */
 .inviteCont {
   width: 100%;
-
 }
 
 .invites {
@@ -214,7 +201,7 @@ img.progressplaceholder{
   text-align: center;
 }
 
-<<<<<<< HEAD
+
 /* BALANCE CONTAINER */
 #container {
   -webkit-box-sizing: border-box;
@@ -225,7 +212,42 @@ img.progressplaceholder{
   height: 700px;
   background-color: #fff;
 }
-=======
+
+
+/* TOTAL PROGRESS */
+.botBar {
+  margin: 0 !important;
+  background-image: none;
+  height: 20%;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+.circularProgressbar {
+  position: relative;
+  margin: auto;
+  height: 50%;
+  width: 40%;
+  margin-bottom: 2.5rem;
+  margin-left: 1.5rem;
+  text-align:center;
+
+}
+
+.rechartBar {
+  height: 50%;
+  width: 10%;
+  position: absolute;
+  margin-bottom: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.balance{
+  height: 50%;
+  width: 50%;
+}
+
 .close {
   width: 25px;
   height: 25px;
@@ -246,4 +268,3 @@ img.progressplaceholder{
   pointer-events: auto !important;
 }
 
->>>>>>> 9674bf77dcd3f1707fca6277a2790c4b79bab7ec

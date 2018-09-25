@@ -1,41 +1,6 @@
 import React from 'react'
 import Select from 'react-select'
 
-const physical = [
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''}
-]
-
-const mental = [
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''}
-]
-const spiritual = [
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''}
-]
-
-const family = [
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''},
-  {value: '', label: ''}
-]
-
 const avatar = [
   {value: 'stingray', label: 'Whaitere (Stingray)'},
   {value: 'taniwha', label: 'Awarua (Taniwha)'},
