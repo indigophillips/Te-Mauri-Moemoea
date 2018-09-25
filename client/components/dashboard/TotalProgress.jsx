@@ -35,27 +35,28 @@ class TotalProgress extends React.Component {
       text={this.state.currentBalance * 100.0 / this.state.totalBalance + "%"}
       strokeWidth={3}
       backgroundPadding={6}
-      styles={{
-        root: {},
+      styles={{ 
+        
         path: {
-        stroke: 'green',
+        stroke: 'purple',
         strokeWidth:'4px',
         strokeLinecap: 'butt',
         transition: 'stroke-dashoffset 0.18s ease 0s'
         },
+
         trail: {
-        stroke: 'lightgreen',
+        stroke: 'lightpurple',
         strokeWidth:'4px',
         circlesize: '15%',
         progress: '100%'
         },
+        
         text: {
         displayTextWhenDone: true,
-        donetext:'Yay, completed!',
+        donetext:'Success!',
         fill: 'green',
-        fontSize: '20px',
+        fontSize: '10px',
         isundeterminated: true,        
-        textAlign: 'justify'
         }
       }}
     />
