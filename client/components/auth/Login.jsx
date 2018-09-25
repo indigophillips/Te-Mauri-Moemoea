@@ -46,37 +46,45 @@ class Login extends React.Component {
       )
     }
     return (
-      <div className='login'>
-        {this.props.message && <span className='error'>
-          {this.props.message}</span>}
-        <form>
-          <fieldset>
-            <h2>Login</h2>
-            <label htmlFor='phoneNumber'>PhoneNumber: </label>
-            <input type='text'
-              name='phoneNumber'
-              id='phoneNumber'
-              placeholder='Phone number...'
-              onChange={this.handleChange}
-              value={this.state.phoneNumber} />
-            <br />
-            <label htmlFor='password'>Password: </label>
-            <input
-              type='password'
-              name='password'
-              placeholder='Password...'
-              onChange={this.handleChange}
-              value={this.state.password} />
-            <br />
-            <button
-              type='button'
-              className='button'
-              onClick={this.handleSubmit}>Login
-            </button>
-            <Link to='/' type='button' className='button cancel-button' >Cancel</Link>
-          </fieldset>
-        </form>
-      </div>
+      <section className="hero is-fullheight">
+        <div className="hero-body">
+          <div className="container">
+            <div className='login'>
+              {this.props.message && <span className='error'>
+                {this.props.message}</span>}
+              <form>
+                <fieldset>
+                  <img src="images/logo_white-01.png"></img>
+                  <label htmlFor='phoneNumber'>PhoneNumber: </label>
+                  <input type='text'
+                    name='phoneNumber'
+                    id='phoneNumber'
+                    placeholder='Phone number...'
+                    onChange={this.handleChange}
+                    value={this.state.phoneNumber} />
+                  <br />
+                  <label htmlFor='password'>Password: </label>
+                  <input
+                    type='password'
+                    name='password'
+                    placeholder='Password...'
+                    onChange={this.handleChange}
+                    value={this.state.password} />
+                  <br />
+                  <div className='buttonGroup'>
+                    <button
+                      type='button'
+                      className='button'
+                      onClick={this.handleSubmit}>Login
+                    </button>
+                    <Link to='/' type='button' className='button cancel-button' >Cancel</Link>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     )
   }
 }
