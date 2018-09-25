@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react'
 import {connect} from 'react-redux'
-
 import {BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell} from 'recharts'
 import {getStats} from '../../actions/getStats'
 
@@ -11,9 +10,10 @@ class Balance extends React.Component {
 
   render () {
     return (
+    
       <Fragment>
         {this.props.data &&
-        <ResponsiveContainer width='100%' height='100%'>
+        <ResponsiveContainer className='rechartsbar' width='100%' height='100%'>
           <BarChart data={this.props.data} margin={{top: 0, right: 1, left: 1, bottom: 0}}>
             <XAxis dataKey="name" fontSize='.6em' stroke='white' fontFamily="sans-serif"/>
             <YAxis tickLine={false} stroke="#00000000" fontFamily="sans-serif"/>

@@ -20,9 +20,6 @@ h4 {
   font-size: 1.2rem;
 }
 
-p {
-  color:#e4e2e2;
-}
 
 /* NAV BAR */
 .navbar {
@@ -81,25 +78,7 @@ a:link:hover, a:visted:hover {
   background: url('/images/dashBoard.png')
 }
 
-.totProgress {
-  height: 95%;
-  width: 25%;
-}
 
-/* BALANCE */
-.balance {
-  width: 75%;
-  height: 100%;
-}
-
-.botBar {
-  margin: 0 !important;
-  background-image: none;
-  height: 20%;
-  width: 100%;
-  bottom: 0;
-  position: fixed;
-}
 
 /* CLOUD */
 .cloudView {
@@ -223,4 +202,33 @@ img.progressplaceholder{
   width: 700px;
   height: 700px;
   background-color: #fff;
+}
+
+.botBar {
+  margin: 0 !important;
+  background-image: none;
+  height: 20%;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+.circularProgressbar {
+  height: 50%;
+  width: 40%;
+  margin-bottom: 2.5rem;
+  margin-left: 1.5rem;
+}
+
+.rechartBar {
+  height: 50%;
+  width: 10%;
+  position: absolute;
+  margin-bottom: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.balance{
+  height: 50%;
+  width: 50%;
 }
