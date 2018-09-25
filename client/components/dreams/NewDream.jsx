@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import NewDreamTitle from './NewDreamTitle'
 
 import TaskCreation from './TaskCreation'
-import Balance from '../dashboard/Balance';
+import Balance from '../dashboard/Balance'
 
 import {sumOverDream} from '../../lib/sumTasks'
 
@@ -15,14 +15,14 @@ class NewDream extends Component {
     this.state = {
       dreamName: '',
       whanau: [],
-      personal: true
+      dreamScope: ''
     }
     this.handleChange = this.handleChange.bind(this)
     this.addWhanau = this.addWhanau.bind(this)
     this.handleDream = this.handleDream.bind(this)
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.props.dispatch(wipeNewDream())
   }
 
@@ -36,9 +36,11 @@ class NewDream extends Component {
   addWhanau () {
     let num = Math.floor(Math.random() * 3)
     if (num < 1) { num = 1 }
-    this.setState({
-      whanau: [...this.state.whanau, `/images/avatar${num}.jpg`]
-    })
+    if (this.state.whanau.length < 7) {
+      this.setState({
+        whanau: [...this.state.whanau, `/images/avatar${num}.jpg`]
+      })
+    }
   }
 
   handleDream (e) {
