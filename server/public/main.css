@@ -153,3 +153,16 @@ img.progressplaceholder{
   padding: 2% 0;
   text-align: center;
 }
+
+.close {
+  width: 25px;
+  height: 25px;
+  right: 0;
+  left: 90%;
+  position: fixed;
+}
+
+.whanauAvatar {
+  width: 75px;
+  height: 75px;
+}

@@ -6,9 +6,11 @@ class NewDream extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      dreamName: ''
+      dreamName: '',
+      whanau: []
     }
     this.handleChange = this.handleChange.bind(this)
+    this.addWhanau = this.addWhanau.bind(this)
   }
 
   handleChange (e) {
@@ -17,11 +19,17 @@ class NewDream extends Component {
       [name]: value
     })
   }
+
+  addWhanau () {
+    this.setState({
+      whanau: [...this.state.whanau, `/images/avatar${Math.floor(Math.random() * 3)}.jpg`]
+    })
+  }
+
   render () {
     return (
       <div>
-        <NewDreamTitle handleChange={this.handleChange}/>
-        hi
+        <NewDreamTitle whanau={this.state.whanau} handleChange={this.handleChange} addWhanau={this.addWhanau}/>
       </div>
     )
   }
