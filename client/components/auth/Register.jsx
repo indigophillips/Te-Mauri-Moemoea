@@ -56,7 +56,7 @@ class Register extends Component {
       )
     }
     return (
-      <section class="hero">
+      <section class="hero is-fullheight">
         <div class="hero-body">
           <div class="container">
             <div className= 'register'>
