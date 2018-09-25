@@ -7,6 +7,8 @@ import thunkMiddleware from 'redux-thunk'
 import reducers from './reducers'
 import App from './components/App'
 
+import './sass/main.scss'
+
 import {persistStore, persistReducer} from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 import {PersistGate} from 'redux-persist/integration/react'
