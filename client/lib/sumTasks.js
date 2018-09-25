@@ -1,4 +1,4 @@
-const ngaTaha = ['whānau', 'wairua', 'heningaro', 'tinana']
+const ngaTaha = ['whānau', 'wairua', 'hinengaro', 'tinana']
 const colour1 = ['darkred', 'orangered', 'darkblue', 'darkgreen']
 const colour2 = ['red', 'orange', 'blue', 'green']
 
