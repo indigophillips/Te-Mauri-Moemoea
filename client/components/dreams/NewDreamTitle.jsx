@@ -18,8 +18,8 @@ const NewDreamTitle = (props) => {
       <label>Who can help me?</label>
       <div className='columns is-mobile'>
         <div className='column is-10 columns is-mobile is-multiline whanauAvatarDiv'>
-          {props.whanau.map(add => (
-            <div className='column is-2' key={add}>
+          {props.whanau.map((add, i) => (
+            <div className='column is-2' key={i}>
               <img
                 src={add}></img>
             </div>

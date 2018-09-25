@@ -1,6 +1,13 @@
-import React, {Component} from 'react'
+import React, {Component, Fragment} from 'react'
 import {connect} from 'react-redux'
 import NewDreamTitle from './NewDreamTitle'
+
+import TaskCreation from './TaskCreation'
+import Balance from '../dashboard/Balance';
+
+import {sumOverDream} from '../../lib/sumTasks'
+
+import {wipeNewDream} from '../../actions/newDream'
 
 class NewDream extends Component {
   constructor (props) {
@@ -13,6 +20,10 @@ class NewDream extends Component {
     this.handleChange = this.handleChange.bind(this)
     this.addWhanau = this.addWhanau.bind(this)
     this.handleDream = this.handleDream.bind(this)
+  }
+
+  componentDidMount() {
+    this.props.dispatch(wipeNewDream())
   }
 
   handleChange (e) {
@@ -38,21 +49,28 @@ class NewDream extends Component {
 
   render () {
     return (
-      <div>
-        <NewDreamTitle whanau={this.state.whanau}
-          handleChange={this.handleChange}
-          addWhanau={this.addWhanau}
-          personal={this.state.personal}
-          handleDream={this.handleDream}/>
-      </div>
+      <Fragment>
+        <div>
+          <NewDreamTitle whanau={this.state.whanau}
+            handleChange={this.handleChange}
+            addWhanau={this.addWhanau}
+            personal={this.state.personal}
+            handleDream={this.handleDream}/>
+        </div>
+        <TaskCreation />
+        <div className='level is-mobile botBar'>
+          <Balance className='balance' data={sumOverDream(this.props.dream)}/>
+        </div>
+      </Fragment>
     )
   }
 }
 
 function mapStateToProps (state) {
   return {
-    user: state.userDetails
+    user: state.userDetails,
+    dream: state.newDream
   }
 }
 
-export default connect(mapStateToProps, null)(NewDream)
+export default connect(mapStateToProps)(NewDream)
