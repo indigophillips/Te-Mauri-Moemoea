@@ -56,7 +56,7 @@ class Login extends React.Component {
             <input type='text'
               name='phoneNumber'
               id='phoneNumber'
-              placeholder='Phone number...'
+              placeholder='Phone Number...'
               onChange={this.handleChange}
               value={this.state.phoneNumber} />
             <br />
