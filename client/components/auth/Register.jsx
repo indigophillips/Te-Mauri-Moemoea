@@ -122,7 +122,7 @@ class Register extends Component {
                     type='text'
                     name='phoneNumber'
                     id='phoneNumber'
-                    placeholder='phoneNumber..'
+                    placeholder='Phone Number..'
                     onChange={this.handleChange}
                     value={this.state.phoneNumber}
                   />
@@ -141,7 +141,7 @@ class Register extends Component {
                     type='password'
                     name='confirm'
                     id='confirm'
-                    placeholder='Confirm phoneNumber'
+                    placeholder='Confirm Phone Number'
                     onChange={this.handleChange}
                     value={this.state.change}
                   />
