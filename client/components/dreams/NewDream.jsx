@@ -1,12 +1,9 @@
 import React, {Component, Fragment} from 'react'
 import {connect} from 'react-redux'
 import NewDreamTitle from './NewDreamTitle'
-
 import TaskCreation from './TaskCreation'
 import Balance from '../dashboard/Balance'
-
 import {sumOverDream} from '../../lib/sumTasks'
-
 import {wipeNewDream} from '../../actions/newDream'
 
 class NewDream extends Component {

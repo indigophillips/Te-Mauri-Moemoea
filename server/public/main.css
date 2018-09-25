@@ -1,4 +1,4 @@
-/* MAIN PAGE */
+/* MAIN HEADING */
 
 body {
   margin: 0;
@@ -35,6 +35,8 @@ h4 {
   font-size: 0.8rem;
 }
 
+/* BUTTONS & LINKS */
+
 .button {
   width: 7rem;
   height: 2.5rem;
@@ -67,8 +69,8 @@ a:link:hover, a:visted:hover {
 
 .register {
   width: 40%;
-  margin: auto;
-  padding: 1rem;
+  margin: 0;
+  padding: 0.5rem;
 }
 
 /* DASHBOARD */
@@ -77,8 +79,6 @@ a:link:hover, a:visted:hover {
   height: 91.1%;
   background: url('/images/dashBoard.png')
 }
-
-
 
 /* CLOUD */
 .cloudView {
@@ -142,7 +142,6 @@ a:link:hover, a:visted:hover {
   display: inline-block;
 }
 
-
 /* IMAGES */
 img.barplaceholder{
   max-height: 100%;
@@ -152,6 +151,16 @@ img.barplaceholder{
 img.progressplaceholder{
   max-height: 100%;
   max-width: 100%;
+}
+
+/* LOGIN */
+.login{
+  padding: 0 0 0 4px;
+  width: 45px;
+  height: 20px;
+  font-size: .8em;
+  border-radius: 0 50% 50% 0;
+  
 }
 
 .log {
@@ -183,7 +192,6 @@ img.progressplaceholder{
 /* INVITE */
 .inviteCont {
   width: 100%;
-
 }
 
 .invites {
@@ -204,6 +212,7 @@ img.progressplaceholder{
   background-color: #fff;
 }
 
+/* TOTAL PROGRESS */
 .botBar {
   margin: 0 !important;
   background-image: none;
@@ -232,3 +241,23 @@ img.progressplaceholder{
   height: 50%;
   width: 50%;
 }
+.close {
+  width: 25px;
+  height: 25px;
+  right: 0;
+  left: 90%;
+  position: fixed;
+}
+
+.whanauAvatarDiv {
+  height: 50px;
+  margin-top: 5px;
+}
+
+.radio {
+  opacity: 1 !important;
+  position: relative !important;
+  padding-left: 5%;
+  pointer-events: auto !important;
+}
+

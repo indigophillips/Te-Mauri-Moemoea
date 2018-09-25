@@ -1,5 +1,4 @@
 import React from 'react'
-
 import CloudView from './CloudView'
 import ProgressView from './ProgressView'
 
