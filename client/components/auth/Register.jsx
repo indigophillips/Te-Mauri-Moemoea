@@ -56,104 +56,110 @@ class Register extends Component {
       )
     }
     return (
-      <div className= 'register'>
-        <form>
-          <fieldset>
-          <img src="images/logo_white-01.png"></img>
-            <label htmlFor='alias'>Alias</label>
-            <input
-              type='text'
-              name='alias'
-              id='alias'
-              placeholder='Alias..'
-              onChange={this.handleChange}
-              value={this.state.Alias}
-            />
-            <label htmlFor='firstName'>First Name</label>
-            <input
-              type='text'
-              name='firstName'
-              id='firstName'
-              placeholder='firstName..'
-              onChange={this.handleChange}
-              value={this.state.firstName}
-            />
-            <label htmlFor='lastName'>LastName</label>
-            <input
-              type='text'
-              name='lastName'
-              id='lastName'
-              placeholder='lastName..'
-              onChange={this.handleChange}
-              value={this.state.lastName}
-            />
-            <label htmlFor='gender'>Gender</label>
-            <input
-              type='text'
-              name='gender'
-              id='gender'
-              placeholder='Gender..'
-              onChange={this.handleChange}
-              value={this.state.Gender}
-            />
-            <label htmlFor='age'>Age</label>
-            <input
-              type='text'
-              name='age'
-              id='age'
-              placeholder='Age..'
-              onChange={this.handleChange}
-              value={this.state.Age}
-            />
-            <label htmlFor='Alias'>Iwi</label>
-            <input
-              type='text'
-              name='iwi'
-              id='iwi'
-              placeholder='Iwi..'
-              onChange={this.handleChange}
-              value={this.state.Iwi}
-            />
-            <label htmlFor='phoneNumber'>phoneNumber</label>
-            <input
-              type='text'
-              name='phoneNumber'
-              id='phoneNumber'
-              placeholder='phoneNumber..'
-              onChange={this.handleChange}
-              value={this.state.phoneNumber}
-            />
-            
-            <label htmlFor='password'>Password</label>
-            <input type='password'
-              name='password'
-              id='password'
-              placeholder='Password..'
-              onChange={this.handleChange}
-              value={this.state.password} />
-            
-            <label htmlFor='confirmPassword'>Confirm password</label>
-            
-            <input
-              type='password'
-              name='confirm'
-              id='confirm'
-              placeholder='Confirm phoneNumber'
-              onChange={this.handleChange}
-              value={this.state.change}
-            />
-            <div class='buttonGroup'>
-            <button
-              type='button'
-              disabled={!this.state.match}
-              className='button'
-              onClick={this.handleSubmit}>Register
-            </button>
-            <Link to='/avatar' type='button' className='button cancel-button' >Cancel</Link>
+      <section class="hero">
+        <div class="hero-body">
+          <div class="container">
+            <div className= 'register'>
+              <form>
+                <fieldset>
+                <img src="images/logo_white-01.png"></img>
+                  <label htmlFor='alias'>Alias</label>
+                  <input
+                    type='text'
+                    name='alias'
+                    id='alias'
+                    placeholder='Alias..'
+                    onChange={this.handleChange}
+                    value={this.state.Alias}
+                  />
+                  <label htmlFor='firstName'>First Name</label>
+                  <input
+                    type='text'
+                    name='firstName'
+                    id='firstName'
+                    placeholder='firstName..'
+                    onChange={this.handleChange}
+                    value={this.state.firstName}
+                  />
+                  <label htmlFor='lastName'>LastName</label>
+                  <input
+                    type='text'
+                    name='lastName'
+                    id='lastName'
+                    placeholder='lastName..'
+                    onChange={this.handleChange}
+                    value={this.state.lastName}
+                  />
+                  <label htmlFor='gender'>Gender</label>
+                  <input
+                    type='text'
+                    name='gender'
+                    id='gender'
+                    placeholder='Gender..'
+                    onChange={this.handleChange}
+                    value={this.state.Gender}
+                  />
+                  <label htmlFor='age'>Age</label>
+                  <input
+                    type='text'
+                    name='age'
+                    id='age'
+                    placeholder='Age..'
+                    onChange={this.handleChange}
+                    value={this.state.Age}
+                  />
+                  <label htmlFor='Alias'>Iwi</label>
+                  <input
+                    type='text'
+                    name='iwi'
+                    id='iwi'
+                    placeholder='Iwi..'
+                    onChange={this.handleChange}
+                    value={this.state.Iwi}
+                  />
+                  <label htmlFor='phoneNumber'>phoneNumber</label>
+                  <input
+                    type='text'
+                    name='phoneNumber'
+                    id='phoneNumber'
+                    placeholder='phoneNumber..'
+                    onChange={this.handleChange}
+                    value={this.state.phoneNumber}
+                  />
+                  
+                  <label htmlFor='password'>Password</label>
+                  <input type='password'
+                    name='password'
+                    id='password'
+                    placeholder='Password..'
+                    onChange={this.handleChange}
+                    value={this.state.password} />
+                  
+                  <label htmlFor='confirmPassword'>Confirm password</label>
+                  
+                  <input
+                    type='password'
+                    name='confirm'
+                    id='confirm'
+                    placeholder='Confirm phoneNumber'
+                    onChange={this.handleChange}
+                    value={this.state.change}
+                  />
+                  <div className='buttonGroup'>
+                  <button
+                    type='button'
+                    disabled={!this.state.match}
+                    className='button'
+                    onClick={this.handleSubmit}>Register
+                  </button>
+                  <Link to='/avatar' type='button' className='button cancel-button' >Cancel</Link>
+                  </div>
+                </fieldset>
+              </form>
             </div>
-          </fieldset>
-        </form>
-      </div>
+          </div>
+        </div>
+      </section>
     )
   }
 }
