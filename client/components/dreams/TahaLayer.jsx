@@ -3,14 +3,6 @@ import React, {Component} from 'react'
 import ExpandedTaskCreator from './TaskCreators/Selected'
 import MinimisedCreator from './TaskCreators/Minified'
 
-const dummyTasks = [
-  {name: 'Do something', done: true},
-  {name: 'Do something else', done: true},
-  {name: 'Do something different', done: true},
-  {name: 'Do something great', done: true},
-  {name: 'Do something for real', done: true}
-]
-
 export class TahaLayer extends Component {
   constructor(props) {
     super(props)
@@ -35,7 +27,6 @@ export class TahaLayer extends Component {
           ? <ExpandedTaskCreator 
               taha={this.props.taha} 
               close={() => this.toggle(false)}
-              tasks={dummyTasks}
             />
           : <MinimisedCreator 
               taha={this.props.taha} 

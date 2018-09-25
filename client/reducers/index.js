@@ -7,6 +7,7 @@ import errorMessage from './errorMessage'
 import stats from './stats'
 import dreams from './dreams'
 import whanau from './whanau'
+import newDream from './newDream'
 
 export default combineReducers({
   register,
@@ -15,5 +16,6 @@ export default combineReducers({
   errorMessage,
   stats,
   dreams,
+  newDream,
   whanau
 })

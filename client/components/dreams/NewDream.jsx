@@ -4,12 +4,18 @@ import {connect} from 'react-redux'
 import TaskCreation from './TaskCreation'
 import ProgressView from '../dashboard/ProgressView';
 
+import {wipeNewDream} from '../../actions/newDream'
+
 class NewDream extends Component {
   constructor (props) {
     super(props)
     this.state = {
 
     }
+  }
+
+  componentDidMount() {
+    this.props.dispatch(wipeNewDream())
   }
 
   render () {
@@ -28,4 +34,4 @@ function mapStateToProps (state) {
   }
 }
 
-export default connect(mapStateToProps, null)(NewDream)
+export default connect(mapStateToProps)(NewDream)

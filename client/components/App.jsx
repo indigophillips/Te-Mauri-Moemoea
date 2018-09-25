@@ -19,7 +19,7 @@ const App = () => {
         <Route path='/user' component={Navbar} />
         <Route exact path='/user/:id' component={DashboardMain} />
         <Route path='/user/:id/dreams' component={InvitesAndNewDreams} />
-        <Route path='/user/:id/NewDream' component={NewDream} />
+        <Route path='/user/:id/newdream' component={NewDream} />
         <Route path='/welcome' component={Welcome} />
         <Route path='/avatar' component={Avatar} />
       </Fragment>
