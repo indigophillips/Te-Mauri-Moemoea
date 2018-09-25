@@ -141,7 +141,7 @@ class Register extends Component {
                     type='password'
                     name='confirm'
                     id='confirm'
-                    placeholder='Confirm Phone Number'
+                    placeholder='Confirm Password'
                     onChange={this.handleChange}
                     value={this.state.change}
                   />
