@@ -214,6 +214,7 @@ img.progressplaceholder{
   text-align: center;
 }
 
+<<<<<<< HEAD
 /* BALANCE CONTAINER */
 #container {
   -webkit-box-sizing: border-box;
@@ -224,3 +225,25 @@ img.progressplaceholder{
   height: 700px;
   background-color: #fff;
 }
+=======
+.close {
+  width: 25px;
+  height: 25px;
+  right: 0;
+  left: 90%;
+  position: fixed;
+}
+
+.whanauAvatarDiv {
+  height: 50px;
+  margin-top: 5px;
+}
+
+.radio {
+  opacity: 1 !important;
+  position: relative !important;
+  padding-left: 5%;
+  pointer-events: auto !important;
+}
+
+>>>>>>> 9674bf77dcd3f1707fca6277a2790c4b79bab7ec
