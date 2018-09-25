@@ -8,22 +8,36 @@ const NewDreamTitle = (props) => {
     <Fragment>
       <Link to={`/user/${id}`}><img className='close' src='./images/close.png'></img></Link>
       <label>Dream Name</label>
-      <input onClick={props.handleChange} placeholder='Dream Name'
-        value='dreamName' name='dreamName' id='dreamName'>
+      <input onClick={props.handleChange}
+        placeholder='Dream Name'
+        id='dreamName'
+        name='dreamName'
+        value={props.dreamName}
+      >
       </input>
       <label>Who can help me?</label>
-      <div className='columns'>
-        {props.whanau.map(add => (
-          <img
-            className='column whanauAvatar'
-            key={add}
-            src={add}></img>
-        ))}
-        <div className='column'>
-
+      <div className='columns is-mobile'>
+        <div className='column is-10 columns is-mobile is-multiline whanauAvatarDiv'>
+          {props.whanau.map(add => (
+            <div className='column is-2' key={add}>
+              <img
+                src={add}></img>
+            </div>
+          ))}
         </div>
-        <button className='column' onClick={props.addWhanau}>+</button>
+        <button className='column is-2' onClick={props.addWhanau}>+</button>
       </div>
+      <form className='columns is-mobile control'>
+        <label htmlFor="" className='column is-6'>
+          <input className='radio with-gap' onClick={props.handleDream} type="radio" name='personal' checked={props.personal === 'true'} id='true'/>
+        Personal Dreams
+        </label>
+        <label htmlFor="" className='column is-6'>
+          <input className='radio with-gap' onClick={props.handleDream} type="radio" name='whanau' checked={props.personal === 'false'} id='false'/>
+        Whanau Dreams
+        </label>
+        {/* <input type='radio'/> */}
+      </form>
     </Fragment>
   )
 }

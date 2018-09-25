@@ -162,7 +162,15 @@ img.progressplaceholder{
   position: fixed;
 }
 
-.whanauAvatar {
-  width: 75px;
-  height: 75px;
+.whanauAvatarDiv {
+  height: 50px;
+  margin-top: 5px;
 }
+
+.radio {
+  opacity: 1 !important;
+  position: relative !important;
+  padding-left: 5%;
+  pointer-events: auto !important;
+}
+
