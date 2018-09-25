@@ -177,6 +177,10 @@ form label{
   display: none;
 }
 
+.hero-body fieldset{
+  border: none;
+}
+
 input{
   border-radius:20px;
   border : transparent solid 1px; 
@@ -196,10 +200,6 @@ input{
 
 .buttonGroup{
   text-align: center;
-}
-
-.logo{
- 
 }
 
 #app{
