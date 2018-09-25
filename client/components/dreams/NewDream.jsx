@@ -2,18 +2,13 @@ import React, {Component, Fragment} from 'react'
 import {connect} from 'react-redux'
 
 import TaskCreation from './TaskCreation'
-import ProgressView from '../dashboard/ProgressView';
+import Balance from '../dashboard/Balance';
+
+import {sumOverDream} from '../../lib/sumTasks'
 
 import {wipeNewDream} from '../../actions/newDream'
 
 class NewDream extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-
-    }
-  }
-
   componentDidMount() {
     this.props.dispatch(wipeNewDream())
   }
@@ -22,7 +17,9 @@ class NewDream extends Component {
     return (
       <Fragment>
         <TaskCreation />
-        <ProgressView />
+        <div className='level is-mobile botBar'>
+          <Balance className='balance' data={sumOverDream(this.props.dream)}/>
+        </div>
       </Fragment>
     )
   }
@@ -30,7 +27,8 @@ class NewDream extends Component {
 
 function mapStateToProps (state) {
   return {
-    user: state.userDetails
+    user: state.userDetails,
+    dream: state.newDream
   }
 }
 
