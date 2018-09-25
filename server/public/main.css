@@ -9,7 +9,6 @@ body {
   padding: 10px;
   width: 700px;
   height: 700px;
-  background-color: #fff;
 }
 
 .navbar {
@@ -174,3 +173,37 @@ img.progressplaceholder{
   pointer-events: auto !important;
 }
 
+form label{
+  display: none;
+}
+
+input{
+  border-radius:20px;
+  border : transparent solid 1px; 
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  margin: 8px auto 0px auto;
+  display: block;
+}
+
+.button{
+  background-color: #4ca5c3;
+  color: #fff;
+  border: none;
+  margin: 10px 4px 10px 4px;
+}
+
+.buttonGroup{
+  text-align: center;
+}
+
+.logo{
+ 
+}
+
+#app{
+  background: -moz-linear-gradient(top, #3b1f59 0%, #c98963 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #3b1f59 0%,#c98963 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #3b1f59 0%,#c98963 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

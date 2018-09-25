@@ -59,7 +59,7 @@ class Register extends Component {
       <div className= 'register'>
         <form>
           <fieldset>
-            <h2>Register</h2>
+          <img src="images/logo_white-01.png"></img>
             <label htmlFor='alias'>Alias</label>
             <input
               type='text'
@@ -69,7 +69,6 @@ class Register extends Component {
               onChange={this.handleChange}
               value={this.state.Alias}
             />
-            <br />
             <label htmlFor='firstName'>First Name</label>
             <input
               type='text'
@@ -79,7 +78,6 @@ class Register extends Component {
               onChange={this.handleChange}
               value={this.state.firstName}
             />
-            <br />
             <label htmlFor='lastName'>LastName</label>
             <input
               type='text'
@@ -89,7 +87,6 @@ class Register extends Component {
               onChange={this.handleChange}
               value={this.state.lastName}
             />
-            <br />
             <label htmlFor='gender'>Gender</label>
             <input
               type='text'
@@ -99,7 +96,6 @@ class Register extends Component {
               onChange={this.handleChange}
               value={this.state.Gender}
             />
-            <br />
             <label htmlFor='age'>Age</label>
             <input
               type='text'
@@ -109,7 +105,6 @@ class Register extends Component {
               onChange={this.handleChange}
               value={this.state.Age}
             />
-            <br />
             <label htmlFor='Alias'>Iwi</label>
             <input
               type='text'
@@ -119,7 +114,6 @@ class Register extends Component {
               onChange={this.handleChange}
               value={this.state.Iwi}
             />
-            <br />
             <label htmlFor='phoneNumber'>phoneNumber</label>
             <input
               type='text'
@@ -129,7 +123,7 @@ class Register extends Component {
               onChange={this.handleChange}
               value={this.state.phoneNumber}
             />
-            <br />
+            
             <label htmlFor='password'>Password</label>
             <input type='password'
               name='password'
@@ -137,8 +131,9 @@ class Register extends Component {
               placeholder='Password..'
               onChange={this.handleChange}
               value={this.state.password} />
-            <br />
+            
             <label htmlFor='confirmPassword'>Confirm password</label>
+            
             <input
               type='password'
               name='confirm'
@@ -147,7 +142,7 @@ class Register extends Component {
               onChange={this.handleChange}
               value={this.state.change}
             />
-            <br />
+            <div class='buttonGroup'>
             <button
               type='button'
               disabled={!this.state.match}
@@ -155,6 +150,7 @@ class Register extends Component {
               onClick={this.handleSubmit}>Register
             </button>
             <Link to='/avatar' type='button' className='button cancel-button' >Cancel</Link>
+            </div>
           </fieldset>
         </form>
       </div>
