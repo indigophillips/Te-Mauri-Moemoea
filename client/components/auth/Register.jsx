@@ -56,13 +56,13 @@ class Register extends Component {
       )
     }
     return (
-      <section class="hero is-fullheight">
-        <div class="hero-body">
-          <div class="container">
+      <section className="hero is-fullheight">
+        <div className="hero-body">
+          <div className="container">
             <div className= 'register'>
               <form>
                 <fieldset>
-                <img src="images/logo_white-01.png"></img>
+                  <img src="images/logo_white-01.png"></img>
                   <label htmlFor='alias'>Alias</label>
                   <input
                     type='text'
