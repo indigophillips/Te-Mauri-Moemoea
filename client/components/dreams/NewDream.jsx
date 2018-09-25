@@ -8,7 +8,7 @@ class NewDream extends Component {
     this.state = {
       dreamName: '',
       whanau: [],
-      personal: true
+      dreamScope: ''
     }
     this.handleChange = this.handleChange.bind(this)
     this.addWhanau = this.addWhanau.bind(this)
