@@ -1,5 +1,5 @@
 import React from 'react'
-import { connect } from 'react-redux'
+import {connect} from 'react-redux'
 
 import Cloud from './Cloud'
 import {selectDream} from '../../actions/selectDream.js'
