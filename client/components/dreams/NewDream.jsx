@@ -1,5 +1,8 @@
-import React, {Component} from 'react'
+import React, {Component, Fragment} from 'react'
 import {connect} from 'react-redux'
+
+import TaskCreation from './TaskCreation'
+import ProgressView from '../dashboard/ProgressView';
 
 class NewDream extends Component {
   constructor (props) {
@@ -8,11 +11,13 @@ class NewDream extends Component {
 
     }
   }
+
   render () {
     return (
-      <div>
-        hi
-      </div>
+      <Fragment>
+        <TaskCreation />
+        <ProgressView />
+      </Fragment>
     )
   }
 }

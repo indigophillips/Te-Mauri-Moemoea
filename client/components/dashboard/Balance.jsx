@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import {BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell} from 'recharts'
 import {getStats} from '../../actions/getStats'
 
-class Balance extends React.Component {
+export class Balance extends React.Component {
   componentDidMount () {
     this.props.dispatch(getStats())
   }
