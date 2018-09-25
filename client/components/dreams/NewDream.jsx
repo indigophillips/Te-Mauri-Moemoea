@@ -25,9 +25,11 @@ class NewDream extends Component {
   addWhanau () {
     let num = Math.floor(Math.random() * 3)
     if (num < 1) { num = 1 }
-    this.setState({
-      whanau: [...this.state.whanau, `/images/avatar${num}.jpg`]
-    })
+    if (this.state.whanau.length < 7) {
+      this.setState({
+        whanau: [...this.state.whanau, `/images/avatar${num}.jpg`]
+      })
+    }
   }
 
   handleDream (e) {

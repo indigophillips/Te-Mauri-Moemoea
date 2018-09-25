@@ -17,9 +17,9 @@ const NewDreamTitle = (props) => {
       </input>
       <label>Who can help me?</label>
       <div className='columns is-mobile'>
-        <div className='column is-10 columns is-mobile is-multiline whanauAvatarDiv'>
-          {props.whanau.map(add => (
-            <div className='column is-2' key={add}>
+        <div className='column is-10 columns is-mobile whanauAvatarDiv'>
+          {props.whanau.map((add, i) => (
+            <div className='column is-2' key={i}>
               <img
                 src={add}></img>
             </div>
@@ -36,7 +36,6 @@ const NewDreamTitle = (props) => {
           <input className='radio with-gap' onClick={props.handleDream} type="radio" name='whanau' checked={props.personal === 'false'} id='false'/>
         Whanau Dreams
         </label>
-        {/* <input type='radio'/> */}
       </form>
     </Fragment>
   )
