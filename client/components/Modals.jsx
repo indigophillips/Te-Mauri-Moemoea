@@ -1,23 +1,28 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import {connect} from 'react-redux'
-import modals from '../lib./modals'
+import {modals} from '../lib/modals'
 
 const Modals = props => {
+  const id = props.id
+  let destination
+  if (props.modalId === 1) {
+    destination = `/user/${id}/onboarding`
+  } else if (props.modalId === 2) {
+    destination = `/user/${id}`
+  } else if (props.modalId === 3) {
+    destination = `user/${id}/dreams`
+  }
+
   return (
-    <div className={`modal ${this.props.open && 'is-active'}`}>
+    <div className={`modal ${props.open && 'is-active'}`}>
       <div className="modal-background"></div>
 
       <div className="modal-content">
-        {}
+        {modals[props.modalId]}
+        <Link to={destination}><button className='button'>Ok</button></Link>
       </div>
-
-      <button className="modal-close is-large" aria-label="close" onClick={this.props.close}></button>
-      <Link></Link>
     </div>
   )
 }
 
-const mapStateToProps = ({userDetails}) => ({user: userDetails})
-
-export default connect(mapStateToProps, null)(Modals)
+export default Modals

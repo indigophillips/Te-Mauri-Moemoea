@@ -1,20 +1,42 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {connect} from 'react-redux'
 
-import CloudView from './CloudView'
-import Balance from './Balance'
+import CloudView from './dashboard/CloudView'
+import Balance from './dashboard/Balance'
 import {sumOverDream} from '../lib/sumTasks'
+import Modal from './Modals'
 
-const Onboarding = (props) => {
-  return (
-    <div className='dashCont'>
-      <CloudView dreams={props.dreams}/>
-      <Balance className='balance' data={props.data}/>
-    </div>
-  )
+const minClicks = 5
+
+class Onboarding extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      dreamsClicked: 0,
+      modelTriggered: false
+    }
+    this.clickDream = this.clickDream.bind(this)
+  }
+
+  clickDream () {
+    this.setState({
+      dreamsClicked: this.state.dreamsClicked + 1,
+      modelTriggered: this.state.modelTriggered || this.state.dreamsClicked >= minClicks
+    })
+  }
+
+  render () {
+    return (
+      <div className='dashCont'>
+        <Modal open={this.state.modelTriggered} id={this.props.id} modalId={2}/>
+        <CloudView customDreamClick={this.clickDream} dreams={this.props.dreams} dashboard={false}/>
+        <Balance className='balance' data={this.props.data}/>
+      </div>
+    )
+  }
 }
 
-const mapStateToProps = ({dreams}) => {
+const mapStateToProps = ({dreams, userDetails}) => {
   const {selection} = dreams
 
   const ngaTaha = ['whānau', 'wairua', 'heningaro', 'tinana']
@@ -37,9 +59,11 @@ const mapStateToProps = ({dreams}) => {
       remaining: 2
     }))
   }
-
   return {
-    data
+    data,
+    dreams,
+    user: userDetails
   }
 }
+
 export default connect(mapStateToProps, null)(Onboarding)

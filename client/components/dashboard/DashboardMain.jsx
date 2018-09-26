@@ -7,7 +7,7 @@ import ProgressView from './ProgressView'
 const DashboardMain = (props) => {
   return (
     <div className='dashCont'>
-      <CloudView dreams={props.dreams}/>
+      <CloudView dreams={props.dreams} dashboard={true}/>
       <ProgressView />
     </div>
   )

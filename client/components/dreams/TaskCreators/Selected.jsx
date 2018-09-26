@@ -3,16 +3,8 @@ import {connect} from 'react-redux'
 
 import AddTaskModal from './AddTaskModal'
 
-const tasks = [
-  {name: 'Do something', done: true},
-  {name: 'Do something else', done: true},
-  {name: 'Do something different', done: true},
-  {name: 'Do something great', done: true},
-  {name: 'Do something for real', done: true}
-]
-
 export class Selected extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       open: false
@@ -30,8 +22,8 @@ export class Selected extends Component {
   render () {
     return (
       <Fragment>
-        <AddTaskModal 
-          open={this.state.open} 
+        <AddTaskModal
+          open={this.state.open}
           close={() => this.toggleAddTask(false)}
           taha={this.props.taha}
         />

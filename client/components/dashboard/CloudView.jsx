@@ -13,9 +13,10 @@ const CloudView = (props) => {
           key={role}
           role={role}
           dreams={props.dreams[role]}
+          customDreamClick={props.customDreamClick}
         />
       ))}
-      <NewDreamCloud />
+      {props.dashboard && <NewDreamCloud />}
     </div>
   )
 }

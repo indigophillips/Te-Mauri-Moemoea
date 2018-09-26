@@ -1,8 +1,9 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import Modal from '../Modals'
 import {login} from '../../actions/auth/login'
 import {clearError} from '../../actions'
-import {Redirect, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 class Login extends React.Component {
   constructor (props) {
@@ -40,13 +41,9 @@ class Login extends React.Component {
   }
 
   render () {
-    if (this.state.redirect) {
-      return (
-        <Redirect to={`/user/${this.state.id}/modal`} />
-      )
-    }
     return (
       <div className='login'>
+        <Modal open={this.state.redirect} id={this.state.id} modalId={1}/>
         {this.props.message && <span className='error'>
           {this.props.message}</span>}
         <form>
