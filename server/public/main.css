@@ -133,14 +133,29 @@ img.progressplaceholder{
 }
 
 /* AVATAR PAGE */
-.avatar {
-  margin: 8px auto;
-  width: 27px;
-  height: 27px;
+
+label{
+  padding-bottom: 6px;
+  color: #fff;
 }
 
-.avatarImg {
-  border-radius: 50%;
+h1{
+  color: #fff;
+  padding-bottom: 2em;
+  font-size: 1.5em;
+}
+
+.avatar-item{
+  padding: 10px;
+}
+
+.avatar-caption{
+  color: #fff;
+  text-align: center;
+}
+
+.avatar-image {
+  border-radius: 10px;
 }
 
 .whanauAvatarDiv {
