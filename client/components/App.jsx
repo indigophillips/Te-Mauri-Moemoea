@@ -5,12 +5,10 @@ import Welcome from './Welcome'
 import Register from './auth/Register'
 import Login from './auth/Login'
 import Onboarding from './Onboarding'
-import Avatar from './Avatar'
 import Navbar from './Navbar'
 import DashboardMain from './dashboard/DashboardMain'
 import InvitesAndNewDreams from './dashboard/InvitesAndNewDreams'
 import NewDream from './dreams/NewDream'
-import TotalProgress from './dashboard/TotalProgress'
 
 const App = () => {
   return (
@@ -24,7 +22,6 @@ const App = () => {
         <Route path='/user/:id/dreams' component={InvitesAndNewDreams} />
         <Route path='/user/:id/newdream' component={NewDream} />
         <Route path='/welcome' component={Welcome} />
-        <Route path='/avatar' component={Avatar} />
       </Fragment>
     </Router>
   )

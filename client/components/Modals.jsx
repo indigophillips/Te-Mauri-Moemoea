@@ -5,11 +5,13 @@ import {modals} from '../lib/modals'
 const Modals = props => {
   const id = props.id
   let destination
-  if (props.modalId === 0) {
-    destination = `/user/${id}/onboarding`
+  if (props.modalId === 0) { // continue here
+    destination = `/user/${id}/avatar`
   } else if (props.modalId === 1) {
-    destination = `/user/${id}`
+    destination = `/user/${id}/onboarding`
   } else if (props.modalId === 2) {
+    destination = `/user/${id}`
+  } else if (props.modalId === 3) {
     destination = `/user/${id}/newdream`
   }
 

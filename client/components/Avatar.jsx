@@ -1,5 +1,6 @@
 import React from 'react'
 import Select from 'react-select'
+import Modal from './Modal'
 
 const avatar = [
   {value: 'stingray', label: 'Whaitere (Stingray)'},
@@ -30,6 +31,7 @@ class Avatar extends React.Component {
         <div className="hero-body">
           <div className="container">
             <div className='avatar'>
+            <Modal open={this.state.redirect} id={this.props.user.id} modalId={1}/>
               <h1> Choose your Avatar...</h1>
               <div className='columns is-mobile is-multiline'>
                 <div className='column is-half'>
