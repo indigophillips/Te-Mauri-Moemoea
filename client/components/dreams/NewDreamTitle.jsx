@@ -6,8 +6,7 @@ const NewDreamTitle = (props) => {
   const id = props.user.id
   return (
     <Fragment>
-      <Link to={`/user/${id}`}><img className='close' src='./images/close.png'></img></Link>
-      <label>Dream Name</label>
+      <Link to={`/user/${id}`}><button class="delete is-large close"></button></Link>
       <input onClick={props.handleChange}
         placeholder='Dream Name'
         id='dreamName'

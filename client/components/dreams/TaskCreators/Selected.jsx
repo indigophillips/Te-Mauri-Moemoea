@@ -27,14 +27,21 @@ export class Selected extends Component {
           close={() => this.toggleAddTask(false)}
           taha={this.props.taha}
         />
-        <div className='level'>
-          {this.props.newDream.tasks
-            .filter(task => task.taha === this.props.taha)
-            .map((task, i) => (
-              <h6 className='subtitle' key={i}>{task.name}</h6>
-            ))}
+        <div className='columns is-mobile'>
+          <div className='column is-10 columns is-mobile is-multiline'>
+            {this.props.newDream.tasks
+              .filter(task => task.taha === this.props.taha)
+              .map((task, i) => (
+                <div class='column is-narrow'>
+                  <span key={i} class="tag">
+                    {task.name}
+                    <button class="delete is-small"></button>
+                  </span>
+                </div>
+              ))}
+          </div>
+          <button className='button column' onClick={() => this.toggleAddTask(true)}>Add Task</button>
         </div>
-        <button className='button' onClick={() => this.toggleAddTask(true)}>Add Task</button>
       </Fragment>
     )
   }
