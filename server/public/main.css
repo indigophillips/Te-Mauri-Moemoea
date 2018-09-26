@@ -36,36 +36,6 @@ h4 {
   font-size: 0.8rem;
 }
 
-/* BUTTONS & LINKS */
-
-.button {
-  width: 7rem;
-  height: 2.5rem;
-  margin: 1rem;
-  font-weight: 700;
-  border: none;
-  color: black;
-  box-shadow: 0 2px 2px 0 gray;
-}
-
-.button:hover {
-  color: gray;
-}
-
-a:link, a:visited {
-  width: 7rem;
-  height: 2.5rem;
-  margin: 1rem;
-  font-weight: 700;
-  border: none;
-  color: black;
-  box-shadow: 0 2px 2px 0 gray;
-}
-
-a:link:hover, a:visted:hover {
-  color: gray;
-}
-
 /* BALANCE */
 #container {
   -webkit-box-sizing: border-box;
@@ -182,8 +152,6 @@ img.progressplaceholder{
 /* LOGIN */
 .login{
   padding: 0 0 0 4px;
-  width: 45px;
-  height: 20px;
   font-size: .8em;
   border-radius: 0 50% 50% 0;
   
@@ -329,6 +297,8 @@ form label{
   border: none;
 }
 
+/* BUTTONS & LINKS */
+
 input{
   border-radius:20px;
   border : transparent solid 1px; 
@@ -340,9 +310,11 @@ input{
 }
 
 .button{
-  background-color: #4ca5c3;
+  background-color: #eb088a;
   color: #fff;
   border: none;
+  font-weight: bold;
+  width: 100px;
   margin: 10px 4px 10px 4px;
 }
 
