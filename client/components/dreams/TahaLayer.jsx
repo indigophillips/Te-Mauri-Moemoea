@@ -4,7 +4,7 @@ import ExpandedTaskCreator from './TaskCreators/Selected'
 import MinimisedCreator from './TaskCreators/Minified'
 
 export class TahaLayer extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
 
     this.state = {
@@ -24,14 +24,14 @@ export class TahaLayer extends Component {
     return (
       <div className='level is-mobile' >
         {(this.state.open)
-          ? <ExpandedTaskCreator 
-              taha={this.props.taha} 
-              close={() => this.toggle(false)}
-            />
-          : <MinimisedCreator 
-              taha={this.props.taha} 
-              open={() => this.toggle(true)}
-            />}
+          ? <ExpandedTaskCreator
+            taha={this.props.taha}
+            close={() => this.toggle(false)}
+          />
+          : <MinimisedCreator
+            taha={this.props.taha}
+            open={() => this.toggle(true)}
+          />}
       </div>
     )
   }

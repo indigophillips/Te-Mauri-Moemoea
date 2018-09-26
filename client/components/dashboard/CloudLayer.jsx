@@ -11,7 +11,10 @@ function CloudLayer (props) {
         <Cloud
           key={dream.id}
           dream={dream}
-          onClick={() => props.select(props.role, dream.id)}
+          onClick={() => {
+            if (props.customDreamClick) props.customDreamClick()
+            props.select(props.role, dream.id)
+          }}
         />
       ))}
     </div>

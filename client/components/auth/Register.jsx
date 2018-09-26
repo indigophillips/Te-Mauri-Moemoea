@@ -126,7 +126,7 @@ class Register extends Component {
                     onChange={this.handleChange}
                     value={this.state.phoneNumber}
                   />
-                  
+
                   <label htmlFor='password'>Password</label>
                   <input type='password'
                     name='password'
@@ -134,9 +134,9 @@ class Register extends Component {
                     placeholder='Password..'
                     onChange={this.handleChange}
                     value={this.state.password} />
-                  
+
                   <label htmlFor='confirmPassword'>Confirm password</label>
-                  
+
                   <input
                     type='password'
                     name='confirm'
@@ -146,13 +146,13 @@ class Register extends Component {
                     value={this.state.change}
                   />
                   <div className='buttonGroup'>
-                  <button
-                    type='button'
-                    disabled={!this.state.match}
-                    className='button'
-                    onClick={this.handleSubmit}>Register
-                  </button>
-                  <Link to='/avatar' type='button' className='button cancel-button' >Cancel</Link>
+                    <button
+                      type='button'
+                      disabled={!this.state.match}
+                      className='button'
+                      onClick={this.handleSubmit}>Register
+                    </button>
+                    <Link to='/avatar' type='button' className='button cancel-button' >Cancel</Link>
                   </div>
                 </fieldset>
               </form>
