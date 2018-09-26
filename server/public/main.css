@@ -40,6 +40,12 @@ body {
   max-height: 10em;
 }
 
+.bargraph-section {
+  width: 100%;
+  min-height: 10%;
+  max-height: 20%;
+}
+
 .botBar {
   margin: 0 !important;
   background-image: none;

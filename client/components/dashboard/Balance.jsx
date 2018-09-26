@@ -6,21 +6,24 @@ import {BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell} from 'r
 const Balance = props => (
   <Fragment>
     {props.data &&
-      <BarChart data={props.data} margin={{top: 0, right: 1, left: 1, bottom: 0}}>
-        <XAxis dataKey="name" fontSize='.6em' stroke='white' fontFamily="sans-serif"/>
-        <YAxis tickLine={false} stroke="#00000000" fontFamily="sans-serif"/>
-        <Tooltip />
-        <Bar dataKey="completed" stackId="a" >
-          {props.data.map((taha) => (
-            <Cell key={taha.name} fill={taha.color1} />
-          ))}
-        </Bar>
-        <Bar dataKey="remaining" stackId="a" >
-          {props.data.map((taha) => (
-            <Cell key={taha.name} fill={taha.color2} />
-          ))}
-        </Bar>
-      </BarChart>}
+      <ResponsiveContainer height='100%' width='100%'>
+        <BarChart data={props.data} margin={{top: 0, right: 1, left: 1, bottom: 0}}>
+          <XAxis dataKey="name" fontSize='.6em' stroke='white' fontFamily="sans-serif"/>
+          <YAxis tickLine={false} stroke="#00000000" fontFamily="sans-serif"/>
+          <Tooltip />
+          <Bar dataKey="completed" stackId="a" >
+            {props.data.map((taha) => (
+              <Cell key={taha.name} fill={taha.color1} />
+            ))}
+          </Bar>
+          <Bar dataKey="remaining" stackId="a" >
+            {props.data.map((taha) => (
+              <Cell key={taha.name} fill={taha.color2} />
+            ))}
+          </Bar>
+        </BarChart>
+      </ResponsiveContainer>
+    }
   </Fragment>
 )
 

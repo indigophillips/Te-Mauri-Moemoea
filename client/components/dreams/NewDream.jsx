@@ -52,16 +52,14 @@ class NewDream extends Component {
   render () {
     return (
       <Fragment>
-        <div>
-          <NewDreamTitle whanau={this.state.whanau}
-            handleChange={this.handleChange}
-            addWhanau={this.addWhanau}
-            personal={this.state.personal}
-            handleDream={this.handleDream}/>
-        </div>
+        <NewDreamTitle whanau={this.state.whanau}
+          handleChange={this.handleChange}
+          addWhanau={this.addWhanau}
+          personal={this.state.personal}
+          handleDream={this.handleDream}/>
         <TaskCreation />
-        <section className='section'>
-          <Balance className='balance' data={sumOverDream(this.props.dream)}/>
+        <section className='section bargraph-section'>
+          <Balance data={sumOverDream(this.props.dream)}/>
         </section>
       </Fragment>
     )
