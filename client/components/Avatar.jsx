@@ -1,74 +1,92 @@
-import React from 'react'
-import Select from 'react-select'
+import React, {Component} from 'react'
+import {connect} from 'react-redux'
+import Modal from './Modals'
+import {addAvatar} from '../actions/selectAvatar'
 
-const avatar = [
-  {value: 'stingray', label: 'Whaitere (Stingray)'},
-  {value: 'taniwha', label: 'Awarua (Taniwha)'},
-  {value: 'eagle', label: 'Kahu (Eagle)'},
-  {value: 'lizard', label: 'Ngarara (Lizard)'},
-  {value: 'whale', label: 'Tuhoro (Whale)'},
-  {value: 'shark', label: 'Mako (Shark)'}
-]
-
-class Avatar extends React.Component {
+class Avatar extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      selectedOption: null
+      selectedAvatar: '',
+      redirect: false
     }
-    this.handleChange = this.handleChange.bind(this)
+    this.handleClick = this.handleClick.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
-  handleChange (selected) {
-    this.setState({selectedOption: selected.value})
+  handleClick (e) {
+    this.setState({selectedAvatar: e.target.name})
+  }
+
+  handleSubmit (e) {
+    this.setState({redirect: true})
+    this.props.selectAvatar(
+      this.state.selectedAvatar || 'images/avatar1.png')
+    e.preventDefault()
   }
 
   render () {
-    const {selectedOption} = this.state
     return (
       <section className="hero is-fullheight">
         <div className="hero-body">
           <div className="container">
             <div className='avatar'>
+              <Modal open={this.state.redirect} id={this.props.user.id} modalId={1}/>
               <h1> Choose your Avatar...</h1>
               <div className='columns is-mobile is-multiline'>
                 <div className='column is-half'>
                   <div className='avatar-item'>
-                    <img className='avatar-image' src="images/avatar3.png"></img>
+                    <img onClick={this.handleClick} 
+                    className='avatar-image' src="images/avatar1.png"
+                    name='images/avatar1.png'></img>
                     <div className='avatar-caption'>Ngarara</div>
                   </div>
                 </div>
                 <div className='column is-half'>
                   <div className='avatar-item'>
-                    <img className='avatar-image' src="images/avatar4.png"></img>
+                    <img onClick={this.handleClick} 
+                    className='avatar-image' src="images/avatar2.png"
+                    name='images/avatar2.png'></img>
                     <div className='avatar-caption'>Kahu</div>
                   </div>
                 </div>
                 <div className='column is-half'>
                   <div className='avatar-item'>
-                    <img className='avatar-image' src="images/avatar5.png"></img>
+                    <img onClick={this.handleClick} 
+                    className='avatar-image' src="images/avatar3.png"
+                    name='images/avatar3.png'></img>
                     <div className='avatar-caption'>Tuhoro</div>
                   </div>
                 </div>
                 <div className='column is-half'>
                   <div className='avatar-item'>
-                    <img className='avatar-image' src="images/avatar1.png"></img>
+                    <img onClick={this.handleClick} 
+                    className='avatar-image' src="images/avatar4.png"                    
+                    name='images/avatar4.png'></img>
                     <div className='avatar-caption'>Whaitere</div>
                   </div>
                 </div>
                 <div className='column is-half'>
                   <div className='avatar-item'>
-                    <img className='avatar-image' src="images/avatar2.png"></img>
+                    <img onClick={this.handleClick} 
+                    className='avatar-image' src="images/avatar5.png"
+                    name='images/avatar5.png'></img>
                     <div className='avatar-caption'>Mako</div>
                   </div>
                 </div>
                 <div className='column is-half'>
                   <div className='avatar-item'>
-                    <img className='avatar-image' src="images/avatar6.png"></img>
+                    <img onClick={this.handleClick} 
+                    className='avatar-image' src="images/avatar6.png"
+                    name='images/avatar6.png'></img>
                     <div className='avatar-caption'>Taniwha</div>
                   </div>
                 </div>
               </div>
+                <button type='button' 
+                  className='button' 
+                  onClick={this.handleSubmit}
+                >Confirm</button>
             </div>
           </div>
         </div>
@@ -77,4 +95,16 @@ class Avatar extends React.Component {
   }
 }
 
-export default Avatar
+function mapStateToProps (state) {
+  return {
+    user: state.userDetails
+  }
+}
+
+function mapDispatchToProps (dispatch) {
+  return {
+    selectAvatar: avatar => dispatch(addAvatar(avatar))
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Avatar)
