@@ -19,7 +19,7 @@ const App = () => {
         <Route path='/register' component={Register} />
         <Route path='/login' component={Login} />
         <Route path='/user/:id/onboarding' component={Onboarding} />
-        <Route path='/user' component={Navbar} />
+        <Route exact path='/user' component={Navbar} />
         <Route exact path='/user/:id' component={DashboardMain} />
         <Route path='/user/:id/dreams' component={InvitesAndNewDreams} />
         <Route path='/user/:id/newdream' component={NewDream} />

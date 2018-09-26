@@ -25,7 +25,7 @@ const NewDreamTitle = (props) => {
             </div>
           ))}
         </div>
-        <button className='column is-2' onClick={props.addWhanau}>+</button>
+        <button class='button is-rounded column is-2' onClick={props.addWhanau}>add</button>
       </div>
       <form className='columns is-mobile control'>
         <label htmlFor="" className='column is-4'>

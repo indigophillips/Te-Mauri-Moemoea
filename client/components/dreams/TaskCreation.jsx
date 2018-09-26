@@ -9,8 +9,8 @@ import {
 const ngaTaha = [
   'whānau',
   'wairua',
-  'tinana',
-  'hinengaro'
+  'hinengaro',
+  'tinana'
 ]
 
 export const TaskCreation = props => {
