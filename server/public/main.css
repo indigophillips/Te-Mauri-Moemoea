@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-h1 {
+/* h1 {
   font-size: 3rem;
   color: #fff;
   padding-bottom: 2em;
@@ -19,7 +19,7 @@ h3 {
 
 h4 {
   font-size: 1.2rem;
-}
+} */
 
 
 /* NAV BAR */
@@ -64,7 +64,6 @@ h4 {
 /* REGISTER PAGE */
 
 .register {
-  width: 40%;
   margin: 0;
   padding: 0.5rem;
 }
@@ -173,19 +172,10 @@ img.progressplaceholder{
 }
 
 /* AVATAR PAGE */
-.avatar {
-  margin: 8px auto;
-  width: 27px;
-  height: 27px;
-}
 
 label {
   padding-bottom: 6px;
   color: #fff;
-}
-
-h1{
-  
 }
 
 .avatar-item{
@@ -322,6 +312,12 @@ input{
   text-align: center;
 }
 
+.error{
+  color:#fff;
+  text-decoration: underline;
+  text-align: center;
+  display: block;
+}
 
 /**APP GRADIENT **/
 #app{

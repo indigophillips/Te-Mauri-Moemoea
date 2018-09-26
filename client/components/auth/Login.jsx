@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {connect} from 'react-redux'
+import Modal from '../Modals'
 import {login} from '../../actions/auth/login'
 import {clearError} from '../../actions'
-import {Redirect, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
-class Login extends React.Component {
+class Login extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -40,29 +41,22 @@ class Login extends React.Component {
   }
 
   render () {
-    if (this.state.redirect) {
-      return (
-        <Redirect to={`/user/${this.state.id}`} />
-      )
-    }
     return (
       <section className="hero is-fullheight">
-        <div className="hero-body">
-          <div className="container">
+-        <div className="hero-body">
+-          <div className="container">
             <div className='login'>
-              {this.props.message && <span className='error'>
-                {this.props.message}</span>}
+              <Modal open={this.state.redirect} id={this.state.id} modalId={0}/>
               <form>
                 <fieldset>
-                  <img src="images/logo_white-01.png"></img>
+                <img src="images/logo_white-01.png"></img>
                   <label htmlFor='phoneNumber'>PhoneNumber: </label>
                   <input type='text'
                     name='phoneNumber'
                     id='phoneNumber'
-                    placeholder='Phone Number...'
+                    placeholder='Phone number...'
                     onChange={this.handleChange}
                     value={this.state.phoneNumber} />
-                  <br />
                   <label htmlFor='password'>Password: </label>
                   <input
                     type='password'
@@ -70,7 +64,8 @@ class Login extends React.Component {
                     placeholder='Password...'
                     onChange={this.handleChange}
                     value={this.state.password} />
-                  <br />
+                  {this.props.message && <span className='error'>
+                  {this.props.message}</span>}
                   <div className='buttonGroup'>
                     <button
                       type='button'

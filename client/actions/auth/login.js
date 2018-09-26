@@ -51,7 +51,7 @@ export function login (user, goUser) {
       })
       .catch(err => {
         if (err) {
-          return dispatch(showError('Username and password do not match an existing user'))
+          return dispatch(showError('Phone number or password is incorrect'))
         } else {
           return dispatch(showError('An unexpected error has occurred'))
         }

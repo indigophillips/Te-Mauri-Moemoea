@@ -23,8 +23,9 @@ const mapStateToProps = ({dreams}) => {
   let data
 
   if (selection.id) {
+    // eslint-disable-next-line
     const selectedDream = dreams[selection.type].find(dream => dream.id == selection.id)
-    
+
     data = sumOverDream(selectedDream)
   } else {
     data = ngaTaha.map((taha, i) => ({
