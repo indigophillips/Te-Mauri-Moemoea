@@ -48,19 +48,29 @@ class NewDream extends Component {
 
   render () {
     return (
-      <Fragment>
-        <div>
-          <NewDreamTitle whanau={this.state.whanau}
-            handleChange={this.handleChange}
-            addWhanau={this.addWhanau}
-            personal={this.state.personal}
-            handleDream={this.handleDream}/>
+      <section className="hero is-fullheight">
+        <div className='hero-head'>
         </div>
-        <TaskCreation />
-        <div className='level is-mobile botBar'>
-          <Balance className='balance' data={sumOverDream(this.props.dream)}/>
+        <div className="hero-body">
+          <div className="container">
+            <section class='section'>
+              <NewDreamTitle whanau={this.state.whanau}
+                handleChange={this.handleChange}
+                addWhanau={this.addWhanau}
+                personal={this.state.personal}
+                handleDream={this.handleDream}/>
+            </section>
+            <section class='section'>
+              <TaskCreation />
+            </section>
+          </div>
         </div>
-      </Fragment>
+        <div className='hero-footer'>
+          <section className='section bargraph-section'>
+            <Balance data={sumOverDream(this.props.dream)}/>
+          </section>
+        </div>
+      </section>
     )
   }
 }

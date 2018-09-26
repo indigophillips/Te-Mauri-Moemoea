@@ -7,8 +7,8 @@ import {sumOverDream} from '../../lib/sumTasks'
 function ProgressView (props) {
   return (
     <div className='level is-mobile botBar'>
-      <TotalProgress className='totProgress'/>
-      <Balance className='balance' data={props.data}/>
+      <TotalProgress />
+      <Balance data={props.data}/>
     </div>
   )
 }
