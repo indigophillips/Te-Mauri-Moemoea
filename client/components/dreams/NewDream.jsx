@@ -60,9 +60,9 @@ class NewDream extends Component {
             handleDream={this.handleDream}/>
         </div>
         <TaskCreation />
-        <div className='level is-mobile botBar'>
+        <section className='section'>
           <Balance className='balance' data={sumOverDream(this.props.dream)}/>
-        </div>
+        </section>
       </Fragment>
     )
   }
