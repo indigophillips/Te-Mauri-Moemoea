@@ -18,7 +18,9 @@ const Modals = props => {
       <div className="modal-background"></div>
 
       <div className="modal-content">
-        {modals[props.modalId]}
+        <div className="modal-text">
+          {modals[props.modalId]}
+        </div>
         <Link to={destination}><button className='button'>Ok</button></Link>
       </div>
     </div>

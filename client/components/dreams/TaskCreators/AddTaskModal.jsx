@@ -49,7 +49,6 @@ export class AddTaskModal extends Component {
                 onChange={this.handleChange}
                 value={this.state.name}
               />
-              <br/>
               <label htmlFor='description'>Description</label>
               <input
                 type='text'
