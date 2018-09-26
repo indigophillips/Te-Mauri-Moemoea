@@ -8,6 +8,7 @@ import stats from './stats'
 import dreams from './dreams'
 import whanau from './whanau'
 import newDream from './newDream'
+import avatar from './addAvatar'
 
 export default combineReducers({
   register,
@@ -17,5 +18,6 @@ export default combineReducers({
   stats,
   dreams,
   newDream,
-  whanau
+  whanau,
+  avatar
 })
