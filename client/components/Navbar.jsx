@@ -1,6 +1,7 @@
 import React from 'react'
+import {connect} from 'react-redux'
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div className='columns is-mobile navbar'>
       <div className='column'>
@@ -17,11 +18,17 @@ const Navbar = () => {
       </div>
       <div className='column'>
         <div className='avatar'>
-          <img className='avatarImg' src="./images/avatar4.png" alt=""/>
+          <img className='avatarImg' src={props.avatar} alt="broken brah"/>
         </div>
       </div>
     </div>
   )
 }
 
-export default Navbar
+function mapStateToProps (state) {
+  return {
+    avatar: state.avatar
+  }
+}
+
+export default connect(mapStateToProps, null)(Navbar)

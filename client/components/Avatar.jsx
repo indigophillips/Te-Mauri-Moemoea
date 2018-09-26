@@ -20,9 +20,8 @@ class Avatar extends Component {
 
   handleSubmit (e) {
     this.setState({redirect: true})
-    this.props.selectAvatar({
-      avatar: this.state.selectedAvatar || 'images/avatar1.png'
-    })
+    this.props.selectAvatar(
+      this.state.selectedAvatar || 'images/avatar1.png')
     e.preventDefault()
   }
 
