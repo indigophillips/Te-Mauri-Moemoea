@@ -43,8 +43,8 @@ class Login extends Component {
   render () {
     return (
       <section className="hero is-fullheight">
--        <div className="hero-body">
--          <div className="container">
+        <div className="hero-body">
+          <div className="container">
             <div className='login'>
               <Modal open={this.state.redirect} id={this.state.id} modalId={0}/>
               <form>
