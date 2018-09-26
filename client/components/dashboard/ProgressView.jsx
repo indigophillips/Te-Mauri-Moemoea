@@ -1,9 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
-
 import TotalProgress from './TotalProgress'
 import Balance from './Balance'
-
 import {sumOverDream} from '../../lib/sumTasks'
 
 function ProgressView (props) {
@@ -18,7 +16,7 @@ function ProgressView (props) {
 const mapStateToProps = ({dreams}) => {
   const {selection} = dreams
 
-  const ngaTaha = ['whānau', 'wairua', 'heningaro', 'tinana']
+  const ngaTaha = ['whānau', 'wairua', 'hinengaro', 'tinana']
   const colour1 = ['darkred', 'orangered', 'darkblue', 'darkgreen']
   const colour2 = ['red', 'orange', 'blue', 'green']
 

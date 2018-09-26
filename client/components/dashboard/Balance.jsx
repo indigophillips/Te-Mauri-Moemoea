@@ -1,5 +1,4 @@
 import React, {Fragment} from 'react'
-
 import {BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell} from 'recharts'
 
 const Balance = props => (
