@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {Component} from 'react'
 import Select from 'react-select'
-import Modal from './Modal'
+import {connect} from 'react-redux'
+import Modal from './Modals'
 
 const avatar = [
   {value: 'stingray', label: 'Whaitere (Stingray)'},
@@ -11,13 +12,13 @@ const avatar = [
   {value: 'shark', label: 'Mako (Shark)'}
 ]
 
-class Avatar extends React.Component {
+class Avatar extends Component {
   constructor (props) {
     super(props)
     this.state = {
       selectedOption: null
     }
-    this.handleChange = this.handleChange.bind(this)
+    this.handleChange = this.handleChange.bind(this) // continue here
   }
 
   handleChange (selected) {
@@ -31,7 +32,7 @@ class Avatar extends React.Component {
         <div className="hero-body">
           <div className="container">
             <div className='avatar'>
-            <Modal open={this.state.redirect} id={this.props.user.id} modalId={1}/>
+              <Modal open={this.state.redirect} id={this.props.user.id} modalId={1}/>
               <h1> Choose your Avatar...</h1>
               <div className='columns is-mobile is-multiline'>
                 <div className='column is-half'>
@@ -79,4 +80,10 @@ class Avatar extends React.Component {
   }
 }
 
-export default Avatar
+function mapStateToProps (state) {
+  return {
+    user: state.userDetails
+  }
+}
+
+export default connect(mapStateToProps, null)(Avatar)
