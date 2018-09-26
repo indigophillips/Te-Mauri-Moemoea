@@ -1,6 +1,10 @@
-import React, {Component} from 'react'
+import React from 'react'
 
 import TahaLayer from './TahaLayer'
+
+import {
+  Accordion
+} from 'react-accessible-accordion';
 
 const ngaTaha = [
   'whānau',
@@ -11,19 +15,14 @@ const ngaTaha = [
 
 export const TaskCreation = props => {
   return (
-    <section className='section'>
-      <div className='container'>
-        {ngaTaha.map(taha => {
-          return (
-            <TahaLayer
-              key={taha}
-              taha={taha}
-            />
-          )
-        })}
-      </div>
-      <div className='is-divider'></div>
-    </section>
+    <Accordion>
+      {ngaTaha.map(taha => (
+        <TahaLayer
+          key={taha}
+          taha={taha}
+        />
+      ))}
+    </Accordion>
   )
 }
 

@@ -1,7 +1,12 @@
 import React, {Component} from 'react'
 
 import ExpandedTaskCreator from './TaskCreators/Selected'
-import MinimisedCreator from './TaskCreators/Minified'
+
+import {
+  AccordionItem,
+  AccordionItemTitle,
+  AccordionItemBody
+} from 'react-accessible-accordion';
 
 export class TahaLayer extends Component {
   constructor(props) {
@@ -22,17 +27,16 @@ export class TahaLayer extends Component {
 
   render () {
     return (
-      <div className='level is-mobile' >
-        {(this.state.open)
-          ? <ExpandedTaskCreator 
-              taha={this.props.taha} 
-              close={() => this.toggle(false)}
-            />
-          : <MinimisedCreator 
-              taha={this.props.taha} 
-              open={() => this.toggle(true)}
-            />}
-      </div>
+      <AccordionItem>
+        <AccordionItemTitle>
+          <h5 className='title is-5'>{this.props.taha}</h5>
+        </AccordionItemTitle>
+        <AccordionItemBody>
+          <ExpandedTaskCreator 
+            taha={this.props.taha} 
+          />
+        </AccordionItemBody>
+      </AccordionItem>
     )
   }
 }

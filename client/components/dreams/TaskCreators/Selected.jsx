@@ -35,11 +35,6 @@ export class Selected extends Component {
           close={() => this.toggleAddTask(false)}
           taha={this.props.taha}
         />
-
-        <div className='level'>
-          <h2 className='title'>{this.props.taha}:</h2>
-        </div>
-
         <div className='level'>
           {this.props.newDream.tasks
             .filter(task => task.taha === this.props.taha)
@@ -47,8 +42,6 @@ export class Selected extends Component {
               <h6 className='subtitle' key={i}>{task.name}</h6>
             ))}
         </div>
-
-        <button className='button' onClick={this.props.close}>Done</button>
         <button className='button' onClick={() => this.toggleAddTask(true)}>Add Task</button>
       </Fragment>
     )
