@@ -1,8 +1,6 @@
 import React from 'react'
 import {BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell} from 'recharts'
 
-{/* <ResponsiveContainer width='100%' height='100%'>
-        </ResponsiveContainer> */}
 const Balance = props => (
     <div className='balance'>
       {props.data &&
