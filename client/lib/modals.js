@@ -1,7 +1,10 @@
 export const modals = [
   [
+    'Select your avatar'
+  ], // login to avatar
+  [
     'Welcome to the dream selection. Here you will find pre-made dreams to get you started. Later on, you will be able to define your own dreams from scratch. Select dreams that you find attractive.'
-  ], // login to onboarding modal
+  ], // avatar to onboarding modal
   [
     'Here is your dashboard, which contains your own personal dreams, whānau dreams, public dreams and dreams which you are contributing to.'
   ], // onaboarding to dashboard modal

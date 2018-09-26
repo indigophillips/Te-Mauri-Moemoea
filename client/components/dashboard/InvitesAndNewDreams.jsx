@@ -25,7 +25,7 @@ class InvitesAndNewDreams extends Component {
       return (
         <Fragment>
           <div className='newDreamBtn'>
-            <Modal open={this.state.modalOpen} id={id} modalId={2}/>
+            <Modal open={this.state.modalOpen} id={id} modalId={3}/>
             <button type='button' onClick={this.switchFlicker}>Add Dream</button>
           </div>
           <div className='inviteCont'>
