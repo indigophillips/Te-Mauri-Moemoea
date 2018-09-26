@@ -18,10 +18,10 @@ class Avatar extends Component {
     this.setState({selectedAvatar: e.target.name})
   }
 
-  handleSubmit () {
+  handleSubmit (e) {
     this.setState({redirect: true})
-    this.props.avatarSelect({
-      avatar: this.state.selectedAvater || 'images/avatar1.png'
+    this.props.selectAvatar({
+      avatar: this.state.selectedAvatar || 'images/avatar1.png'
     })
     e.preventDefault()
   }
@@ -102,7 +102,7 @@ function mapStateToProps (state) {
   }
 }
 
-function mapDispatchToProps () {
+function mapDispatchToProps (dispatch) {
   return {
     selectAvatar: avatar => dispatch(addAvatar(avatar))
   }
