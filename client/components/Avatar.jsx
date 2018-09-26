@@ -37,37 +37,37 @@ class Avatar extends Component {
               <div className='columns is-mobile is-multiline'>
                 <div className='column is-half'>
                   <div className='avatar-item'>
-                    <img className='avatar-image' src="images/Lizard.jpg"></img>
+                    <img className='avatar-image' src="images/avatar3.png"></img>
                     <div className='avatar-caption'>Ngarara</div>
                   </div>
                 </div>
                 <div className='column is-half'>
                   <div className='avatar-item'>
-                    <img className='avatar-image' src="images/Eagle.png"></img>
+                    <img className='avatar-image' src="images/avatar4.png"></img>
                     <div className='avatar-caption'>Kahu</div>
                   </div>
                 </div>
                 <div className='column is-half'>
                   <div className='avatar-item'>
-                    <img className='avatar-image' src="images/whale.png"></img>
+                    <img className='avatar-image' src="images/avatar5.png"></img>
                     <div className='avatar-caption'>Tuhoro</div>
                   </div>
                 </div>
                 <div className='column is-half'>
                   <div className='avatar-item'>
-                    <img className='avatar-image' src="images/Stingray.jpg"></img>
+                    <img className='avatar-image' src="images/avatar1.png"></img>
                     <div className='avatar-caption'>Whaitere</div>
                   </div>
                 </div>
                 <div className='column is-half'>
                   <div className='avatar-item'>
-                    <img className='avatar-image' src="images/Mako.jpg"></img>
+                    <img className='avatar-image' src="images/avatar2.png"></img>
                     <div className='avatar-caption'>Mako</div>
                   </div>
                 </div>
                 <div className='column is-half'>
                   <div className='avatar-item'>
-                    <img className='avatar-image' src="images/taniwha.jpg"></img>
+                    <img className='avatar-image' src="images/avatar6.png"></img>
                     <div className='avatar-caption'>Taniwha</div>
                   </div>
                 </div>

@@ -72,7 +72,7 @@ class Login extends Component {
                       className='button'
                       onClick={this.handleSubmit}>Login
                     </button>
-                    <Link to='/' type='button' className='button cancel-button' >Cancel</Link>
+                    <Link to='/register' type='button' className='button cancel-button' >Sign Up</Link>
                   </div>
                 </fieldset>
               </form>
