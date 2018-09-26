@@ -1,23 +1,40 @@
-import React, {Fragment} from 'react'
-import {Link} from 'react-router-dom'
+import React, {Fragment, Component} from 'react'
 import {connect} from 'react-redux'
+import Modal from '../Modals'
 
-const InvitesAndNewDreams = (props) => {
-  if (!props.user) {
-    return ('Error')
-  } else {
-    let id = props.user.id
-    return (
-      <Fragment>
-        <div className='newDreamBtn'>
-          <Link to={`/user/${id}/newdream`}>Add Dream</Link>
-        </div>
-        <div className='inviteCont'>
-          <p className='invites'>Invite 1</p>
-          <p className='invites'>Invite 2</p>
-        </div>
-      </Fragment>
-    )
+class InvitesAndNewDreams extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      modalOpen: false
+    }
+    this.switchFlicker = this.switchFlicker.bind(this)
+  }
+
+  switchFlicker () {
+    this.setState({
+      modalOpen: true
+    })
+  }
+
+  render () {
+    if (!this.props.user) {
+      return ('Error')
+    } else {
+      let id = this.props.user.id
+      return (
+        <Fragment>
+          <div className='newDreamBtn'>
+            <Modal open={this.state.modalOpen} id={id} modalId={2}/>
+            <button type='button' onClick={this.switchFlicker}>Add Dream</button>
+          </div>
+          <div className='inviteCont'>
+            <p className='invites'>Invite 1</p>
+            <p className='invites'>Invite 2</p>
+          </div>
+        </Fragment>
+      )
+    }
   }
 }
 

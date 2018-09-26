@@ -43,7 +43,7 @@ class Login extends React.Component {
   render () {
     return (
       <div className='login'>
-        <Modal open={this.state.redirect} id={this.state.id} modalId={1}/>
+        <Modal open={this.state.redirect} id={this.state.id} modalId={0}/>
         {this.props.message && <span className='error'>
           {this.props.message}</span>}
         <form>

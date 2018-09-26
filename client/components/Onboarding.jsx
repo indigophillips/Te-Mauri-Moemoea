@@ -28,7 +28,7 @@ class Onboarding extends Component {
   render () {
     return (
       <div className='dashCont'>
-        <Modal open={this.state.modelTriggered} id={this.props.id} modalId={2}/>
+        <Modal open={this.state.modelTriggered} id={this.props.id} modalId={1}/>
         <CloudView customDreamClick={this.clickDream} dreams={this.props.dreams} dashboard={false}/>
         <Balance className='balance' data={this.props.data}/>
       </div>
