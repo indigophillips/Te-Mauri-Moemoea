@@ -22,6 +22,7 @@ export const TaskCreation = props => {
           )
         })}
       </div>
+      <div className='is-divider'></div>
     </section>
   )
 }

@@ -7,7 +7,7 @@ export function sumOverDream (dream) {
     let datum = {
       name: taha,
       color1: colour1[i],
-      color2: colour2[i],
+      color2: colour2[i]
     }
 
     const allTasks = dream.tasks.filter(task => (task.taha === taha))

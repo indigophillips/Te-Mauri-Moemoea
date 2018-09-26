@@ -1,11 +1,11 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Modal from '../Modals'
 import {login} from '../../actions/auth/login'
 import {clearError} from '../../actions'
 import {Link} from 'react-router-dom'
 
-class Login extends React.Component {
+class Login extends Component {
   constructor (props) {
     super(props)
     this.state = {

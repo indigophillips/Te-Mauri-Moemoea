@@ -17,12 +17,11 @@ export default function newDreamReducer (state = freshDream, action) {
     case WIPE_NEW_DREAM:
       return freshDream
     case ADD_TASK:
-      const newState = Object.assign(
+      return Object.assign(
         {},
         state,
         {tasks: [...state.tasks, action.payload]}
       )
-      return newState
     default:
       return state
   }
