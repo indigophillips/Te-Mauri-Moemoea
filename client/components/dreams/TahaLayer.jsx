@@ -9,7 +9,7 @@ import {
 } from 'react-accessible-accordion';
 
 export class TahaLayer extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
 
     this.state = {

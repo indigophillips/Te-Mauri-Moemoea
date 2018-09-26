@@ -1,15 +1,18 @@
 import React from 'react'
+import {connect} from 'react-redux'
 
 import CloudView from './CloudView'
 import ProgressView from './ProgressView'
 
-const DashboardMain = () => {
+const DashboardMain = (props) => {
   return (
     <div className='dashCont'>
-      <CloudView />
+      <CloudView dreams={props.dreams} dashboard={true}/>
       <ProgressView />
     </div>
   )
 }
 
-export default DashboardMain
+const mapStateToProps = ({dreams}) => ({dreams})
+
+export default connect(mapStateToProps)(DashboardMain)

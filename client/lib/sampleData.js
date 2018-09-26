@@ -2,10 +2,10 @@ export const user = {
   id: 1,
   gender: 'female',
   iwi: 'Ngāti Tūwharetoa',
-  kaitiaki:	'kahu',
-  email:	'georgie1002y@gmail.com',
-  first_name:	'Georgina',
-  last_name:	'Mikaere'
+  kaitiaki: 'kahu',
+  email: 'georgie1002y@gmail.com',
+  first_name: 'Georgina',
+  last_name: 'Mikaere'
 }
 
 export const personalDreams = [
@@ -34,7 +34,7 @@ export const personalDreams = [
         taha: 'whānau',
         done: false,
         due_date: 'none'
-      }        
+      }
     ]
   },
   {
@@ -55,7 +55,7 @@ export const personalDreams = [
         taha: 'hinengaro',
         done: false,
         due_date: 'none'
-      },      
+      },
       {
         name: 'Speak to Dad',
         description: 'Talk to Dad to see if there are any part time jobs at his work',
@@ -75,22 +75,22 @@ export const personalDreams = [
         description: 'Go for a run for 30 minutes a day for 1 week',
         taha: 'tinana',
         done: false,
-        due_date: '10/10/2018'        
+        due_date: '10/10/2018'
       },
       {
         name: 'Disconnect',
         description: 'Turn off my phone and other devices 1 hour before bed to get a good sleep for 1 week',
         taha: 'hinengaro',
         done: false,
-        due_date: '10/10/2018'            
+        due_date: '10/10/2018'
       },
       {
         name: 'Meditate',
         description: 'Meditate for 10 minutes a day to de-stress for 1 week',
         taha: 'wairua',
         done: false,
-        due_date: '10/10/2018'            
-      }  
+        due_date: '10/10/2018'
+      }
     ]
   }
 ]
@@ -104,21 +104,21 @@ export const whanauDreams = [
     tasks: [
       {
         name: 'Pick a date',
-        taha:'whānau',
+        taha: 'whānau',
         description: 'Choose a date which suits everyone',
         done: false,
         due_date: '1/11/2018'
       },
       {
         name: 'Passports',
-        taha:'whānau',
+        taha: 'whānau',
         description: 'Ensure everyones passports are current',
         done: false,
         due_date: 'none'
       },
       {
         name: 'Accomodation',
-        taha:'whānau',
+        taha: 'whānau',
         description: 'Book suitable accomodation',
         done: false,
         due_date: 'none'
@@ -136,7 +136,7 @@ export const contributorDreams = [
     tasks: [
       {
         name: 'Painting the mural',
-        taha:'whānau',
+        taha: 'whānau',
         description: 'Contribute to the painting of the school mural',
         done: false,
         due_date: '23/12/2018'
@@ -149,13 +149,13 @@ export const publicDreams = [
   {
     id: 6,
     name: 'Build a Computer',
-    description: 'I would like to know how to build a computer',
+    description: 'I would like to know how to build a computer'
   },
   {
     id: 7,
     name: 'Improve my maths abilities',
-    description: 'I would like to pair up with someone to become better at maths',
-  }  
+    description: 'I would like to pair up with someone to become better at maths'
+  }
 ]
 
 export const whanau = [
@@ -169,7 +169,7 @@ export const whanau = [
     ]
   }
 ]
-
+// eslint-disable-next-line
 export const whanau_members = [
   {
     id: 2,

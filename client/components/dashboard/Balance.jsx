@@ -1,5 +1,4 @@
 import React, {Fragment} from 'react'
-
 import {BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell} from 'recharts'
 
 {/* <ResponsiveContainer width='100%' height='100%'> */}
