@@ -2,9 +2,8 @@ import React from 'react'
 import CloudLayer from './CloudLayer'
 import NewDreamCloud from './NewDreamCloud'
 
-import {connect} from 'react-redux'
-
 const CloudView = (props) => {
+  // eslint-disable-next-line
   const roles = Object.keys(props.dreams).filter(role => role != 'selection')
 
   return (
@@ -21,6 +20,4 @@ const CloudView = (props) => {
   )
 }
 
-const mapStateToProps = ({dreams}) => ({dreams})
-
-export default connect(mapStateToProps)(CloudView)
+export default CloudView

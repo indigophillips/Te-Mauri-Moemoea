@@ -1,9 +1,9 @@
 import {SELECT_DREAM} from '../actions/selectDream'
 
 import {
-  personalDreams, 
-  whanauDreams, 
-  contributorDreams, 
+  personalDreams,
+  whanauDreams,
+  contributorDreams,
   publicDreams
 } from '../lib/sampleData'
 

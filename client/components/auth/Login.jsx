@@ -42,7 +42,7 @@ class Login extends React.Component {
   render () {
     if (this.state.redirect) {
       return (
-        <Redirect to={`/user/${this.state.id}`} />
+        <Redirect to={`/user/${this.state.id}/modal`} />
       )
     }
     return (

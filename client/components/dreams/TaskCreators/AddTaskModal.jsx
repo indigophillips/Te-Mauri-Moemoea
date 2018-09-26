@@ -5,7 +5,7 @@ import {connect} from 'react-redux'
 import {addTaskToDream} from '../../../actions/newDream'
 
 export class AddTaskModal extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       name: '',
@@ -32,7 +32,7 @@ export class AddTaskModal extends Component {
     this.props.close()
   }
 
-  render() {
+  render () {
     return (
       <div className={`modal ${this.props.open && 'is-active'}`}>
         <div className="modal-background"></div>

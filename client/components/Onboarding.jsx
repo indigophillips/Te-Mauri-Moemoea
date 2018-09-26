@@ -1,15 +1,14 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import TotalProgress from './TotalProgress'
+import CloudView from './CloudView'
 import Balance from './Balance'
+import {sumOverDream} from '../lib/sumTasks'
 
-import {sumOverDream} from '../../lib/sumTasks'
-
-function ProgressView (props) {
+const Onboarding = (props) => {
   return (
-    <div className='level is-mobile botBar'>
-      <TotalProgress className='totProgress'/>
+    <div className='dashCont'>
+      <CloudView dreams={props.dreams}/>
       <Balance className='balance' data={props.data}/>
     </div>
   )
@@ -43,5 +42,4 @@ const mapStateToProps = ({dreams}) => {
     data
   }
 }
-
-export default connect(mapStateToProps)(ProgressView)
+export default connect(mapStateToProps, null)(Onboarding)
