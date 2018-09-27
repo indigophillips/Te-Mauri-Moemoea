@@ -39,7 +39,7 @@ class Avatar extends Component {
                     <img onClick={this.handleClick} 
                     className='avatar-image' src="images/avatar1.png"
                     name='images/avatar1.png'></img>
-                    <div className='avatar-caption'>Ngarara</div>
+                    <div className='avatar-caption'>Whaitere</div>
                   </div>
                 </div>
                 <div className='column is-half'>
@@ -47,7 +47,7 @@ class Avatar extends Component {
                     <img onClick={this.handleClick} 
                     className='avatar-image' src="images/avatar2.png"
                     name='images/avatar2.png'></img>
-                    <div className='avatar-caption'>Kahu</div>
+                    <div className='avatar-caption'>Mako</div>
                   </div>
                 </div>
                 <div className='column is-half'>
@@ -55,7 +55,7 @@ class Avatar extends Component {
                     <img onClick={this.handleClick} 
                     className='avatar-image' src="images/avatar3.png"
                     name='images/avatar3.png'></img>
-                    <div className='avatar-caption'>Tuhoro</div>
+                    <div className='avatar-caption'>Ngarara</div>
                   </div>
                 </div>
                 <div className='column is-half'>
@@ -63,7 +63,7 @@ class Avatar extends Component {
                     <img onClick={this.handleClick} 
                     className='avatar-image' src="images/avatar4.png"                    
                     name='images/avatar4.png'></img>
-                    <div className='avatar-caption'>Whaitere</div>
+                    <div className='avatar-caption'>Kahu</div>
                   </div>
                 </div>
                 <div className='column is-half'>
@@ -71,7 +71,7 @@ class Avatar extends Component {
                     <img onClick={this.handleClick} 
                     className='avatar-image' src="images/avatar5.png"
                     name='images/avatar5.png'></img>
-                    <div className='avatar-caption'>Mako</div>
+                    <div className='avatar-caption'>Tuhoro</div>
                   </div>
                 </div>
                 <div className='column is-half'>
