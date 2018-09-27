@@ -32,7 +32,7 @@ class NewDream extends Component {
     if (num < 1) { num = 1 }
     if (this.state.whanau.length < 7) {
       this.setState({
-        whanau: [...this.state.whanau, `/images/avatar${num}.jpg`]
+        whanau: [...this.state.whanau, `/images/avatar${num}.png`]
       })
     }
   }
@@ -44,10 +44,11 @@ class NewDream extends Component {
   }
 
   handleSubmit () {
+    const scopes = Object.keys(this.props.dreams).filter(entry => entry != 'selection')
     this.props.submitDream({
-      id: this.props.dreams.length,
+      id: scopes.reduce((total, dreamArr) => total + this.props.dreams[dreamArr].length, 0),
       name: this.state.dreamName,
-      scope: this.state.scope,
+      scope: this.state.dreamScope,
       tasks: this.props.dream.tasks
     })
     this.props.wipeNewDream()
