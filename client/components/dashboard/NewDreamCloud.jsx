@@ -8,11 +8,8 @@ const NewDreamCloud = (props) => {
     let id = props.user.id
     return (
       <div className='newDreamCont'>
-          <img onClick={props.switchFlicker}
-            className='newDream' src='./images/clouds/cloud1.png'/>
-          <div className='newDreamTxt'>
-            Add new Dream
-          </div>
+        <img onClick={props.switchFlicker}
+          className='newDream' src='./images/clouds/koru_cloud.png'/>
       </div>
     )
   }
