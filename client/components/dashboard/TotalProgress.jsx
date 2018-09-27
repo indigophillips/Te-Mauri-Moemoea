@@ -37,14 +37,14 @@ class TotalProgress extends React.Component {
       styles={{ 
         
         path: {
-        stroke: 'green',
+        stroke: '#4c044c',
         strokeWidth:'4px',
         strokeLinecap: 'butt',
         transition: 'stroke-dashoffset 0.18s ease 0s'
         },
 
         trail: {
-        stroke: 'lightgreen',
+        stroke: '#8c198c',
         strokeWidth:'4px',
         circlesize: '20%',
         progress: '100%'
@@ -53,7 +53,7 @@ class TotalProgress extends React.Component {
         text: {
         displayTextWhenDone: true,
         donetext:'Success!',
-        fill: 'green',
+        fill: '#4c044c',
         fontSize: '10px',
         isundeterminated: true,        
         }
