@@ -44,7 +44,7 @@ export class AddTaskModal extends Component {
         <div className="modal-content">
           <form>
             <fieldset>
-              <h2 className='title is-2'>New Taha</h2>
+              <h2 className='title is-2'>New Task</h2>
               <label htmlFor='name'>Name</label>
               <input
                 type='text'
