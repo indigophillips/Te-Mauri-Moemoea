@@ -50,7 +50,7 @@ class Login extends Component {
               <form>
                 <fieldset>
                   <img src="images/logo_white-01.png"></img>
-                  <label htmlFor='phoneNumber'>PhoneNumber: </label>
+                  <label htmlFor='phoneNumber'>Phone Number: </label>
                   <input type='text'
                     name='phoneNumber'
                     id='phoneNumber'
