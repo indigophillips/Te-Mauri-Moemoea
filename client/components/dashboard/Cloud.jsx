@@ -11,7 +11,7 @@ class Cloud extends Component {
 
   render () {
     return (
-      <div className='cloud level-item' onClick={this.props.onClick}>
+      <div className='cloud column is-4' onClick={this.props.onClick}>
         <img src={`./images/clouds/cloud${Math.floor(Math.random()*6 + 1)}.png`}/>
         <div className='cloudtext'>
           {this.props.dream.name}
