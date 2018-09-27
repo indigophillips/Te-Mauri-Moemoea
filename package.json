@@ -1,5 +1,5 @@
 {
-  "name": "Te-Tihi",
+  "name": "te-tihi",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/tetihi/Te-Tihi.git",
@@ -10,7 +10,11 @@
     "build": "webpack --config ./client/webpack.config.js",
     "dev": "nodemon server & yarn build --watch",
     "test": "jest --watchAll",
-    "postinstall": "yarn build"
+    "postinstall": "yarn build",
+    "knex": "knex"
+  },
+  "jest": {
+    "collectCoverage": true
   },
   "babel": {
     "presets": [
@@ -23,12 +27,34 @@
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "bulma": "^0.7.1",
+    "bulma-divider": "^2.0.1",
+    "css-loader": "^1.0.0",
+    "dotenv": "^6.0.0",
+    "eslint": "^5.6.0",
     "express": "^4.16.3",
+    "express-jwt": "^5.3.1",
     "jest": "^23.6.0",
+    "jsonwebtoken": "^8.3.0",
+    "jwt-decode": "^2.2.0",
     "knex": "^0.15.2",
+    "node-sass": "^4.9.3",
     "react": "^16.5.2",
+    "react-accessible-accordion": "^2.4.4",
+    "react-circular-progressbar": "^1.0.0",
     "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
+    "react-select": "^2.0.0",
+    "recharts": "^1.2.0",
+    "redux": "^4.0.0",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^7.1.0",
+    "sodium": "^2.0.3",
+    "sqlite3": "^4.0.2",
+    "style-loader": "^0.23.0",
+    "superagent": "^4.0.0-beta.5",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0"
   },
