@@ -18,8 +18,7 @@ class TotalProgress extends React.Component {
       this.setState({
         currentBalance: 0,
         completedBalance: prevProps.randomNum
-      })
-      this.updateBalance()
+      }, this.updateBalance)
     }
   }
 
