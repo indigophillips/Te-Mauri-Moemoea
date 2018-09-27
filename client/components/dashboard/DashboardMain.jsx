@@ -23,16 +23,26 @@ class DashboardMain extends Component {
   render () {
     let id = this.props.user.id
     return (
-      <div className='appContainer'>
-      <Modal open={this.state.modalOpen} id={id} modalId={3}/>
-        <Navbar />
-        <div className='dashCont'>
-          <CloudView switchFlicker={this.switchFlicker}
-            dreams={this.props.dreams}
-            dashboard={true}/>
-          <ProgressView />
+      <section className="hero is-fullheight">
+        <div className='hero-head'>
+          <Navbar />
         </div>
-      </div>
+        <div className="hero-body">
+          <div className="container">
+            <Modal open={this.state.modalOpen} id={id} modalId={3}/>
+            <div className='dashCont'>
+              <CloudView switchFlicker={this.switchFlicker}
+                dreams={this.props.dreams}
+                dashboard={true}/>
+            </div>
+          </div>
+        </div>
+        <div className='hero-footer'>
+          <section className='section bargraph-section'>
+              <ProgressView />
+          </section>
+        </div>
+      </section>
     )
   }
 }
