@@ -7,13 +7,24 @@ import Navbar from '../Navbar'
 
 const DashboardMain = (props) => {
   return (
-    <div className='appContainer'>
+    <section className="hero is-fullheight">
+    <div className='hero-head'>
       <Navbar />
-      <div className='dashCont'>
-        <CloudView dreams={props.dreams} dashboard={true}/>
-        <ProgressView />
+    </div>
+    <div className="hero-body">
+      <div className="container">
+        <section className='dashCont'>
+          <CloudView dreams={props.dreams} dashboard={true}/>
+          <ProgressView />
+        </section>
       </div>
     </div>
+    <div className='hero-footer'>
+      <section className='section bargraph-section'>
+        <Balance data={sumOverDream(this.props.dream)}/>
+      </section>
+    </div>
+  </section>
   )
 }
 
