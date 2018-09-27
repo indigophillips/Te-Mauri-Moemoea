@@ -6,7 +6,7 @@ import {selectDream} from '../../actions/selectDream.js'
 
 function CloudLayer (props) {
   return (
-    <div className='level cloudLayer is-mobile'>
+    <div className='columns is-centered cloudLayer is-mobile is-multiline'>
       {props.dreams.map(dream => (
         <Cloud
           key={dream.id}

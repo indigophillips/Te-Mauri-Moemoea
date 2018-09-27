@@ -29,7 +29,6 @@ class TotalProgress extends React.Component {
 
   render () {
     return (
-      <div className='circularProgressbar'>
       <CircularProgressbar
       percentage={this.state.currentBalance * 100.0 / this.state.totalBalance}
       text={this.state.currentBalance * 100.0 / this.state.totalBalance + "%"}
@@ -60,7 +59,6 @@ class TotalProgress extends React.Component {
         }
       }}
     />
-    </div> 
     )
   }
 }

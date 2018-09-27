@@ -80,7 +80,11 @@ class NewDream extends Component {
                   dreamScope={this.state.dreamScope}
                   handleDream={this.handleDream}/>
               <TaskCreation />
-              <button type='button' onClick={this.handleSubmit}>Submit Dream</button>
+              <div className='columns is-centered is-mobile'>
+                <div className='column is-4 has-text-centered'>
+                  <button type='button' className='button' onClick={this.handleSubmit}>Submit</button>
+                </div>
+              </div>
             </div>
           <div className='hero-footer'>
             <section className='section bargraph-section'>
