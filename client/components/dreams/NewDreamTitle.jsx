@@ -15,6 +15,17 @@ const NewDreamTitle = (props) => {
         value={props.dreamName}
       >
       </input>
+      <label>Who can help me?</label>
+      <div className='columns is-mobile'>
+        <div className='column is-10 columns is-mobile whanauAvatarDiv'>
+          {props.whanau.map((add, i) => (
+            (i < 4 && (<div className='column is-3' key={i}>
+              <img src='/images/contributor.png'></img>
+            </div>))
+          ))}
+        </div>
+        <button className='button' onClick={props.addWhanau}>add</button>
+      </div>
       <form className='columns is-mobile control'>
         <div className='column is-4'>
           <input className='radio with-gap' onClick={props.handleDream} type="radio" name='personal' checked={props.dreamScope === 'personal'} id='personal'/>
@@ -36,16 +47,3 @@ const NewDreamTitle = (props) => {
 const mapStateToProps = ({userDetails}) => ({user: userDetails})
 
 export default connect(mapStateToProps, null)(NewDreamTitle)
-
-// <label>Who can help me?</label>
-// <div className='columns is-mobile'>
-//   <div className='column is-10 columns is-mobile whanauAvatarDiv'>
-//     {props.whanau.map((add, i) => (
-//       <div className='column is-2' key={i}>
-//         <img
-//           src={add}></img>
-//       </div>
-//     ))}
-//   </div>
-//   <button className='button' onClick={props.addWhanau}>add</button>
-// </div>
