@@ -19,7 +19,7 @@ const App = () => {
         <Route path='/user/:id/onboarding' component={Onboarding} />
         <Route exact path='/user/:id' component={DashboardMain} />
         <Route path='/user/:id/newdream' component={NewDream} />
-        <Route path='/welcome' component={Welcome} />
+        <Route exact path='/' component={Welcome} />
       </Fragment>
     </Router>
   )
