@@ -3,12 +3,16 @@ import {connect} from 'react-redux'
 
 import CloudView from './CloudView'
 import ProgressView from './ProgressView'
+import Navbar from '../Navbar'
 
 const DashboardMain = (props) => {
   return (
-    <div className='dashCont'>
-      <CloudView dreams={props.dreams} dashboard={true}/>
-      <ProgressView />
+    <div className='appContainer'>
+      <Navbar />
+      <div className='dashCont'>
+        <CloudView dreams={props.dreams} dashboard={true}/>
+        <ProgressView />
+      </div>
     </div>
   )
 }
