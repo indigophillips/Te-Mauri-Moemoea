@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
+import {Redirect} from 'react-router-dom'
 import NewDreamTitle from './NewDreamTitle'
 import TaskCreation from './TaskCreation'
 import Balance from '../dashboard/Balance'
@@ -12,12 +13,14 @@ class NewDream extends Component {
     this.state = {
       dreamName: '',
       whanau: [],
-      dreamScope: ''
+      dreamScope: '',
+      redirect: false
     }
     this.handleChange = this.handleChange.bind(this)
     this.addWhanau = this.addWhanau.bind(this)
     this.handleDream = this.handleDream.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleRedirect = this.handleRedirect.bind(this)
   }
 
   handleChange (e) {
@@ -43,7 +46,14 @@ class NewDream extends Component {
     })
   }
 
+  handleRedirect (boo) {
+    this.setState({
+      redirect: boo
+    })
+  }
+
   handleSubmit () {
+    this.handleRedirect(true)
     const scopes = Object.keys(this.props.dreams).filter(entry => entry != 'selection')
     this.props.submitDream({
       id: scopes.reduce((total, dreamArr) => total + this.props.dreams[dreamArr].length, 0),
@@ -56,32 +66,38 @@ class NewDream extends Component {
 
 
   render () {
-    return (
-      <section className="hero is-fullheight">
-        <div className='hero-head'>
-        </div>
-        <div className="hero-body">
-          <div className="container">
-            <section class='section'>
-              <NewDreamTitle whanau={this.state.whanau}
-                handleChange={this.handleChange}
-                addWhanau={this.addWhanau}
-                dreamScope={this.state.dreamScope}
-                handleDream={this.handleDream}/>
-            </section>
-            <section class='section'>
-              <TaskCreation />
+    if (this.state.redirect) {
+      let id = this.props.user.id
+      this.handleRedirect(false)
+      return <Redirect to={`/user/${id}`} />
+    } else {
+      return (
+        <section className="hero is-fullheight">
+          <div className='hero-head'>
+          </div>
+          <div className="hero-body">
+            <div className="container">
+              <section class='section'>
+                <NewDreamTitle whanau={this.state.whanau}
+                  handleChange={this.handleChange}
+                  addWhanau={this.addWhanau}
+                  dreamScope={this.state.dreamScope}
+                  handleDream={this.handleDream}/>
+              </section>
+              <section class='section'>
+                <TaskCreation />
+              </section>
+            </div>
+            <button type='button' onClick={this.handleSubmit}>Submit Dream</button>
+          </div>
+          <div className='hero-footer'>
+            <section className='section bargraph-section'>
+              <Balance data={sumOverDream(this.props.dream)}/>
             </section>
           </div>
-          <button type='button' onClick={this.handleSubmit}>Submit Dream</button>
-        </div>
-        <div className='hero-footer'>
-          <section className='section bargraph-section'>
-            <Balance data={sumOverDream(this.props.dream)}/>
-          </section>
-        </div>
-      </section>
-    )
+        </section>
+      )
+    }
   }
 }
 
