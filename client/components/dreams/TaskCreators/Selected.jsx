@@ -29,7 +29,7 @@ export class Selected extends Component {
         />
         <div className='columns is-mobile'>
           <div className='column is-12 columns is-mobile is-multiline'>
-          <button className='button' onClick={() => this.toggleAddTask(true)}>Add Task</button>
+          <button className='button' onClick={() => this.toggleAddTask(true)}>Add Taha</button>
             {this.props.newDream.tasks
               .filter(task => task.taha === this.props.taha)
               .map((task, i) => (
