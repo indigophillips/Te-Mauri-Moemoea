@@ -65,16 +65,15 @@ h1 {
   background-color: #fff;
 }
 
+.marginLeft {
+  margin-left: 10px !important;
+}
+
 
 /* TOTAL PROGRESS */
-.circularProgressbar {
-  position: relative;
-  margin: auto;
-  height: 50%;
-  width: 40%;
-  margin-bottom: 2.5rem;
-  margin-left: 1.5rem;
+.circularProgressBar {
   text-align:center;
+  margin-top: 10px !important;
 
 }
 
@@ -105,7 +104,7 @@ h1 {
 .cloud {
   position: relative;
   text-align: center;
-  width: 35%;
+  width: 33.3%;
   height: 18%;
 }
 
@@ -114,10 +113,14 @@ h1 {
   height: 100%;
 }
 
+.hero-body {
+  padding: 0 !important;
+}
+
 /* CLOUD TEXT */
 .cloudtext {
   position: absolute;
-  font-size: .8em;
+  font-size: .6em;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

@@ -6,9 +6,13 @@ import {sumOverDream} from '../../lib/sumTasks'
 
 function ProgressView (props) {
   return (
-    <div className='level is-mobile botBar'>
+    <div className='columns is-gapless is-mobile'>
+    <div className='column is-3 circularProgressBar'>
       <TotalProgress />
+    </div>
+    <div className='column marginLeft '>
       <Balance data={props.data}/>
+    </div>
     </div>
   )
 }
