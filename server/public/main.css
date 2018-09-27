@@ -111,8 +111,7 @@ h2 {
 .cloud {
   position: relative;
   text-align: center;
-  width: 33.3%;
-  height: 18%;
+  height: 35%;
 }
 
 .cloud img {
@@ -202,7 +201,10 @@ img.progressplaceholder{
   max-width: 100%;
   bottom: fixed;
   object-position: center;
-  
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 /* LOGIN */
@@ -331,7 +333,6 @@ input{
   color: #fff;
   border: none;
   font-weight: bold;
-  width: 100px;
   margin: 10px 4px 10px 4px;
   text-align: center;
 }
