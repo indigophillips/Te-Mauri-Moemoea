@@ -97,6 +97,7 @@ h1 {
 
 .cloudLayer {
   min-height: 6em;
+  max-height: 10em;
   margin-bottom: 0 !important;
 }
 
