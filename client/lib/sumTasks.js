@@ -1,6 +1,6 @@
 const ngaTaha = ['whānau', 'wairua', 'hinengaro', 'tinana']
-const colour1 = ['darkred', 'darkorange', 'darkblue', 'darkgreen']
-const colour2 = ['red', 'orange', 'blue', 'green']
+const colour1 = ['#4c044c', '#ff4d88', '#ff3300', '#d2c707']
+const colour2 = ['#8c198c', '#990033', '#f8882d', '#f2eb6a']
 
 export function sumOverDream (dream) {
   return ngaTaha.map((taha, i) => {

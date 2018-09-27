@@ -152,7 +152,7 @@ class Register extends Component {
                       className='button'
                       onClick={this.handleSubmit}>Register
                     </button>
-                    <Link to='/avatar' type='button' className='button cancel-button' >Cancel</Link>
+                    <Link to='/login' type='button' className='button cancel-button' >Cancel</Link>
                   </div>
                 </fieldset>
               </form>
