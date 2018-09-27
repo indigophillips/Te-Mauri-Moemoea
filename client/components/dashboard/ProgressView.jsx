@@ -6,9 +6,13 @@ import {sumOverDream} from '../../lib/sumTasks'
 
 function ProgressView (props) {
   return (
-    <div className='level is-mobile botBar'>
+    <div className='columns is-gapless is-mobile'>
+    <div className='column is-3 circularProgressBar'>
       <TotalProgress />
+    </div>
+    <div className='column marginLeft '>
       <Balance data={props.data}/>
+    </div>
     </div>
   )
 }
@@ -17,7 +21,7 @@ const mapStateToProps = ({dreams}) => {
   const {selection} = dreams
 
   const ngaTaha = ['whānau', 'wairua', 'hinengaro', 'tinana']
-  const colour1 = ['darkred', 'orangered', 'darkblue', 'darkgreen']
+  const colour1 = ['darkred', 'darkorange', 'darkblue', 'darkgreen']
   const colour2 = ['red', 'orange', 'blue', 'green']
 
   let data

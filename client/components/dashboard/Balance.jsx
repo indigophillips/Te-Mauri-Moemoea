@@ -5,10 +5,10 @@ const CustomXAxisLabel = props => {
   const taha = (props.payload.value === 'whānau')
     ? 'whanau'
     : props.payload.value
-  const imageWidth = 90
+  const imageWidth = 70
   return (
     <g transform={`translate(${props.x},${props.y})`}>
-      <image xlinkHref={`./images/taha/${taha}.png`} x={-imageWidth/2} y={0} height="40px" width={`${imageWidth}px`} textAnchor="left" fill="#666" />
+      <image xlinkHref={`./images/taha/${taha}.png`} x={-imageWidth/2} y={0} height={`${imageWidth / 2}px`} width={`${imageWidth}px`} textAnchor="left" fill="#666" />
     </g>
 )}
 
