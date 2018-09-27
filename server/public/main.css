@@ -97,6 +97,7 @@ h1 {
 
 .cloudLayer {
   min-height: 6em;
+  max-height: 10em;
   margin-bottom: 0 !important;
 }
 
@@ -105,7 +106,7 @@ h1 {
 .cloud {
   position: relative;
   text-align: center;
-  width: 35%;
+  width: 33.3%;
   height: 18%;
 }
 
