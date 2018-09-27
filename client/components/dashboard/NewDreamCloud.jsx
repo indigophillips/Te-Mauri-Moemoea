@@ -1,6 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
+          // <div className='newDreamTxt'>
+          //   Add new Dream
+          // </div>
 
 const NewDreamCloud = (props) => {
   if (!props.user) {
@@ -10,10 +13,7 @@ const NewDreamCloud = (props) => {
     return (
       <div className='newDreamCont'>
         <Link to={`/user/${id}/dreams`}>
-          <img className='newDream' src='./images/clouds/cloud1.png'/>
-          <div className='newDreamTxt'>
-            Add new Dream
-          </div>
+          <img className='newDream' src='./images/clouds/ariki/cloud-01.png'/>
         </Link>
       </div>
     )

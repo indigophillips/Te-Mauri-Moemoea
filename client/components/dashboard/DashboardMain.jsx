@@ -1,15 +1,29 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import {connect} from 'react-redux'
 
 import CloudView from './CloudView'
 import ProgressView from './ProgressView'
+import Navbar from '../Navbar'
 
 const DashboardMain = (props) => {
   return (
-    <div className='dashCont'>
-      <CloudView dreams={props.dreams} dashboard={true}/>
-      <ProgressView />
-    </div>
+    <section className="hero is-fullheight">
+      <div className='hero-head'>
+        <Navbar />
+      </div>
+      <div className="hero-body">
+        <div className="container">
+          <section class='section'>
+            <CloudView dreams={props.dreams} dashboard={true}/>
+          </section>
+        </div>
+      </div>
+      <div className='hero-footer'>
+        <section className='section bargraph-section'>
+          <ProgressView />
+        </section>
+      </div>
+    </section>
   )
 }
 

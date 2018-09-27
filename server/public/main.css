@@ -65,14 +65,7 @@ h4 {
 
 /* TOTAL PROGRESS */
 .circularProgressbar {
-  position: relative;
-  margin: auto;
-  height: 50%;
-  width: 40%;
-  margin-bottom: 2.5rem;
-  margin-left: 1.5rem;
-  text-align:center;
-
+  margin-right: 1.5rem;
 }
 
 /* REGISTER PAGE */
@@ -107,8 +100,8 @@ h4 {
 .cloud {
   position: relative;
   text-align: center;
-  width: 35%;
-  height: 18%;
+  width: 45%;
+  height: 23%;
 }
 
 .cloud img {
