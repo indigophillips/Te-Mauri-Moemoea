@@ -27,11 +27,23 @@ class Onboarding extends Component {
 
   render () {
     return (
-      <div className='dashCont'>
-        <Modal open={this.state.modelTriggered} id={this.props.id} modalId={2}/>
-        <CloudView customDreamClick={this.clickDream} dreams={this.props.dreams} dashboard={false}/>
-        <Balance className='balance' data={this.props.data}/>
-      </div>
+      <section className="hero is-fullheight">
+        <div className='hero-head'>
+        </div>
+        <div className="hero-body">
+          <div className="container">
+            <div className='dashCont'>
+              <Modal open={this.state.modelTriggered} id={this.props.id} modalId={2}/>
+              <CloudView customDreamClick={this.clickDream} dreams={this.props.dreams} dashboard={false}/>
+            </div>
+          </div>
+        </div>
+        <div className='hero-footer'>
+          <section className='section bargraph-section'>
+            <Balance className='balance' data={this.props.data}/>
+          </section>
+        </div>
+      </section>
     )
   }
 }

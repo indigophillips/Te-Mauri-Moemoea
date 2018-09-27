@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import {connect} from 'react-redux'
 
 const NewDreamCloud = (props) => {
@@ -9,12 +8,8 @@ const NewDreamCloud = (props) => {
     let id = props.user.id
     return (
       <div className='newDreamCont'>
-        <Link to={`/user/${id}/dreams`}>
-          <img className='newDream' src='./images/clouds/cloud1.png'/>
-          <div className='newDreamTxt'>
-            Add new Dream
-          </div>
-        </Link>
+        <img onClick={props.switchFlicker}
+          className='newDream' src='./images/clouds/koru_cloud.png'/>
       </div>
     )
   }

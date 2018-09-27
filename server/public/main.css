@@ -40,6 +40,11 @@ h2 {
   margin-right: 0;
 }
 
+.switch img {
+  display:block;
+  margin:auto;
+}
+
 ::placeholder {
   font-size: 0.8rem;
 }
@@ -103,7 +108,6 @@ h2 {
 
 
 /* CLOUD */
-
 .cloud {
   position: relative;
   text-align: center;
@@ -292,6 +296,29 @@ input{
   width: 80%;
   margin: auto;
   margin: 8px auto 0px auto;
+  display: block;
+}
+
+.dreamCreation{
+  padding: 2em;
+}
+
+#dreamName {
+  width: 100%;
+  margin-top: 4em;
+}
+
+.dreamCreation input[type=radio] {
+  margin-top: 2em;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.dreamCreation label{
+  color: #fff;
+  text-align: center;
   display: block;
 }
 
