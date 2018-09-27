@@ -14,7 +14,7 @@ const sampleDreams = {
   contributing: contributorDreams,
   public: publicDreams,
   selection: {
-    type: 'personal',
+    type: 'contributing',
     id: 1
   }
 }

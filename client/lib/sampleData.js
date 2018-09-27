@@ -10,35 +10,6 @@ export const user = {
 
 export const personalDreams = [
   {
-    id: 1,
-    name: 'Get my learners drivers license',
-    scope: 'personal',
-    description: 'I would like to get my learners drivers license so that I may drive the car to school with mum',
-    tasks: [
-      {
-        name: 'Ask mum/dad for my ID',
-        description: 'Find my passport or birth certificate to show before the test',
-        taha: 'whānau',
-        done: true,
-        due_date: 'none'
-      },
-      {
-        name: 'Study for test',
-        description: 'Go to the road code website and take the example tests',
-        taha: 'hinengaro',
-        done: false,
-        due_date: 'none'
-      },
-      {
-        name: 'Be a passenger',
-        description: 'Ask mum to drive me around to show me what its like to drive',
-        taha: 'whānau',
-        done: false,
-        due_date: 'none'
-      }
-    ]
-  },
-  {
     id: 2,
     name: 'Find a part time job',
     description: 'I would like to get a part time job so that I can buy a new phone',
@@ -111,7 +82,7 @@ export const personalDreams = [
 export const whanauDreams = [
   {
     id: 4,
-    name: 'Take a family trip to the Gold Coast',
+    name: 'Whānau trip to Oz',
     scope: 'whanau',
     description: 'Our whānau would like to take a trip to the Gold Coast for 2 weeks',
     tasks: [
@@ -171,13 +142,42 @@ export const contributorDreams = [
         done: true
       }
     ]
+  },
+  {
+    id: 1,
+    name: 'Get drivers license',
+    scope: 'contributor',
+    description: 'I would like to get my learners drivers license so that I may drive the car to school with mum',
+    tasks: [
+      {
+        name: 'Ask mum/dad for my ID',
+        description: 'Find my passport or birth certificate to show before the test',
+        taha: 'whānau',
+        done: true,
+        due_date: 'none'
+      },
+      {
+        name: 'Study for test',
+        description: 'Go to the road code website and take the example tests',
+        taha: 'hinengaro',
+        done: false,
+        due_date: 'none'
+      },
+      {
+        name: 'Be a passenger',
+        description: 'Ask mum to drive me around to show me what its like to drive',
+        taha: 'whānau',
+        done: false,
+        due_date: 'none'
+      }
+    ]
   }
 ]
 
 export const publicDreams = [
   {
     id: 6,
-    name: 'Make the world a better place',
+    name: 'Make the world better',
     scope: 'public',
     description: 'Spread happiness one smile at a time',
     tasks: [
@@ -221,7 +221,7 @@ export const publicDreams = [
   },
   {
     id: 8,
-    name: 'Improve my maths abilities',
+    name: 'Improve maths',
     scope: 'public',
     description: 'I would like to pair up with someone to become better at maths',
     tasks: [
