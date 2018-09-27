@@ -1,10 +1,10 @@
-import React, {Component, Fragment} from 'react'
+import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import NewDreamTitle from './NewDreamTitle'
 import TaskCreation from './TaskCreation'
 import Balance from '../dashboard/Balance'
 import {sumOverDream} from '../../lib/sumTasks'
-import {wipeNewDream} from '../../actions/newDream'
+import {wipeNewDream, addNewDream} from '../../actions/newDream'
 
 class NewDream extends Component {
   constructor (props) {
@@ -17,10 +17,7 @@ class NewDream extends Component {
     this.handleChange = this.handleChange.bind(this)
     this.addWhanau = this.addWhanau.bind(this)
     this.handleDream = this.handleDream.bind(this)
-  }
-
-  componentDidMount () {
-    this.props.dispatch(wipeNewDream())
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange (e) {
@@ -42,9 +39,20 @@ class NewDream extends Component {
 
   handleDream (e) {
     this.setState({
-      personal: e.target.id
+      dreamScope: e.target.name
     })
   }
+
+  handleSubmit () {
+    this.props.submitDream({
+      id: this.props.dreams.length,
+      name: this.state.dreamName,
+      scope: this.state.scope,
+      tasks: this.props.dream.tasks
+    })
+    this.props.wipeNewDream()
+  }
+
 
   render () {
     return (
@@ -57,13 +65,14 @@ class NewDream extends Component {
               <NewDreamTitle whanau={this.state.whanau}
                 handleChange={this.handleChange}
                 addWhanau={this.addWhanau}
-                personal={this.state.personal}
+                dreamScope={this.state.dreamScope}
                 handleDream={this.handleDream}/>
             </section>
             <section class='section'>
               <TaskCreation />
             </section>
           </div>
+          <button type='button' onClick={this.handleSubmit}>Submit Dream</button>
         </div>
         <div className='hero-footer'>
           <section className='section bargraph-section'>
@@ -78,8 +87,16 @@ class NewDream extends Component {
 function mapStateToProps (state) {
   return {
     user: state.userDetails,
+    dreams: state.dreams,
     dream: state.newDream
   }
 }
 
-export default connect(mapStateToProps)(NewDream)
+function mapDispatchToProps (dispatch) {
+  return {
+    submitDream: dreamName => dispatch(addNewDream(dreamName)),
+    wipeNewDream: () => dispatch(wipeNewDream())
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(NewDream)
