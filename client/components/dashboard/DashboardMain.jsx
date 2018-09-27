@@ -10,9 +10,17 @@ class DashboardMain extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      modalOpen: false
+      modalOpen: false,
+      randomNum: 45
     }
     this.switchFlicker = this.switchFlicker.bind(this)
+    this.randomizeNum = this.randomizeNum.bind(this)
+  }
+
+  randomizeNum () {
+    this.setState({
+      randomNum: Math.floor(Math.random() * 100)
+    })
   }
 
   switchFlicker () {
@@ -20,6 +28,7 @@ class DashboardMain extends Component {
       modalOpen: true
     })
   }
+
   render () {
     let id = this.props.user.id
     return (
@@ -31,7 +40,9 @@ class DashboardMain extends Component {
           <div className="container">
             <Modal open={this.state.modalOpen} id={id} modalId={3}/>
             <div className='dashCont'>
-              <CloudView switchFlicker={this.switchFlicker}
+              <CloudView 
+                switchFlicker={this.switchFlicker}
+                randomizeNum={this.randomizeNum}
                 dreams={this.props.dreams}
                 dashboard={true}/>
             </div>
@@ -39,7 +50,7 @@ class DashboardMain extends Component {
         </div>
         <div className='hero-footer'>
           <section className='section bargraph-section'>
-              <ProgressView />
+              <ProgressView randomNum={this.state.randomNum}/>
           </section>
         </div>
       </section>

@@ -8,7 +8,7 @@ function ProgressView (props) {
   return (
     <div className='columns is-gapless is-mobile'>
     <div className='column is-3 circularProgressBar'>
-      <TotalProgress />
+      <TotalProgress randomNum={props.randomNum}/>
     </div>
     <div className='column marginLeft '>
       <Balance data={props.data}/>

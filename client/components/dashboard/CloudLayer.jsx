@@ -12,6 +12,7 @@ function CloudLayer (props) {
           key={dream.id}
           dream={dream}
           onClick={() => {
+            props.randomizeNum()
             if (props.customDreamClick) props.customDreamClick()
             props.select(props.role, dream.id)
           }}

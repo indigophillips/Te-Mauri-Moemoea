@@ -5,14 +5,24 @@ class TotalProgress extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      completedBalance: 30,
+      completedBalance: 20,
       currentBalance: 0,
       totalBalance: 100,
       counter: null
     }
+    this.updateBalance = this.updateBalance.bind(this)
   }
 
-  componentDidMount () {
+  componentDidUpdate(prevProps) {
+    if (prevProps.randomNum !== this.state.completedBalance){
+      this.setState({
+        currentBalance: 0,
+        completedBalance: prevProps.randomNum
+      }, this.updateBalance)
+    }
+  }
+
+  updateBalance() {
     this.setState({
       counter: setInterval(() => {
         if (this.state.currentBalance < this.state.completedBalance) {
@@ -25,6 +35,10 @@ class TotalProgress extends React.Component {
       20
       )
     })
+  }
+
+  componentDidMount () {
+    this.updateBalance()
   }
 
   render () {
