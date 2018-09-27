@@ -10,7 +10,7 @@
     "build": "webpack --config ./client/webpack.config.js",
     "dev": "nodemon server & yarn build --watch",
     "test": "jest --watchAll",
-    "postinstall": "yarn build",
+    "postinstall": "yarn build && knex migrate:latest",
     "knex": "knex"
   },
   "jest": {
