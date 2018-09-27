@@ -29,6 +29,10 @@ export class AddTaskModal extends Component {
       taha: this.props.taha,
       done: false
     })
+    this.setState({
+      name: '',
+      description: ''
+    })
     this.props.close()
   }
 

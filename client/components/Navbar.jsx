@@ -8,13 +8,7 @@ const Navbar = (props) => {
         <img src='images/burger.png'/>
       </div>
       <div className='column switch'>
-        <div className='toggle'>
-          <label>
-            <input type="checkbox"></input>
-            <span className="lever"></span>
-          </label>
-
-        </div>
+        <img src='images/world_logo.png'></img>
       </div>
       <div className='column'>
         <div className='avatar'>
