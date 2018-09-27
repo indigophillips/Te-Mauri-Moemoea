@@ -8,7 +8,7 @@ const InvitesAndNewDreams = (props) => {
     return (
       <Fragment>
         <div className='newDreamBtn'>
-          <button type='button' onClick={this.switchFlicker}>Add Dream</button>
+          <button type='button' onClick={this.switchFlicker}>Add Moemoe&amacr;</button>
         </div>
         <div className='inviteCont'>
           <p className='invites'>Invite 1</p>
