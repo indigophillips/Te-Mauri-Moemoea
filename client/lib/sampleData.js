@@ -107,12 +107,12 @@ export const whanauDreams = [
         name: 'Pick a date',
         taha: 'whānau',
         description: 'Choose a date which suits everyone',
-        done: false,
+        done: true,
         due_date: '1/11/2018'
       },
       {
         name: 'Passports',
-        taha: 'whānau',
+        taha: 'hinengaro',
         description: 'Ensure everyones passports are current',
         done: false,
         due_date: 'none'
@@ -154,18 +154,41 @@ export const publicDreams = [
     description: 'Spread happiness one smile at a time',
     tasks: [
       {
-        name: 'Build a Computer',
-        taha: 'public',
-        description: 'I would like to know how to build a computer',
+        name: 'Painting the mural',
+        taha: 'whānau',
+        description: 'Contribute to the painting of the school mural',
         done: false,
-        due_date: '25/11/2018'
-      },
+        due_date: '23/12/2018'
+      }
+    ]
+  },
+  {
+    id: 7,
+    name: 'Build a Computer',
+    scope: 'public',
+    description: 'I would like to know how to build a computer',
+    tasks: [
       {
-        name: 'Improve my maths abilities',
-        taha: 'public',
-        description: 'I would like to pair up with someone to become better at maths',
+        name: 'Painting the mural',
+        taha: 'wairua',
+        description: 'Contribute to the painting of the school mural',
+        done: true,
+        due_date: '23/12/2018'
+      }
+    ]
+  },
+  {
+    id: 8,
+    name: 'Improve my maths abilities',
+    scope: 'public',
+    description: 'I would like to pair up with someone to become better at maths',
+    tasks: [
+      {
+        name: 'Painting the mural',
+        taha: 'whānau',
+        description: 'Contribute to the painting of the school mural',
         done: false,
-        due_date: '31/12/2018'
+        due_date: '23/12/2018'
       }
     ]
   }
