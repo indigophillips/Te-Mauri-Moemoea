@@ -54,7 +54,7 @@ export const personalDreams = [
         name: 'Write my C.V',
         description: 'Complete writing my C.V',
         taha: 'hinengaro',
-        done: false,
+        done: true,
         due_date: 'none'
       },
       {
@@ -231,6 +231,18 @@ export const publicDreams = [
         description: 'Contribute to the painting of the school mural',
         done: false,
         due_date: '23/12/2018'
+      },
+      {
+        taha: 'hinengaro',
+        done: true
+      },
+      {
+        taha: 'whānau',
+        done: true
+      },
+      {
+        taha: 'wairua',
+        done: true
       }
     ]
   }
