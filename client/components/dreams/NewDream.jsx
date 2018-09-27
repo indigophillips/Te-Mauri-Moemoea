@@ -66,6 +66,7 @@ class NewDream extends Component {
 
 
   render () {
+<<<<<<< HEAD
     if (this.state.redirect) {
       let id = this.props.user.id
       this.handleRedirect(false)
@@ -93,6 +94,23 @@ class NewDream extends Component {
           <div className='hero-footer'>
             <section className='section bargraph-section'>
               <Balance data={sumOverDream(this.props.dream)}/>
+=======
+    return (
+      <section className="hero is-fullheight">
+        <div className='hero-head'>
+        </div>
+        <div className="hero-body">
+          <div className="container">
+            <section className='section'>
+              <NewDreamTitle whanau={this.state.whanau}
+                handleChange={this.handleChange}
+                addWhanau={this.addWhanau}
+                personal={this.state.personal}
+                handleDream={this.handleDream}/>
+            </section>
+            <section className='section'>
+              <TaskCreation />
+>>>>>>> 3abeaaf5f0ddaee3d8109be7418ae7efe61131ec
             </section>
           </div>
         </section>
