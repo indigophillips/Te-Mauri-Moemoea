@@ -8,6 +8,15 @@ h1 {
   color: #fff;
 }
 
+h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  font-family: 'Baloo', cursive;
+  word-spacing: 0.07em;
+  letter-spacing: 0.03em;
+}
+
 
 /* NAV BAR */
 .navbar {
@@ -85,9 +94,6 @@ h1 {
   padding: 0.5rem;
 }
 
-/* DASHBOARD */
-
-
 /* CLOUD VIEW */
 
 .cloudView {
@@ -127,6 +133,7 @@ h1 {
 .cloudtext div {
   display: inline-block;
 }
+
 /* NEW DREAMS */
 .newDreamCont {
   position: relative;
@@ -170,12 +177,36 @@ img.progressplaceholder{
   max-width: 100%;
 }
 
+/* WELCOME */
+.welcome{
+  text-align: center;
+  position: center;
+  margin: 0;
+  padding: 0.5rem; 
+}
+
+.welcome-image { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100%;
+  max-width: 100%;
+  top:fixed;
+}
+
+.globe-image {
+  max-height: 100%;
+  max-width: 100%;
+  bottom: fixed;
+  object-position: center;
+  
+}
+
 /* LOGIN */
 .login{
   padding: 0 0 0 4px;
   font-size: .8em;
-  border-radius: 0 50% 50% 0;
-  
+  border-radius: 0 50% 50% 0;  
 }
 
 .log {
