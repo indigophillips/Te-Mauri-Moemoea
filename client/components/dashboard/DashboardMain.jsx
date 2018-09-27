@@ -6,26 +6,35 @@ import CloudView from './CloudView'
 import ProgressView from './ProgressView'
 import Navbar from '../Navbar'
 
-const DashboardMain = (props) => {
-  return (
-    <section className="hero is-fullheight">
-    <div className='hero-head'>
-      <Navbar />
-    </div>
-    <div className="hero-body">
-      <div className="container">
-        <section className='dashCont'>
-          <CloudView dreams={props.dreams} dashboard={true}/>
-        </section>
+class DashboardMain extends Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      modalOpen: false
+    }
+    this.switchFlicker = this.switchFlicker.bind(this)
+  }
+
+  switchFlicker () {
+    this.setState({
+      modalOpen: true
+    })
+  }
+  render () {
+    let id = this.props.user.id
+    return (
+      <div className='appContainer'>
+      <Modal open={this.state.modalOpen} id={id} modalId={3}/>
+        <Navbar />
+        <div className='dashCont'>
+          <CloudView switchFlicker={this.switchFlicker}
+            dreams={this.props.dreams}
+            dashboard={true}/>
+          <ProgressView />
+        </div>
       </div>
-    </div>
-    <div className='hero-footer'>
-      <section className='section bargraph-section'>
-        <ProgressView />
-      </section>
-    </div>
-  </section>
-  )
+    )
+  }
 }
 
 function mapStateToProps (state) {
