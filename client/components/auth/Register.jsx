@@ -62,7 +62,7 @@ class Register extends Component {
             <div className= 'register'>
               <form>
                 <fieldset>
-                  <img src="images/logo_white-01.png"></img>
+                  <img src="images/logo_white.png"></img>
                   <label htmlFor='alias'>Alias</label>
                   <input
                     type='text'
@@ -77,7 +77,7 @@ class Register extends Component {
                     type='text'
                     name='firstName'
                     id='firstName'
-                    placeholder='FirstName..'
+                    placeholder='First Name..'
                     onChange={this.handleChange}
                     value={this.state.firstName}
                   />
@@ -86,7 +86,7 @@ class Register extends Component {
                     type='text'
                     name='lastName'
                     id='lastName'
-                    placeholder='LastName..'
+                    placeholder='Last Name..'
                     onChange={this.handleChange}
                     value={this.state.lastName}
                   />

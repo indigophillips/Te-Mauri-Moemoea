@@ -1,14 +1,14 @@
 export const modals = [
   [
-    'Select your avatar'
+    'Select your KAITIAKI (Guardian)'
   ], // login to avatar
   [
-    'Welcome to the dream selection. Here you will find pre-made dreams to get you started. Later on, you will be able to define your own dreams from scratch. Select dreams that you find attractive.'
+    'NAU MAI, HAERE MAI to your MOEMOEĀ Tutorial. Learn how MOEMOEĀ can be made up of  different attributes within Te Whare Tapa Whā: TINANA (Physical), WAIRUA (Spiritual), HINENGARO (Mental) and WHĀNAU (Family). Select dreams that you find attractive.'
   ], // avatar to onboarding modal
   [
-    'Here is your dashboard, which contains your own personal dreams, whānau dreams, public dreams and dreams which you are contributing to.'
+    'Your dashboard, this contains your own personal MOEMOEĀ, whānau MOEMOEĀ, , public MOEMOEĀ,  and MOEMOEĀ you are contributing to.'
   ], // onaboarding to dashboard modal
   [
-    'Here you can refine and edit your dream, or ask for help from your whānau or community. You can define tasks as part of each dream under each side of te whare tapa whā: tinana, wairua, whānau, hinengaro. You decide what tasks make up your dreams, and you decide which side of the whare they sit in.'
+    'Refine and edit your MOEMOEĀ, or ask for help from your whānau or community. Define tasks under the Taha you feel is most appropriate for you. TINANA (Physical), WAIRUA (Spiritual), HINENGARO (Mental) and WHĀNAU (Family).'
   ] // newDreamAndInvites to newDream modal
 ]

@@ -9,12 +9,26 @@ h1 {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   color: #fff;
   text-align: center;
-  font-family: 'Baloo', cursive;
-  word-spacing: 0.07em;
-  letter-spacing: 0.03em;
+  font-family: 'Open Sans', sans-serif; 
+  padding-bottom: 0.3rem;
+  word-spacing: 0.08em;
+  letter-spacing: 0.08em;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  word-spacing: 0.08em;
+  letter-spacing: 0.08em;
+  padding-top: 0.07rem;
+  padding-bottom: 4rem;
+  font-style: italic;
 }
 
 
@@ -192,8 +206,10 @@ img.progressplaceholder{
   margin-left: auto;
   margin-right: auto;
   max-height: 100%;
-  max-width: 100%;
+  max-width: 90%;
   top:fixed;
+  padding-bottom: 4rem;
+  
 }
 
 .globe-image {
@@ -266,8 +282,6 @@ label {
   padding: 2% 0;
   text-align: center;
 }
-
-
 
 .close {
   width: 25px;
