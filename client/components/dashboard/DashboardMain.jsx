@@ -15,13 +15,12 @@ const DashboardMain = (props) => {
       <div className="container">
         <section className='dashCont'>
           <CloudView dreams={props.dreams} dashboard={true}/>
-          <ProgressView />
         </section>
       </div>
     </div>
     <div className='hero-footer'>
       <section className='section bargraph-section'>
-        <Balance data={sumOverDream(this.props.dream)}/>
+        <ProgressView />
       </section>
     </div>
   </section>
