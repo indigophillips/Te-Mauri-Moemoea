@@ -2,7 +2,7 @@ import {UPDATE_NEW_DREAM, WIPE_NEW_DREAM, ADD_TASK} from '../actions/newDream'
 
 export const freshDream = {
   name: '',
-  description: '',
+  scope: '',
   tasks: []
 }
 

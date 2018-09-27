@@ -12,6 +12,7 @@ export const personalDreams = [
   {
     id: 1,
     name: 'Get my learners drivers license',
+    scope: 'personal',
     description: 'I would like to get my learners drivers license so that I may drive the car to school with mum',
     tasks: [
       {
@@ -98,20 +99,20 @@ export const personalDreams = [
 export const whanauDreams = [
   {
     id: 4,
-    whanau_id: 1,
     name: 'Take a family trip to the Gold Coast',
+    scope: 'whanau',
     description: 'Our whānau would like to take a trip to the Gold Coast for 2 weeks',
     tasks: [
       {
         name: 'Pick a date',
         taha: 'whānau',
         description: 'Choose a date which suits everyone',
-        done: false,
+        done: true,
         due_date: '1/11/2018'
       },
       {
         name: 'Passports',
-        taha: 'whānau',
+        taha: 'hinengaro',
         description: 'Ensure everyones passports are current',
         done: false,
         due_date: 'none'
@@ -130,8 +131,8 @@ export const whanauDreams = [
 export const contributorDreams = [
   {
     id: 5,
-    dreamer_id: 1,
     name: 'School Mural',
+    scope: 'contributor',
     description: 'Help to create a mural on the new building at school',
     tasks: [
       {
@@ -148,16 +149,53 @@ export const contributorDreams = [
 export const publicDreams = [
   {
     id: 6,
-    name: 'Build a Computer',
-    description: 'I would like to know how to build a computer'
+    name: 'Make the world a better place',
+    scope: 'public',
+    description: 'Spread happiness one smile at a time',
+    tasks: [
+      {
+        name: 'Painting the mural',
+        taha: 'whānau',
+        description: 'Contribute to the painting of the school mural',
+        done: false,
+        due_date: '23/12/2018'
+      }
+    ]
   },
   {
     id: 7,
+    name: 'Build a Computer',
+    scope: 'public',
+    description: 'I would like to know how to build a computer',
+    tasks: [
+      {
+        name: 'Painting the mural',
+        taha: 'wairua',
+        description: 'Contribute to the painting of the school mural',
+        done: true,
+        due_date: '23/12/2018'
+      }
+    ]
+  },
+  {
+    id: 8,
     name: 'Improve my maths abilities',
-    description: 'I would like to pair up with someone to become better at maths'
+    scope: 'public',
+    description: 'I would like to pair up with someone to become better at maths',
+    tasks: [
+      {
+        name: 'Painting the mural',
+        taha: 'whānau',
+        description: 'Contribute to the painting of the school mural',
+        done: false,
+        due_date: '23/12/2018'
+      }
+    ]
   }
 ]
 
+
+// unused below
 export const whanau = [
   {
     id: 1,
