@@ -39,7 +39,7 @@ class Onboarding extends Component {
 const mapStateToProps = ({dreams, userDetails}) => {
   const {selection} = dreams
 
-  const ngaTaha = ['whānau', 'wairua', 'hinegaro', 'tinana']
+  const ngaTaha = ['whānau', 'wairua', 'hinengaro', 'tinana']
   const colour1 = ['darkred', 'orangered', 'darkblue', 'darkgreen']
   const colour2 = ['red', 'orange', 'blue', 'green']
 
