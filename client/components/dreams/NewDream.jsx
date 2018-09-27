@@ -73,23 +73,15 @@ class NewDream extends Component {
     } else {
       return (
         <section className="hero is-fullheight">
-          <div className='hero-head'>
-          </div>
-          <div className="hero-body">
-            <div className="container">
-              <section class='section'>
+            <div className="dreamCreation">
                 <NewDreamTitle whanau={this.state.whanau}
                   handleChange={this.handleChange}
                   addWhanau={this.addWhanau}
                   dreamScope={this.state.dreamScope}
                   handleDream={this.handleDream}/>
-              </section>
-              <section class='section'>
-                <TaskCreation />
-              </section>
+              <TaskCreation />
+              <button type='button' onClick={this.handleSubmit}>Submit Dream</button>
             </div>
-            <button type='button' onClick={this.handleSubmit}>Submit Dream</button>
-          </div>
           <div className='hero-footer'>
             <section className='section bargraph-section'>
               <Balance data={sumOverDream(this.props.dream)}/>
