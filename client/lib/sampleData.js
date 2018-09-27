@@ -60,7 +60,7 @@ export const personalDreams = [
       {
         name: 'Speak to Dad',
         description: 'Talk to Dad to see if there are any part time jobs at his work',
-        taha: 'hinengaro',
+        taha: 'whānau',
         done: false,
         due_date: 'none'
       }
@@ -77,6 +77,18 @@ export const personalDreams = [
         taha: 'tinana',
         done: false,
         due_date: '10/10/2018'
+      },
+      {
+        taha: 'whānau',
+        done: false
+      },
+      {
+        taha: 'whānau',
+        done: true
+      },
+      {
+        taha: 'whānau',
+        done: true
       },
       {
         name: 'Disconnect',
@@ -123,6 +135,10 @@ export const whanauDreams = [
         description: 'Book suitable accomodation',
         done: false,
         due_date: 'none'
+      },
+      {
+        taha: 'tinana',
+        done: true
       }
     ]
   }
@@ -141,6 +157,18 @@ export const contributorDreams = [
         description: 'Contribute to the painting of the school mural',
         done: false,
         due_date: '23/12/2018'
+      },
+      {
+        taha: 'tinana',
+        done: true
+      },
+      {
+        taha: 'hinengaro',
+        done: false
+      },
+      {
+        taha: 'hinengaro',
+        done: true
       }
     ]
   }
