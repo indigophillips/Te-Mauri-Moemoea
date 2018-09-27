@@ -6,12 +6,10 @@ import Register from './auth/Register'
 import Login from './auth/Login'
 import Avatar from './Avatar'
 import Onboarding from './Onboarding'
-import Navbar from './Navbar'
 import DashboardMain from './dashboard/DashboardMain'
 import InvitesAndNewDreams from './dashboard/InvitesAndNewDreams'
 import NewDream from './dreams/NewDream'
 
-// <Route exact path='/user/:id' component={Navbar} />
 const App = () => {
   return (
     <Router>
