@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {connect} from 'react-redux'
+import Modal from '../Modals'
 
 import CloudView from './CloudView'
 import ProgressView from './ProgressView'
@@ -27,6 +28,11 @@ const DashboardMain = (props) => {
   )
 }
 
-const mapStateToProps = ({dreams}) => ({dreams})
+function mapStateToProps (state) {
+  return {
+    dreams: state.dreams,
+    user: state.userDetails
+  }
+}
 
 export default connect(mapStateToProps)(DashboardMain)

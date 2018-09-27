@@ -16,7 +16,7 @@ const CloudView = (props) => {
           customDreamClick={props.customDreamClick}
         />
       ))}
-      {props.dashboard && <NewDreamCloud />}
+      {props.dashboard && <NewDreamCloud switchFlicker={props.switchFlicker}/>}
     </div>
   )
 }
