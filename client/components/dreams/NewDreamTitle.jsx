@@ -6,7 +6,7 @@ const NewDreamTitle = (props) => {
   const id = props.user.id
   return (
     <Fragment>
-      <Link to={`/user/${id}`}><button class="delete is-large close"></button></Link>
+      <Link to={`/user/${id}`}><button className="delete is-large close"></button></Link>
       <input onClick={props.handleChange}
         placeholder='Dream Name'
         id='dreamName'
@@ -24,7 +24,7 @@ const NewDreamTitle = (props) => {
             </div>
           ))}
         </div>
-        <button class='button is-rounded column is-2' onClick={props.addWhanau}>add</button>
+        <button className='button is-rounded column is-2' onClick={props.addWhanau}>add</button>
       </div>
       <form className='columns is-mobile control'>
         <label htmlFor="" className='column is-4'>

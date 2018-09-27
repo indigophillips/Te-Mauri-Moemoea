@@ -53,14 +53,14 @@ class NewDream extends Component {
         </div>
         <div className="hero-body">
           <div className="container">
-            <section class='section'>
+            <section className='section'>
               <NewDreamTitle whanau={this.state.whanau}
                 handleChange={this.handleChange}
                 addWhanau={this.addWhanau}
                 personal={this.state.personal}
                 handleDream={this.handleDream}/>
             </section>
-            <section class='section'>
+            <section className='section'>
               <TaskCreation />
             </section>
           </div>
