@@ -202,6 +202,20 @@ export const publicDreams = [
         description: 'Contribute to the painting of the school mural',
         done: true,
         due_date: '23/12/2018'
+      },
+      {
+        name: 'Painting the mural',
+        taha: 'wairua',
+        description: 'Contribute to the painting of the school mural',
+        done: false,
+        due_date: '23/12/2018'
+      },
+      {
+        name: 'Painting the mural',
+        taha: 'wairua',
+        description: 'Contribute to the painting of the school mural',
+        done: true,
+        due_date: '23/12/2018'
       }
     ]
   },
