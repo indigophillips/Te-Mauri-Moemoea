@@ -29,15 +29,15 @@ const NewDreamTitle = (props) => {
       <form className='columns is-mobile control'>
         <label htmlFor="" className='column is-4'>
           <input className='radio with-gap' onClick={props.handleDream} type="radio" name='personal' checked={props.personal === 'personal'} id='personal'/>
-        Personal Dreams
+        Personal
         </label>
         <label htmlFor="" className='column is-4'>
           <input className='radio with-gap' onClick={props.handleDream} type="radio" name='whanau' checked={props.personal === 'whanau'} id='whanau'/>
-        Whanau Dreams
+        Whanau
         </label>
         <label htmlFor="" className='column is-4'>
           <input className='radio with-gap' onClick={props.handleDream} type="radio" name='public' checked={props.personal === 'public'} id='public'/>
-        Public Dreams
+        Public
         </label>
       </form>
     </Fragment>
