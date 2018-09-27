@@ -56,7 +56,7 @@ class NewDream extends Component {
     this.handleRedirect(true)
     const scopes = Object.keys(this.props.dreams).filter(entry => entry != 'selection')
     this.props.submitDream({
-      id: scopes.reduce((total, dreamArr) => total + this.props.dreams[dreamArr].length, 0),
+      id: scopes.reduce((total, dreamArr) => total + this.props.dreams[dreamArr].length, 0) + 1,
       name: this.state.dreamName,
       scope: this.state.dreamScope,
       tasks: this.props.dream.tasks
