@@ -12,6 +12,7 @@ export const personalDreams = [
   {
     id: 1,
     name: 'Get my learners drivers license',
+    scope: 'personal',
     description: 'I would like to get my learners drivers license so that I may drive the car to school with mum',
     tasks: [
       {
@@ -98,8 +99,8 @@ export const personalDreams = [
 export const whanauDreams = [
   {
     id: 4,
-    whanau_id: 1,
     name: 'Take a family trip to the Gold Coast',
+    scope: 'whanau',
     description: 'Our whānau would like to take a trip to the Gold Coast for 2 weeks',
     tasks: [
       {
@@ -130,8 +131,8 @@ export const whanauDreams = [
 export const contributorDreams = [
   {
     id: 5,
-    dreamer_id: 1,
     name: 'School Mural',
+    scope: 'contributor',
     description: 'Help to create a mural on the new building at school',
     tasks: [
       {
@@ -148,16 +149,30 @@ export const contributorDreams = [
 export const publicDreams = [
   {
     id: 6,
-    name: 'Build a Computer',
-    description: 'I would like to know how to build a computer'
-  },
-  {
-    id: 7,
-    name: 'Improve my maths abilities',
-    description: 'I would like to pair up with someone to become better at maths'
+    name: 'Make the world a better place',
+    scope: 'public',
+    description: 'Spread happiness one smile at a time',
+    tasks: [
+      {
+        name: 'Build a Computer',
+        taha: 'public',
+        description: 'I would like to know how to build a computer',
+        done: false,
+        due_date: '25/11/2018'
+      },
+      {
+        name: 'Improve my maths abilities',
+        taha: 'public',
+        description: 'I would like to pair up with someone to become better at maths',
+        done: false,
+        due_date: '31/12/2018'
+      }
+    ]
   }
 ]
 
+
+// unused below
 export const whanau = [
   {
     id: 1,

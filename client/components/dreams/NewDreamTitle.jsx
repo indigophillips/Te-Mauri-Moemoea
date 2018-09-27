@@ -6,13 +6,8 @@ const NewDreamTitle = (props) => {
   const id = props.user.id
   return (
     <Fragment>
-<<<<<<< HEAD
-      <Link to={`/user/${id}`}><button class="delete is-large close"></button></Link>
-      <input onChange={props.handleChange}
-=======
       <Link to={`/user/${id}`}><button className="delete is-large close"></button></Link>
       <input onClick={props.handleChange}
->>>>>>> 3abeaaf5f0ddaee3d8109be7418ae7efe61131ec
         placeholder='Dream Name'
         id='dreamName'
         name='dreamName'
