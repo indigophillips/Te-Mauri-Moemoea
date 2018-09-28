@@ -39,6 +39,7 @@
     "jwt-decode": "^2.2.0",
     "knex": "^0.15.2",
     "node-sass": "^4.9.3",
+    "pg": "^7.4.3",
     "react": "^16.5.2",
     "react-accessible-accordion": "^2.4.4",
     "react-circular-progressbar": "^1.0.0",
