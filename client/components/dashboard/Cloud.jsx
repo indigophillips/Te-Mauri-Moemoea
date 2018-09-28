@@ -12,7 +12,7 @@ class Cloud extends Component {
 
   componentDidMount () {
     this.setState({
-      timer: setInterval(() => {this.setState({t: (this.state.t + 1) % 360000})}, 25)
+      timer: setInterval(() => {this.setState({t: (this.state.t + 1) % 360000})}, 20)
     })
   }
 
@@ -27,8 +27,8 @@ class Cloud extends Component {
   render () {
     return (
       <div className='cloud column is-4' style={{
-        top: `${Math.floor(Math.sin(this.state.t / 140)  * 20)}px`,
-        left: `${Math.floor(Math.cos(this.state.t / 60)  * 20)}px`}}
+        top: `${Math.sin(this.state.t / 220)  * 20}mm`,
+        left: `${Math.cos(this.state.t / 100)  * 20}mm`}}
         onClick={this.props.onClick}>
         <img src={`./images/clouds/cloud${this.state.cloudType}.png`}/>
         <div className='cloudtext'>
