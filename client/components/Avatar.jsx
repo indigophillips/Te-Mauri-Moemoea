@@ -32,7 +32,7 @@ class Avatar extends Component {
           <div className="container">
             <div className='avatar'>
               <Modal open={this.state.redirect} id={this.props.user.id} modalId={1}/>
-              <h1> Choose your Kaitiaki...</h1>
+              <h4> Choose your Kaitiaki...</h4>
               <div className='columns is-mobile is-multiline'>
                 <div className='column is-half'>
                   <div className='avatar-item'>
