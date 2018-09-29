@@ -10,7 +10,11 @@
     "build": "webpack --config ./client/webpack.config.js",
     "dev": "nodemon server & yarn build --watch",
     "test": "jest --watchAll",
-    "postinstall": "yarn build",
+    "h:deploy": "git push heroku master",
+    "h:migrate": "heroku run knex migrate:latest",
+    "h:rollback": "heroku run knex migrate:rollback",
+    "h:seed": "heroku run knex seed:run",
+    "postinstall": "yarn build && knex migrate:latest",
     "knex": "knex"
   },
   "jest": {
