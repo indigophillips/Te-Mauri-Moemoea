@@ -1,5 +1,8 @@
 import React from 'react'
 import {connect} from 'react-redux'
+          // <div className='newDreamTxt'>
+          //   Add new Dream
+          // </div>
 
 const NewDreamCloud = (props) => {
   if (!props.user) {
