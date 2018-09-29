@@ -6,12 +6,13 @@ import {selectDream} from '../../actions/selectDream.js'
 
 function CloudLayer (props) {
   return (
-    <div className='level cloudLayer is-mobile'>
+    <div className='columns is-centered cloudLayer is-mobile is-multiline is-gapless'>
       {props.dreams.map(dream => (
         <Cloud
           key={dream.id}
           dream={dream}
           onClick={() => {
+            if (props.randomizeNum && typeof props.randomizeNum === 'function') props.randomizeNum()
             if (props.customDreamClick) props.customDreamClick()
             props.select(props.role, dream.id)
           }}

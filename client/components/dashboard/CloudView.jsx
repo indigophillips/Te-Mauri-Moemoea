@@ -12,11 +12,12 @@ const CloudView = (props) => {
         <CloudLayer
           key={role}
           role={role}
+          randomizeNum={props.randomizeNum}
           dreams={props.dreams[role]}
           customDreamClick={props.customDreamClick}
         />
       ))}
-      {props.dashboard && <NewDreamCloud />}
+      {props.dashboard && <NewDreamCloud switchFlicker={props.switchFlicker}/>}
     </div>
   )
 }

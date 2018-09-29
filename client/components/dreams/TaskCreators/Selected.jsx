@@ -28,7 +28,8 @@ export class Selected extends Component {
           taha={this.props.taha}
         />
         <div className='columns is-mobile'>
-          <div className='column is-10 columns is-mobile is-multiline'>
+          <div className='column is-12 columns is-mobile is-multiline'>
+          <button className='button' onClick={() => this.toggleAddTask(true)}>Add Taha</button>
             {this.props.newDream.tasks
               .filter(task => task.taha === this.props.taha)
               .map((task, i) => (
@@ -40,7 +41,6 @@ export class Selected extends Component {
                 </div>
               ))}
           </div>
-          <button className='button column' onClick={() => this.toggleAddTask(true)}>Add Task</button>
         </div>
       </Fragment>
     )

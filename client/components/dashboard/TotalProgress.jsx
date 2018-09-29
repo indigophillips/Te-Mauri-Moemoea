@@ -5,14 +5,24 @@ class TotalProgress extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      completedBalance: 30,
+      completedBalance: 20,
       currentBalance: 0,
       totalBalance: 100,
       counter: null
     }
+    this.updateBalance = this.updateBalance.bind(this)
   }
 
-  componentDidMount () {
+  componentDidUpdate(prevProps) {
+    if (prevProps.randomNum !== this.state.completedBalance){
+      this.setState({
+        currentBalance: 0,
+        completedBalance: prevProps.randomNum
+      }, this.updateBalance)
+    }
+  }
+
+  updateBalance() {
     this.setState({
       counter: setInterval(() => {
         if (this.state.currentBalance < this.state.completedBalance) {
@@ -27,6 +37,10 @@ class TotalProgress extends React.Component {
     })
   }
 
+  componentDidMount () {
+    this.updateBalance()
+  }
+
   render () {
     return (
       <CircularProgressbar
@@ -37,14 +51,14 @@ class TotalProgress extends React.Component {
       styles={{ 
         
         path: {
-        stroke: 'green',
+        stroke: '#4c044c',
         strokeWidth:'4px',
         strokeLinecap: 'butt',
         transition: 'stroke-dashoffset 0.18s ease 0s'
         },
 
         trail: {
-        stroke: 'lightgreen',
+        stroke: '#8c198c',
         strokeWidth:'4px',
         circlesize: '20%',
         progress: '100%'
@@ -53,7 +67,7 @@ class TotalProgress extends React.Component {
         text: {
         displayTextWhenDone: true,
         donetext:'Success!',
-        fill: 'green',
+        fill: '#4c044c',
         fontSize: '10px',
         isundeterminated: true,        
         }

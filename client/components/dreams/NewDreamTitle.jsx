@@ -6,11 +6,12 @@ const NewDreamTitle = (props) => {
   const id = props.user.id
   return (
     <Fragment>
-      <Link to={`/user/${id}`}><button class="delete is-large close"></button></Link>
-      <input onClick={props.handleChange}
-        placeholder='Dream Name'
+      <Link to={`/user/${id}`}><button className="delete is-large close"></button></Link>
+      <input onChange={props.handleChange}
+        placeholder='Moemoeā Name'
         id='dreamName'
         name='dreamName'
+        type='text'
         value={props.dreamName}
       >
       </input>
@@ -18,27 +19,26 @@ const NewDreamTitle = (props) => {
       <div className='columns is-mobile'>
         <div className='column is-10 columns is-mobile whanauAvatarDiv'>
           {props.whanau.map((add, i) => (
-            <div className='column is-2' key={i}>
-              <img
-                src={add}></img>
-            </div>
+            (i < 4 && (<div className='column is-3' key={i}>
+              <img src='/images/contributor.png'></img>
+            </div>))
           ))}
         </div>
-        <button class='button is-rounded column is-2' onClick={props.addWhanau}>add</button>
+        <button className='button' onClick={props.addWhanau}>add</button>
       </div>
       <form className='columns is-mobile control'>
-        <label htmlFor="" className='column is-4'>
-          <input className='radio with-gap' onClick={props.handleDream} type="radio" name='personal' checked={props.personal === 'personal'} id='personal'/>
-        Personal Dreams
-        </label>
-        <label htmlFor="" className='column is-4'>
-          <input className='radio with-gap' onClick={props.handleDream} type="radio" name='whanau' checked={props.personal === 'whanau'} id='whanau'/>
-        Whanau Dreams
-        </label>
-        <label htmlFor="" className='column is-4'>
-          <input className='radio with-gap' onClick={props.handleDream} type="radio" name='public' checked={props.personal === 'public'} id='public'/>
-        Public Dreams
-        </label>
+        <div className='column is-4'>
+          <input className='radio with-gap' onClick={props.handleDream} type="radio" name='personal' checked={props.dreamScope === 'personal'} id='personal'/>
+          <label for='personal'>Personal</label>
+        </div>
+        <div className='column is-4'>
+          <input className='radio with-gap' onClick={props.handleDream} type="radio" name='whanau' checked={props.dreamScope === 'whanau'} id='whanau'/>
+          <label for='whanau'>Whanau</label>
+        </div>
+        <div className='column is-4'>
+          <input className='radio with-gap' onClick={props.handleDream} type="radio" name='public' checked={props.dreamScope === 'public'} id='public'/>
+          <label for='public'>Public</label>
+        </div>
       </form>
     </Fragment>
   )

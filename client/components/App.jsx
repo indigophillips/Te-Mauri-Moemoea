@@ -7,7 +7,6 @@ import Login from './auth/Login'
 import Avatar from './Avatar'
 import Onboarding from './Onboarding'
 import DashboardMain from './dashboard/DashboardMain'
-import InvitesAndNewDreams from './dashboard/InvitesAndNewDreams'
 import NewDream from './dreams/NewDream'
 
 const App = () => {
@@ -19,9 +18,8 @@ const App = () => {
         <Route path='/user/:id/avatar' component={Avatar} />
         <Route path='/user/:id/onboarding' component={Onboarding} />
         <Route exact path='/user/:id' component={DashboardMain} />
-        <Route path='/user/:id/dreams' component={InvitesAndNewDreams} />
         <Route path='/user/:id/newdream' component={NewDream} />
-        <Route path='/welcome' component={Welcome} />
+        <Route exact path='/' component={Welcome} />
       </Fragment>
     </Router>
   )

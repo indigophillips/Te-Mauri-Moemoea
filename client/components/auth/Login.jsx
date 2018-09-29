@@ -49,8 +49,8 @@ class Login extends Component {
               <Modal open={this.state.redirect} id={this.state.id} modalId={0}/>
               <form>
                 <fieldset>
-                  <img src="images/logo_white-01.png"></img>
-                  <label htmlFor='phoneNumber'>PhoneNumber: </label>
+                  <img src="images/logo_white.png"></img>
+                  <label htmlFor='phoneNumber'>Phone Number: </label>
                   <input type='text'
                     name='phoneNumber'
                     id='phoneNumber'
