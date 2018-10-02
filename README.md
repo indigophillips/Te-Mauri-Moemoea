@@ -32,6 +32,11 @@ Whanau -    Family
 ![registration page](https://user-images.githubusercontent.com/36146995/46374495-50350180-c6ed-11e8-8081-5a59262f70bd.jpg)
 ![login page](https://user-images.githubusercontent.com/36146995/46374527-63e06800-c6ed-11e8-9130-2d56e39360d0.jpg)
 
+![avatar page](https://user-images.githubusercontent.com/36146995/46374568-7ce91900-c6ed-11e8-8aa2-48f7c42c2c0a.jpg)
+
+![moemoeaa page](https://user-images.githubusercontent.com/36146995/46374596-938f7000-c6ed-11e8-91b0-11c54564d1b5.jpg)
+![modal page](https://user-images.githubusercontent.com/36146995/46374612-9b4f1480-c6ed-11e8-87fb-83556e98cbe9.jpg)
+
 ## THE WHO
 
 
