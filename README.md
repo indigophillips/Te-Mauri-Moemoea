@@ -1,17 +1,17 @@
 # TE-MAURI-MOEMOEAA
-### PLEASE NOTE I DO NOT OWN THE RIGHTS TO THIS APP/IMAGES
 
 I decided to volunteer at the Vodafone Xone - Otautahi my time was spent to help a cause very close to my heart. Along with Team Te Tihi we developed a great app for rangatahi(youth). 
-
-
-## Vodafone Accelerator Change Team 2018
-
-
 
 ## The Ti-Tihi Team at the Vodafone Change Accerlerator
 
 ![team te tihi](https://user-images.githubusercontent.com/36146995/46374080-49f25580-c6ec-11e8-94b5-daa8fdf24368.jpg)
 
+#### PLEASE NOTE:THE RIGHTS TO THIS APP BELONG TO - Te Tihi o Ruahina Whanau Ora Alliance
+
+
+## Vodafone Accelerator Change Team 2018
+
+![volunteers](https://user-images.githubusercontent.com/36146995/46375194-3eecf480-c6ef-11e8-8471-b89d68539f0f.jpg)
 
 ## THE WHAT
 
