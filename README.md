@@ -28,8 +28,9 @@ Whanau -    Family
 
 ## THE LOOK
 
-
-
+![welcome page](https://user-images.githubusercontent.com/36146995/46374421-2ed41580-c6ed-11e8-9873-13baab648246.jpg)
+![registration page](https://user-images.githubusercontent.com/36146995/46374495-50350180-c6ed-11e8-8081-5a59262f70bd.jpg)
+![login page](https://user-images.githubusercontent.com/36146995/46374527-63e06800-c6ed-11e8-9130-2d56e39360d0.jpg)
 
 ## THE WHO
 
