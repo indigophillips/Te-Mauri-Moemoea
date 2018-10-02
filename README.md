@@ -10,6 +10,7 @@ Whanau -    Family
 
 ##The Ti-Tihi Team at the Vodafone Change Accerlerator
 
+![team te tihi](https://user-images.githubusercontent.com/36146995/46374080-49f25580-c6ec-11e8-94b5-daa8fdf24368.jpg)
 
 
 
