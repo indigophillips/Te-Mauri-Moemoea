@@ -11,7 +11,7 @@ I decided to volunteer at the Vodafone Xone - Otautahi my time was spent to help
 
 ## Vodafone Accelerator Change Team 2018
 
-![volunteers](https://user-images.githubusercontent.com/36146995/46375194-3eecf480-c6ef-11e8-8471-b89d68539f0f.jpg)
+![vodafone](https://user-images.githubusercontent.com/36146995/46375285-807d9f80-c6ef-11e8-907c-4d1b9864bf78.jpg)
 
 ## THE WHAT
 
