@@ -1,15 +1,16 @@
 # TE-MAURI-MOEMOEAA
-
+#### PLEASE NOTE:THE RIGHTS TO THIS APP BELONG TO - Te Tihi o Ruahina Whanau Ora Alliance
 I decided to volunteer at the Vodafone Xone - Otautahi my time was spent to help a cause very close to my heart. Along with Team Te Tihi we developed a great app for rangatahi(youth). 
+
 
 ## The Ti-Tihi Team at the Vodafone Change Accerlerator
 
 ![team te tihi](https://user-images.githubusercontent.com/36146995/46374080-49f25580-c6ec-11e8-94b5-daa8fdf24368.jpg)
 
-#### PLEASE NOTE:THE RIGHTS TO THIS APP BELONG TO - Te Tihi o Ruahina Whanau Ora Alliance
-
 
 ## Vodafone Accelerator Change Team 2018
+
+![volunteers](https://user-images.githubusercontent.com/36146995/46384063-29d48d80-c710-11e8-8105-ca72e34f28ec.jpg)
 
 
 ## THE WHAT
@@ -20,9 +21,6 @@ Wairua -    Emotional/Spiritual
 Tinana -    Physical
 Hinengaro - Mental
 Whanau -    Family
-
-
-## THE HOW
 
 
 ## THE LOOK
@@ -36,7 +34,7 @@ Whanau -    Family
 ![moemoeaa page](https://user-images.githubusercontent.com/36146995/46374596-938f7000-c6ed-11e8-91b0-11c54564d1b5.jpg)
 ![modal page](https://user-images.githubusercontent.com/36146995/46374612-9b4f1480-c6ed-11e8-87fb-83556e98cbe9.jpg)
 
-## THE WHO
+
 
 
 
